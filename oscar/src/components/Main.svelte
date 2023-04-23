@@ -2,7 +2,8 @@
   import Scroller from "@sveltejs/svelte-scroller";
   import Wrapper1 from "./Wrapper1.svelte";
   import Wrapper2 from "./Wrapper2.svelte";
-  import Text from "./Text.svelte";
+  import Map from "./Map.svelte";
+  import Hist from "./graphs/Hist.svelte";
 
   let count, index, offset, progress;
 </script>
@@ -19,9 +20,11 @@
 >
   <div class="background" slot="background">
     <div class="chart">
-      <Wrapper1 {index} />
+      <!-- <Map {index} /> -->
     </div>
-    <Wrapper2 {index} />
+    <div class="chart">
+      <Hist {index} />
+    </div>
   </div>
 
   <div class="foreground" slot="foreground">
@@ -41,20 +44,15 @@
   .background {
     position: -webkit-sticky;
     position: sticky;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     background-color: #8a8a8a;
     z-index: 0;
     height: 80vh;
     display: flex;
     align-items: start;
-    justify-content: center;
-  }
-
-  .chart {
-    margin-left: 30vw;
-    margin-top: 20vh;
-    max-width: 70vw;
+    justify-content: start;
+    padding-left: 30vw;
   }
 
   .foreground {
@@ -63,6 +61,7 @@
   }
 
   .step {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
