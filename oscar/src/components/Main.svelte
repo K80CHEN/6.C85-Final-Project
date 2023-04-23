@@ -1,10 +1,7 @@
 <script>
   import Scroller from "@sveltejs/svelte-scroller";
-  import Wrapper1 from "./Wrapper1.svelte";
-  import Wrapper2 from "./Wrapper2.svelte";
-  import Map from "./Map.svelte";
-  import Hist from "./graphs/Hist.svelte";
-
+  import SimpleBar from "./graphs/SimpleBar.svelte";
+  import ScatterTween from "./graphs/ScatterTween.svelte";
   let count, index, offset, progress;
 </script>
 
@@ -19,24 +16,24 @@
   id="scroll"
 >
   <div class="background" slot="background">
-    <div class="chart">
-      <!-- <Map {index} /> -->
+    <div class="graph">
+      <SimpleBar {index} />
     </div>
-    <div class="chart">
-      <Hist {index} />
+    <div class="graph">
+      <ScatterTween {index} />
     </div>
   </div>
 
   <div class="foreground" slot="foreground">
-    <section class="step">This is the first section.</section>
-    <section class="step">This is the second section.</section>
-    <section class="step">This is the third section.</section>
-    <section class="step">This is the 4 section.</section>
-    <section class="step">This is the 5 section.</section>
-    <section class="step">This is the 6 section.</section>
-    <section class="step">This is the 7 section.</section>
-    <section class="step">This is the 8 section.</section>
-    <section class="step">This is the 9 section.</section>
+    <section class="step-section">This is the first section</section>
+    <section class="step-section">Simple Bar Chart</section>
+    <section class="step-section">Scatter plot tweened.</section>
+    <section class="step-section">This is the 4 section.</section>
+    <section class="step-section">This is the 5 section.</section>
+    <section class="step-section">This is the 6 section.</section>
+    <section class="step-section">This is the 7 section.</section>
+    <section class="step-section">This is the 8 section.</section>
+    <section class="step-section">This is the 9 section.</section>
   </div>
 </Scroller>
 
@@ -55,12 +52,19 @@
     padding-left: 30vw;
   }
 
+  .graph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
   .foreground {
     position: relative;
     max-width: 30vw;
   }
 
-  .step {
+  .step-section {
     position: relative;
     display: flex;
     align-items: center;

@@ -1,3 +1,5 @@
+<!-- static histogram display when scrolled to position -->
+
 <script>
   import * as d3 from "d3";
   import { onMount } from "svelte";
@@ -7,16 +9,17 @@
   let isVisible = false;
   let container;
 
-  $: if (index === 2) {
+  // change index number to correspond to at which section this component gets displayed
+  // remember index starts from 0
+
+  $: if (index === 1) {
     isVisible = true;
   } else {
     isVisible = false;
   }
 
-  let el;
-
   onMount(() => {
-    d3.select(el)
+    d3.select(container)
       .selectAll("div")
       .data(data)
       .enter()
@@ -30,7 +33,11 @@
   });
 </script>
 
-<div class="my_dataviz my_chart" class:visible={isVisible} bind:this={el} />
+<div
+  class="my_dataviz my_chart"
+  class:visible={isVisible}
+  bind:this={container}
+/>
 
 <style>
   .my_dataviz {
