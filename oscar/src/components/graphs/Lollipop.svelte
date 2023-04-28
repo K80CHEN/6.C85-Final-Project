@@ -1,5 +1,6 @@
 <script>
   import * as d3 from "d3";
+  import { onMount } from "svelte";
 
   const data = [
     {
@@ -35,7 +36,7 @@
       Value: 1167,
     },
     {
-      Country: "Italy",
+      Country: "Italy"ç,
       Value: 660,
     },
     {
@@ -44,25 +45,25 @@
     },
   ];
 
-  // set the dimensions and margins of the graph
-  const margin = { top: 10, right: 30, bottom: 40, left: 100 },
-    width = 460 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
   let container;
 
-  // append the svg object to the body of the page
-  const svg = d3
-    .select(container)
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+  onMount(() => {
+    // set the dimensions and margins of the graph
+    const margin = { top: 10, right: 30, bottom: 40, left: 100 },
+      width = 460 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
 
-  // Parse the Data
-  function lolli(data) {
-    // sort data
+    // append the svg object to the body of the page
+    const svg = d3
+      .select(container)
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+    // Parse the Data
+
     data.sort(function (b, a) {
       return a.Value - b.Value;
     });
@@ -133,8 +134,7 @@
       .attr("x1", function (d) {
         return x(d.Value);
       });
-  }
-  lolli(data);
+  });
 </script>
 
 <div id="lollipop" bind:this={container} />

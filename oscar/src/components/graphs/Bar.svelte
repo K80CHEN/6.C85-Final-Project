@@ -1,80 +1,80 @@
 <script>
-  import { onMount } from "svelte";
+  import { useD3 } from "../helpers/myd3helper";
+  import * as d3 from "d3";
 
-  export let index;
-  let isVisible = false;
-  let container;
+  let data = [
+    { label: "A", value: 10 },
+    { label: "B", value: 20 },
+    { label: "C", value: 15 },
+    { label: "D", value: 25 },
+  ];
 
-  // change index number to correspond to at which section this component gets displayed
-  // remember index starts from 0
+  function createSvg(svg) {
+    const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
-  $: if (index === 1) {
-    isVisible = true;
-  } else {
-    isVisible = false;
+    const x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+    const y = d3.scaleLinear().rangeRound([height, 0]);
+
+    const g = d3
+      .select(svg)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    x.domain(data.map((d) => d.label));
+    y.domain([0, d3.max(data, (d) => d.value)]);
+
+    g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", `translate(0,${height})`)
+      .call(d3.axisBottom(x))
+      .selectAll("text")
+      .style("font-size", "10px");
+
+    g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y))
+      .selectAll("text")
+      .style("font-size", "10px");
+
+    g.selectAll(".axis path, .axis line")
+      .attr("fill", "none")
+      .attr("stroke", "#000")
+      .attr("shape-rendering", "crispEdges");
+
+    g.selectAll(".bar")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("class", "bar")
+      .attr("x", (d) => x(d.label))
+      .attr("y", (d) => y(d.value))
+      .attr("width", x.bandwidth())
+      .attr("height", (d) => height - y(d.value))
+      .style("fill", "steelblue");
   }
 
-  let chart = [];
-
-  onMount(async () => {
-    const response = await fetch("src/data/HH_size.json");
-    const data = await response.json();
-    chart = createBarChart(data);
-  });
-
-  function createBarChart(data) {
-    if (!data || data.length === 0) {
-      return [];
-    }
-
-    const maxValue = Math.max(...data.map((d) => d.Percentage));
-    const chartHeight = 300; // Change this value to control the maximum height of the chart
-
-    const scale = chartHeight / maxValue;
-
-    return data.map((d) => {
-      return {
-        ...d,
-        scaledValue: d.Percentage * scale,
-      };
-    });
+  function updateSvg(svg) {
+    console.log("sdasdl;k");
   }
 </script>
 
-{#if chart && chart.length}
-  <div class="bar-container" class:visible={isVisible}>
-    {#each chart as { HHSize, scaledValue }}
-      <div class="bar" style="height: {scaledValue}px;">
-        <span>{HHSize}</span>
-      </div>
-    {/each}
-  </div>
-{:else}
-  <p>Loading chart...</p>
-{/if}
+<svg use:d3={{ create: createSvg, update: updateSvg }} />
 
 <style>
-  .bar-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 300px;
-    max-height: 300px; /* Change this value to control the maximum height of the chart */
-
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 2s, visibility 2s;
-  }
-
   .bar {
-    width: 20px;
-    background-color: steelblue;
-    text-align: center;
-    color: white;
+    fill: steelblue;
   }
-
-  .bar-container.visible {
-    opacity: 1;
-    visibility: visible;
+  .axis {
+    font-size: 10px;
+  }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
   }
 </style>
