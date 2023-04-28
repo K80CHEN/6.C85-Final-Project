@@ -1,8 +1,8 @@
 <script>
   import Scroller from "@sveltejs/svelte-scroller";
-  import SimpleBar from "./graphs/SimpleBar.svelte";
-  import ScatterTween from "./graphs/ScatterTween.svelte";
-  import Bar from "./graphs/Bar.svelte";
+  import SimpleBar from "../graphs/SimpleBar.svelte";
+  import ScatterTween from "../graphs/ScatterTween.svelte";
+  import Bar from "../graphs/Bar.svelte";
 
   let count, index, offset, progress;
 </script>

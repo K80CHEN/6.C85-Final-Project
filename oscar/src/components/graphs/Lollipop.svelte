@@ -1,79 +1,140 @@
-
 <script>
+  import * as d3 from "d3";
 
-    // set the dimensions and margins of the graph
-    const margin = {top: 10, right: 30, bottom: 40, left: 100},
-        width = 460 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
-    
-    // append the svg object to the body of the page
-    const svg = d3.select("#my_dataviz")
-      .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-        .attr("transform",
-              `translate(${margin.left}, ${margin.top})`);
-    
-    // Parse the Data
-    d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv").then( function(data) {
-    
+  const data = [
+    {
+      Country: "United States",
+      Value: 12394,
+    },
+    {
+      Country: "Russia",
+      Value: 6148,
+    },
+    {
+      Country: "Germany (FRG)",
+      Value: 1653,
+    },
+    {
+      Country: "France",
+      Value: 2162,
+    },
+    {
+      Country: "United Kingdom",
+      Value: 1214,
+    },
+    {
+      Country: "China",
+      Value: 1131,
+    },
+    {
+      Country: "Spain",
+      Value: 814,
+    },
+    {
+      Country: "Netherlands",
+      Value: 1167,
+    },
+    {
+      Country: "Italy",
+      Value: 660,
+    },
+    {
+      Country: "Israel",
+      Value: 1263,
+    },
+  ];
+
+  // set the dimensions and margins of the graph
+  const margin = { top: 10, right: 30, bottom: 40, left: 100 },
+    width = 460 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+  let container;
+
+  // append the svg object to the body of the page
+  const svg = d3
+    .select(container)
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+  // Parse the Data
+  function lolli(data) {
     // sort data
-    data.sort(function(b, a) {
+    data.sort(function (b, a) {
       return a.Value - b.Value;
     });
-    
+
     // Add X axis
-    const x = d3.scaleLinear()
-      .domain([0, 13000])
-      .range([ 0, width]);
-    svg.append("g")
+    const x = d3.scaleLinear().domain([0, 13000]).range([0, width]);
+    svg
+      .append("g")
       .attr("transform", `translate(0, ${height})`)
       .call(d3.axisBottom(x))
       .selectAll("text")
-        .attr("transform", "translate(-10,0)rotate(-45)")
-        .style("text-anchor", "end");
-    
+      .attr("transform", "translate(-10,0)rotate(-45)")
+      .style("text-anchor", "end");
+
     // Y axis
-    const y = d3.scaleBand()
-      .range([ 0, height ])
-      .domain(data.map(function(d) { return d.Country; }))
+    const y = d3
+      .scaleBand()
+      .range([0, height])
+      .domain(
+        data.map(function (d) {
+          return d.Country;
+        })
+      )
       .padding(1);
-    svg.append("g")
-      .call(d3.axisLeft(y))
-    
+    svg.append("g").call(d3.axisLeft(y));
+
     // Lines
-    svg.selectAll("myline")
+    svg
+      .selectAll("myline")
       .data(data)
       .join("line")
-        .attr("x1", x(0))
-        .attr("x2", x(0))
-        .attr("y1", function(d) { return y(d.Country); })
-        .attr("y2", function(d) { return y(d.Country); })
-        .attr("stroke", "grey")
-    
+      .attr("x1", x(0))
+      .attr("x2", x(0))
+      .attr("y1", function (d) {
+        return y(d.Country);
+      })
+      .attr("y2", function (d) {
+        return y(d.Country);
+      })
+      .attr("stroke", "grey");
+
     // Circles -> start at X=0
-    svg.selectAll("mycircle")
+    svg
+      .selectAll("mycircle")
       .data(data)
       .join("circle")
-        .attr("cx", x(0) )
-        .attr("cy", function(d) { return y(d.Country); })
-        .attr("r", "7")
-        .style("fill", "#69b3a2")
-        .attr("stroke", "black")
-    
-    // Change the X coordinates of line and circle
-    svg.selectAll("circle")
-      .transition()
-      .duration(2000)
-      .attr("cx", function(d) { return x(d.Value); })
-    
-    svg.selectAll("line")
-      .transition()
-      .duration(2000)
-      .attr("x1", function(d) { return x(d.Value); })
-    
-    })
-    </script>
+      .attr("cx", x(0))
+      .attr("cy", function (d) {
+        return y(d.Country);
+      })
+      .attr("r", "7")
+      .style("fill", "#69b3a2")
+      .attr("stroke", "black");
 
-<div id="my_dataviz"></div>
+    // Change the X coordinates of line and circle
+    svg
+      .selectAll("circle")
+      .transition()
+      .duration(2000)
+      .attr("cx", function (d) {
+        return x(d.Value);
+      });
+
+    svg
+      .selectAll("line")
+      .transition()
+      .duration(2000)
+      .attr("x1", function (d) {
+        return x(d.Value);
+      });
+  }
+  lolli(data);
+</script>
+
+<div id="lollipop" bind:this={container} />
