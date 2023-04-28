@@ -2,6 +2,8 @@
   import Scroller from "@sveltejs/svelte-scroller";
   import SimpleBar from "./graphs/SimpleBar.svelte";
   import ScatterTween from "./graphs/ScatterTween.svelte";
+  import Bar from "./graphs/Bar.svelte";
+
   let count, index, offset, progress;
 </script>
 
@@ -17,16 +19,30 @@
 >
   <div class="background" slot="background">
     <div class="graph">
-      <SimpleBar {index} />
+      <!-- <Bar {index} /> -->
+      <!-- <SimpleBar {index} /> -->
+      <!-- <Map {index} /> -->
     </div>
     <div class="graph">
-      <ScatterTween {index} />
+      <!-- <ScatterTween {index} /> -->
+      <Bar {index} />
     </div>
   </div>
 
   <div class="foreground" slot="foreground">
-    <section class="step-section">This is the first section</section>
-    <section class="step-section">Simple Bar Chart</section>
+    <section class="step-section">
+      <p>
+        You are Oscar and you were born in <span>Honduras</span> in the rural
+        region of <span>El Paraiso</span>.You currently live in the neighborhood
+        of La Danta.
+      </p>
+    </section>
+    <section class="step-section">
+      <p>
+        You were born in 1994 and you are 29 years old. You are married and have
+        2 kids (Juan, Julita).
+      </p>
+    </section>
     <section class="step-section">Scatter plot tweened.</section>
     <section class="step-section">This is the 4 section.</section>
     <section class="step-section">This is the 5 section.</section>
