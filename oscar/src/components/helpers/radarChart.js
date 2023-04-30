@@ -4,8 +4,11 @@
 ////////////////// VisualCinnamon.com ///////////////////
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
+
+import * as d3 from 'd3';
+
 	
-export default function RadarChart(id, data, options) {
+function RadarChart(id, data, options) {
 	var cfg = {
 	 w: 600,				//Width of the circle
 	 h: 600,				//Height of the circle
@@ -19,7 +22,7 @@ export default function RadarChart(id, data, options) {
 	 opacityCircles: 0.1, 	//The opacity of the circles of each blob
 	 strokeWidth: 2, 		//The width of the stroke around each blob
 	 roundStrokes: false,	//If true the area and stroke will follow a round path (cardinal-closed)
-	 color: d3.scale.category10()	//Color function
+	 color: d3.scaleOrdinal(d3.schemeCategory10)	//Color function
 	};
 	
 	//Put all of the options into a variable called cfg
@@ -35,11 +38,11 @@ export default function RadarChart(id, data, options) {
 	var allAxis = (data[0].map(function(i, j){return i.axis})),	//Names of each axis
 		total = allAxis.length,					//The number of different axes
 		radius = Math.min(cfg.w/2, cfg.h/2), 	//Radius of the outermost circle
-		Format = d3.format('%'),			 	//Percentage formatting
+		Format = d3.format(".1f"),			 	//Percentage formatting
 		angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
 	
 	//Scale for the radius
-	var rScale = d3.scale.linear()
+	var rScale = d3.scaleLinear()
 		.range([0, radius])
 		.domain([0, maxValue]);
 		
@@ -98,8 +101,8 @@ export default function RadarChart(id, data, options) {
 	   .attr("y", function(d){return -d*radius/cfg.levels;})
 	   .attr("dy", "0.4em")
 	   .style("font-size", "10px")
-	   .attr("fill", "#737373")
-	   .text(function(d,i) { return Format(maxValue * d/cfg.levels); });
+	   .attr("fill", "#737373");
+	//    .text(function(d,i) { return Format(maxValue * d/cfg.levels); });
 
 	/////////////////////////////////////////////////////////
 	//////////////////// Draw the axes //////////////////////
@@ -137,13 +140,13 @@ export default function RadarChart(id, data, options) {
 	/////////////////////////////////////////////////////////
 	
 	//The radial line function
-	var radarLine = d3.svg.line.radial()
-		.interpolate("linear-closed")
+	var radarLine = d3.lineRadial()
+		.curve(d3.curveLinearClosed)
 		.radius(function(d) { return rScale(d.value); })
 		.angle(function(d,i) {	return i*angleSlice; });
 		
 	if(cfg.roundStrokes) {
-		radarLine.interpolate("cardinal-closed");
+		radarLine.curve(d3.curveCardinalClosed)
 	}
 				
 	//Create a wrapper for the blobs	
@@ -217,8 +220,8 @@ export default function RadarChart(id, data, options) {
 		.style("fill", "none")
 		.style("pointer-events", "all")
 		.on("mouseover", function(d,i) {
-			newX =  parseFloat(d3.select(this).attr('cx')) - 10;
-			newY =  parseFloat(d3.select(this).attr('cy')) - 10;
+			var newX =  parseFloat(d3.select(this).attr('cx')) - 10;
+			var newY =  parseFloat(d3.select(this).attr('cy')) - 10;
 					
 			tooltip
 				.attr('x', newX)
@@ -270,3 +273,5 @@ export default function RadarChart(id, data, options) {
 	}//wrap	
 	
 }//RadarChart
+
+export default RadarChart;

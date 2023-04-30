@@ -1,5 +1,11 @@
 <script>
-  // import { RadarChart } from "../helpers/radarChart";
+  import RadarChart from "../helpers/RadarChart.js";
+  import * as d3 from "d3";
+  import { onMount } from "svelte";
+
+  onMount(()=> {
+    
+  })
 
   /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
 
@@ -14,7 +20,7 @@
   //     window.innerHeight - margin.top - margin.bottom - 20
   //   );
   const margin = { top: 10, right: 30, bottom: 40, left: 100 },
-    width = 460 - margin.left - margin.right,
+    width = 500 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
   //////////////////////////////////////////////////////////////
@@ -23,46 +29,151 @@
 
   var data = [
     [
-      //iPhone
-      { axis: "Battery Life", value: 0.22 },
-      { axis: "Brand", value: 0.28 },
-      { axis: "Contract Cost", value: 0.29 },
-      { axis: "Design And Quality", value: 0.17 },
-      { axis: "Have Internet Connectivity", value: 0.22 },
-      { axis: "Large Screen", value: 0.02 },
-      { axis: "Price Of Device", value: 0.21 },
-      { axis: "To Be A Smartphone", value: 0.5 },
+      // MoneyGram
+      {
+        axis: "Less than one hour",
+        value: 4.37,
+      },
+      {
+        axis: "Same day",
+        value: 2.66,
+      },
+      {
+        axis: "Next day",
+        value: 0,
+      },
+      {
+        axis: "2 days",
+        value: 0,
+      },
+      {
+        axis: "3-5 days",
+        value: 2.57,
+      },
+      {
+        axis: "6 days or more",
+        value: 0.59,
+      },
     ],
+    // Remitly
     [
-      //Samsung
-      { axis: "Battery Life", value: 0.27 },
-      { axis: "Brand", value: 0.16 },
-      { axis: "Contract Cost", value: 0.35 },
-      { axis: "Design And Quality", value: 0.13 },
-      { axis: "Have Internet Connectivity", value: 0.2 },
-      { axis: "Large Screen", value: 0.13 },
-      { axis: "Price Of Device", value: 0.35 },
-      { axis: "To Be A Smartphone", value: 0.38 },
+      {
+        axis: "Less than one hour",
+        value: 4.36,
+      },
+      {
+        axis: "Same day",
+        value: 0,
+      },
+      {
+        axis: "Next day",
+        value: 0,
+      },
+      {
+        axis: "2 days",
+        value: 6.04,
+      },
+      {
+        axis: "3-5 days",
+        value: 3.01,
+      },
+      {
+        axis: "6 days or more",
+        value: 0,
+      },
     ],
+    //Ria
     [
-      //Nokia Smartphone
-      { axis: "Battery Life", value: 0.26 },
-      { axis: "Brand", value: 0.1 },
-      { axis: "Contract Cost", value: 0.3 },
-      { axis: "Design And Quality", value: 0.14 },
-      { axis: "Have Internet Connectivity", value: 0.22 },
-      { axis: "Large Screen", value: 0.04 },
-      { axis: "Price Of Device", value: 0.41 },
-      { axis: "To Be A Smartphone", value: 0.3 },
+      {
+        axis: "Less than one hour",
+        value: 4.11,
+      },
+      {
+        axis: "Same day",
+        value: 4.26,
+      },
+      {
+        axis: "Next day",
+        value: 5.14,
+      },
+      {
+        axis: "2 days",
+        value: 0,
+      },
+      {
+        axis: "3-5 days",
+        value: 0,
+      },
+      {
+        axis: "6 days or more",
+        value: 0,
+      },
+    ],
+    // western union
+    [
+      {
+        axis: "Less than one hour",
+        value: 3.97,
+      },
+      {
+        axis: "Same day",
+        value: 0,
+      },
+      {
+        axis: "Next day",
+        value: 4.56,
+      },
+      {
+        axis: "2 days",
+        value: 0,
+      },
+      {
+        axis: "3-5 days",
+        value: 3.97,
+      },
+      {
+        axis: "6 days or more",
+        value: 0,
+      },
+    ],
+    //Xoom
+    [
+      {
+        axis: "Less than one hour",
+        value: 4.86,
+      },
+      {
+        axis: "Same day",
+        value: 5.71,
+      },
+      {
+        axis: "Next day",
+        value: 0,
+      },
+      {
+        axis: "2 days",
+        value: 0,
+      },
+      {
+        axis: "3-5 days",
+        value: 0,
+      },
+      {
+        axis: "6 days or more",
+        value: 0,
+      },
     ],
   ];
+
   //////////////////////////////////////////////////////////////
   //////////////////// Draw the Chart //////////////////////////
   //////////////////////////////////////////////////////////////
 
-  var color = d3.scale.ordinal().range(["#EDC951", "#CC333F", "#00A0B0"]);
+  const color = d3
+    .scaleOrdinal()
+    .range(["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]);
 
-  var radarChartOptions = {
+  const radarChartOptions = {
     w: width,
     h: height,
     margin: margin,
@@ -71,8 +182,13 @@
     roundStrokes: true,
     color: color,
   };
+
+  let container;
   //Call function to draw the Radar chart
-  RadarChart(".radarChart", data, radarChartOptions);
+
+  onMount(() => {
+    RadarChart(container, data, radarChartOptions);
+  });
 </script>
 
-<div class="radarChart" />
+<div id="radarChart" bind:this={container} />

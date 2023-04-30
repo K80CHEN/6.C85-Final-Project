@@ -36,7 +36,7 @@
       Value: 1167,
     },
     {
-      Country: "Italy"ç,
+      Country: "Italy",
       Value: 660,
     },
     {

@@ -6,8 +6,7 @@
   import River from "./graphs/River.svelte";
   import Pie from "./graphs/Pie.svelte";
   import Lollipop from "./graphs/Lollipop.svelte";
-  import Bar from "./graphs/Bar.svelte";
-  // import Spider from "./graphs/Spider.svelte";
+  import Spider from "./graphs/Spider.svelte";
 </script>
 
 <main>
@@ -18,6 +17,5 @@
   <River />
   <Pie />
   <Lollipop />
-  <!-- <Bar /> -->
-  <!-- <Spider /> -->
+  <Spider />
 </main>
