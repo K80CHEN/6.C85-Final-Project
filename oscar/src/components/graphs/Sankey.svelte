@@ -28,9 +28,8 @@
                          .domain(graph.nodes.map(d => d.id))
                          .range(colors);
 	// state trackers
-	let hovered = -1; // index of the hovered arc, -1 when nothing is hovered
-	let current;
-	$: if (current !== undefined) console.log(current['Reported Month'], current['Incident year']);
+	let hovered = -1; // index of the hovered segment
+	$: console.log(hovered);
 </script>
 
 <div class="visualization">
@@ -59,20 +58,23 @@
                         dy=0.35em
                         text-anchor={data.x0 < width / 2 ? "start" : "end"}
                         font-size="18px">
-                    {data.use}
+                    {(data.id === hovered) ? `${data.use}, ${data.value}` : data.use}
                 </text>
                 {/each}
             </g>
-            <g>
-                {#each graph.links as data}
+            {#each graph.links as data}
+                {console.log(data.target.id)}
                 <path d={linkGenerator(data)}
                       fill="none"
                       stroke={`url(#gradient_${data.source.id}_${data.target.id})`}
-                      stroke-opacity={defaultOpacity}
-                      stroke-width={Math.max(1, data.width)}>
+                      stroke-opacity={(hovered === data.target.id) ? 0.5 : defaultOpacity}
+                      stroke-width={Math.max(1, data.width)}
+                      on:mouseover={(event) => { hovered = data.target.id; }}
+                      on:focus={() => {}}
+                      on:mouseout={(event) => { hovered = -1; }}
+                      on:blur={() => {}}>
                 </path>
-                {/each}
-            </g>
+            {/each}
         </g>
 	</svg>
 </div>
