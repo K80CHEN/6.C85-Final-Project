@@ -8,7 +8,7 @@
 	const innerRadius = 50;
 	const outerRadius = 350;
 
-	const colorMain = '#c3b091';
+	const colorMain = '#690A12';
 
 	const amountDomain = [-10, 35]
 	const yRadial = d3.scaleLinear()
@@ -50,18 +50,27 @@
 </script>
 
 <div class="visualization">
-	<div class="description-visible">
-		{#if hovered !== -1 && current !== undefined}
-			<p>{current['Reported Month']} {current['Incident year']}</p>
-			<p>{current['Number of Dead']} migrant{current['Number of Dead'] > 1 ? "s" : ""}
-				 from {current['Country of Origin']} 
-				 {current['Number of Dead'] > 1 ? "were" : "was"} reported dead{current['Minimum Estimated Number of Missing'] > 0 ? ` and ${current['Minimum Estimated Number of Missing']} were reported missing` : ""}.</p>
-		{:else}
-			<p>Migrants that were reported dead or missing at the US-Mexico border</p>
-			<p>(2022-2023)</p>
-		{/if}
-	</div>
 	<svg width={width} height={height}>
+		<g transform={`translate(${width/2}, ${height/2 - 50})`}>
+			{#if hovered !== -1 && current !== undefined}
+				<text fill={'#690A12'} font-size="15px" text-anchor="middle">
+					<tspan x="0" dy="1.2em">{`${current['Reported Month']} ${current['Incident year']}\n`}</tspan>
+					<tspan x="0" dy="2.0em">
+						{current['Number of Dead']} migrant{current['Number of Dead'] > 1 ? "s" : ""} from {current['Country of Origin']} 
+					</tspan>
+					<tspan x="0" dy="1.2em"> 
+						{current['Number of Dead'] > 1 ? " were" : " was"} reported dead{current['Minimum Estimated Number of Missing'] > 0 ? ` and ${current['Minimum Estimated Number of Missing']} were reported missing` : ""}.
+					</tspan>
+				</text>
+			{:else}
+				<text fill={'#690A12'} font-size="15px" text-anchor="middle">
+					<tspan x="0" dy="1.2em">Migrants that were</tspan>
+					<tspan x="0" dy="1.2em">reported dead or missing</tspan>
+					<tspan x="0" dy="1.2em">at the US-Mexico border</tspan>
+					<tspan x="0" dy="2.0em">(2022-2023)</tspan>
+				</text>
+			{/if}
+		</g>
 		<g transform={`translate(${width/2}, ${height/2})`}>
 			{#each missingData as data}
 			<path 
@@ -97,7 +106,7 @@
 					r={label.loc}
 			></circle>
 			<text x={width/2 + label.loc + 2} y={height/2}
-				  fill="#b38B6d"
+				  fill="#690A12"
 				  opacity=0.7
 				  font-size="12px"
 			>{label.lat}</text>
@@ -111,22 +120,5 @@
 		font: 25px sans-serif;
 		margin-top: 0;
 		text-align: middle;
-	}
-
-	.description-visible {
-		visibility: visible;
-		color: #b38B6d;
-		position: absolute;
-		text-align: center;
-		font-size: 15px;
-		height: 175px;
-		width: 175px;
-		display: table-cell;
-		text-align: center;
-		vertical-align: middle;
-		border-radius: 50%;
-		padding: 1px;
-		left: 585px;
-		top: 190px;
 	}
 </style>
