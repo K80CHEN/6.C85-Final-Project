@@ -1,7 +1,8 @@
 <script>
   import Scroller from "@sveltejs/svelte-scroller";
-  import SimpleBar from "./graphs/SimpleBar.svelte";
-  import ScatterTween from "./graphs/ScatterTween.svelte";
+  import Pie from "./graphs/Pie.svelte";
+  import River from "./graphs/River.svelte";
+  import Radial from "./graphs/Radial.svelte";
   let count, index, offset, progress;
 </script>
 
@@ -15,18 +16,13 @@
   bind:progress
   id="scroll"
 >
-  <div class="background" slot="background">
-    <div class="graph">
-      <SimpleBar {index} />
-    </div>
-    <div class="graph">
-      <ScatterTween {index} />
-    </div>
-  </div>
 
   <div class="foreground" slot="foreground">
-    <section class="step-section">This is the first section</section>
-    <section class="step-section">Simple Bar Chart</section>
+    <section class="step-section">
+      <Radial {index}/>
+    </section>
+    <section class="step-section">
+    </section>
     <section class="step-section">Scatter plot tweened.</section>
     <section class="step-section">This is the 4 section.</section>
     <section class="step-section">This is the 5 section.</section>
@@ -34,6 +30,9 @@
     <section class="step-section">This is the 7 section.</section>
     <section class="step-section">This is the 8 section.</section>
     <section class="step-section">This is the 9 section.</section>
+  </div>
+
+  <div class="background" slot="background">
   </div>
 </Scroller>
 
@@ -43,13 +42,13 @@
     position: sticky;
     width: 100vw;
     margin: 0;
-    background-color: #8a8a8a;
+    background-color: white;
     z-index: 0;
     height: 80vh;
     display: flex;
     align-items: start;
     justify-content: start;
-    padding-left: 30vw;
+    padding-left: 0;
   }
 
   .graph {
@@ -61,7 +60,7 @@
 
   .foreground {
     position: relative;
-    max-width: 30vw;
+    width: 100%;
   }
 
   .step-section {
@@ -76,7 +75,7 @@
   section {
     height: 40vh;
     text-align: center;
-    max-width: 750px;
+    max-width: 100%;
     color: white;
     padding: 1em;
     margin: 0 0 2em 0;
