@@ -1,13 +1,14 @@
 <script>
   import CirclePack from "./graphs/CirclePack.svelte";
   import Speed from "./graphs/Speed.svelte";
+  import Spider from "./graphs/Spider.svelte";
 </script>
 
 <div>
   <section>
     <h3>
-      Migrant workers send money back via a bank; it takes a long time and is
-      very expensive.
+      MYTH #3 Migrant workers send money back via a bank; it takes a long time
+      and is very expensive.
     </h3>
   </section>
   <CirclePack />
@@ -22,5 +23,6 @@
     </p>
     <p>For the purpose of this, let's look at</p>
   </section>
-  <Speed />
+  <!-- <Speed /> -->
+  <Spider />
 </div>

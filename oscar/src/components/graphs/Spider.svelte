@@ -1,11 +1,9 @@
 <script>
-  import RadarChart from "../helpers/RadarChart.js";
+  import RadarChart from "../helpers/radarChart";
   import * as d3 from "d3";
   import { onMount } from "svelte";
 
-  onMount(()=> {
-    
-  })
+  onMount(() => {});
 
   /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
 
