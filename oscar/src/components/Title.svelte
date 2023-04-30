@@ -22,7 +22,7 @@
   }
 
   h1 {
-    line-height: 2.844rem;
+    line-height: 3rem;
     font-size: 2.4rem;
     font-family: "Domine", serif;
   }

@@ -1,3 +1,7 @@
+<script>
+  import Sankey from "./graphs/Sankey.svelte";
+</script>
+
 <div>
   <div class="text-block">
     <p class="myth-title">Myth #2 Remittances are a form of aid.</p>
@@ -31,7 +35,16 @@
       to alleviate their financial constraints. See below a typical budget
       allocation for a Honduran family.
     </p>
+  </div>
+  <Sankey />
 
+  <div class="text-block add-margin-top">
+    <span class="viz-footnote"
+      >Visualizing remittance spending. Data Source: World Food Program</span
+    >
+  </div>
+
+  <div class="text-block">
     <p class="body-text">
       Additionally, it's important to highlight that while most recipient
       families may not be wealthy, they are not the poorest of the poor either.
@@ -63,5 +76,17 @@
     font-weight: 600;
     line-height: 1.3rem;
     margin: 3rem 0;
+  }
+  span.viz-footnote {
+    display: block;
+    font-size: 11px;
+    line-height: 16px;
+    font-family: "Libre Franklin", sans-serif;
+    color: #999;
+    text-align: start;
+    margin-bottom: 2.5rem;
+  }
+  .add-margin-top {
+    margin-top: 1.5rem;
   }
 </style>
