@@ -3,6 +3,7 @@
   import Pie from "./graphs/Pie.svelte";
   import River from "./graphs/River.svelte";
   import Radial from "./graphs/Radial.svelte";
+  import Sankey from "./graphs/Sankey.svelte";
   let count, index, offset, progress;
 </script>
 
@@ -19,7 +20,7 @@
 
   <div class="foreground" slot="foreground">
     <section class="step-section">
-      <Radial {index}/>
+      <Sankey {index}/>
     </section>
     <section class="step-section">
     </section>
