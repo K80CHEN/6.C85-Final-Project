@@ -7,9 +7,10 @@
   import Transition from "./Transition.svelte";
   import RemitMyth from "./RemitMyth.svelte";
   import Outro from "./Outro.svelte";
+  import "@fontsource/domine";
 </script>
 
-<main>
+<body>
   <Title />
   <Hero />
   <Intro />
@@ -18,4 +19,11 @@
   <Transition />
   <RemitMyth />
   <Outro />
-</main>
+</body>
+
+<style>
+  body {
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>

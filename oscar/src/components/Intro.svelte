@@ -1,5 +1,9 @@
-<div>
-  <p>
+<script>
+  import "@fontsource/gelasio";
+</script>
+
+<div class="intro">
+  <p class="body-text">
     In recent years, migration has become a hotly debated topic, often clouded
     by misinformation and misperceptions. As global patterns shift, it's
     essential to separate fact from fiction and examine the true impact of
@@ -14,7 +18,7 @@
     more enlightening than fiction.
   </p>
 
-  <section>
+  <p class="body-text" n>
     Disclaimer: The characters and personal experiences featured in this piece
     represent a diverse range of migrants, each with their unique journey,
     aspirations, and challenges. By asking you to temporarily become a migrant
@@ -22,5 +26,21 @@
     that behind every statistic and data point, there are real people striving
     for a better future. As we dive into the facts, let us not forget the human
     element that lies at the heart of the migration narrative.
-  </section>
+  </p>
 </div>
+
+<style>
+  .intro {
+    display: block;
+    margin: 0 auto;
+    max-width: 460px;
+    margin-bottom: 5rem;
+  }
+
+  .body-text {
+    font-family: "Gelasio", serif;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: start;
+  }
+</style>

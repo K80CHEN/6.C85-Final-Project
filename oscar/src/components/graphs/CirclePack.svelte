@@ -12,8 +12,8 @@
     data = await response.json();
     // console.log(data);
     // set the dimensions and margins of the graph
-    const width = 460;
-    const height = 460;
+    const width = 640;
+    const height = 500;
 
     // append the svg object to the body of the page
     const svg = d3
@@ -22,7 +22,7 @@
       .attr("width", width)
       .attr("height", height);
 
-    // Color palette for continents?
+    // Color palette
     const color = d3
       .scaleOrdinal()
       .domain([
@@ -50,35 +50,60 @@
         "Alante Financial",
       ])
       .range([
-        "#e6194b",
-        "#3cb44b",
-        "#ffe119",
-        "#4363d8",
-        "#f58231",
-        "#911eb4",
-        "#46f0f0",
-        "#f032e6",
-        "#bcf60c",
-        "#fabebe",
-        "#008080",
-        "#e6beff",
-        "#9a6324",
-        "#fffac8",
-        "#800000",
-        "#aaffc3",
-        "#808000",
-        "#ffd8b1",
-        "#000075",
-        "#808080",
-        "#ffffff",
-        "#000000",
-        "#E6E6FA",
-        "#D8BFD8",
-        "#DDA0DD",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
+        "#1260CC",
       ]);
 
+    // "#e6194b",
+    //   "#3cb44b",
+    //   "#ffe119",
+    //   "#4363d8",
+    //   "#f58231",
+    //   "#911eb4",
+    //   "#46f0f0",
+    //   "#f032e6",
+    //   "#bcf60c",
+    //   "#fabebe",
+    //   "#008080",
+    //   "#e6beff",
+    //   "#9a6324",
+    //   "#fffac8",
+    //   "#800000",
+    //   "#aaffc3",
+    //   "#808000",
+    //   "#ffd8b1",
+    //   "#000075",
+    //   "#808080",
+    //   "#ffffff",
+    //   "#000000",
+    //   "#E6E6FA",
+    //   "#D8BFD8",
+    //   "#DDA0DD",
+
     // Size scale for countries
-    const size = d3.scaleLinear().domain([0, 300]).range([7, 55]); // circle will be between 7 and 55 px wide
+    const size = d3.scaleLinear().domain([0, 300]).range([17, 85]); // circle will be between 7 and 55 px wide
 
     // create a tooltip
     const Tooltip = d3
