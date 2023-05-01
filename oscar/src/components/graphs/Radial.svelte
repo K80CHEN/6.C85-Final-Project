@@ -44,9 +44,9 @@
     return { lat: newLat, loc: yRadial(d) };
   });
 
-  const colors = ["#94855f", "#ccb58a", "#76958d", "#707070", "#69a0a4"];
+  const colors = ["#94855f", "#ccb58a", "#76958d", "#707070", "#69a0a4", "#8b7b82"];
   const colorScale = d3.scaleOrdinal()
-                         .domain(missingData.map(d => d.id))
+                         .domain(missingData.map(d => d.all.orig))
                          .range(colors);
   // state trackers
   let hovered = -1; // index of the hovered arc, -1 when nothing is hovered
@@ -95,7 +95,7 @@
             innerRadius: data.in,
             outerRadius: data.out,
           })}
-          fill={colorScale(data.id)}
+          fill={colorScale(data.all.orig)}
         />
         <path
           d={hoverGenerator({ startAngle: data.start, endAngle: data.end })}
