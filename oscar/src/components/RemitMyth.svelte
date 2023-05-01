@@ -34,20 +34,20 @@
       >Data Scource: Remittances Price Worldwide (2016 Q2 - 2022 Q3)</span
     >
     <p class="body-text">
-      Affordability: Contrary to popular belief, these services offer
-      competitive fees and exchange rates. Our data shows that the average cost
-      of sending $200 through these providers is just 5.9% of the transaction
-      amount, significantly lower than the 10-15% commonly cited. Furthermore,
+      Contrary to popular belief, these services offer competitive fees and
+      exchange rates. Our data shows that the average cost of sending $200
+      through these providers is just 5.9% of the transaction amount,
+      significantly lower than the 10-15% commonly cited. Furthermore,
       competition among providers has driven down fees in recent years,
       benefiting migrant workers and their families.
     </p>
     <p class="body-text">
-      Efficiency: Money transfer services have also excelled in terms of speed
-      and accessibility. Our findings indicate that 73.7% of transactions
-      through these providers are completed within 24 hours, while 83% are
-      processed within 48 hours. Additionally, these services boast an extensive
-      global network, making it easy for recipients to access funds in rural and
-      urban areas alike.
+      Money transfer services have also excelled in terms of speed and
+      accessibility. Our findings indicate that 73.7% of transactions through
+      these providers are completed within 24 hours, while 83% are processed
+      within 48 hours. Additionally, these services boast an extensive global
+      network, making it easy for recipients to access funds in rural and urban
+      areas alike.
     </p>
     <p class="body-text">
       While these bank alternatives have helped in reducing the cost and time it
@@ -66,12 +66,11 @@
       workers to use more expensive or slower services than necessary.
     </p>
     <p class="body-text">
-      For example, the radar chart below displays the top most used bank and
-      money transfer service provider’s average cost (as a percentage of the
-      total amount sent $200) depending on when the money arrives. As we can
-      see, MoneyGram provides a much smaller overall cost for sending and
-      receiving remittances on the same day, whereas WesternUnion has the
-      highest fees.
+      For example, the radar chart below displays the most used bank and money
+      transfer service provider’s average cost (as a percentage of the total
+      amount sent $200) depending on when the money arrives. As we can see,
+      MoneyGram provides a much smaller overall cost for sending and receiving
+      remittances on the same day, whereas WesternUnion has the highest fees.
     </p>
   </div>
 

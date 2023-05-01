@@ -32,8 +32,7 @@
       working, with remittances constituting, on average, only x% of their
       household income. Furthermore, people should keep in mind that most
       families who receive remittances only allocate this money on basic needs
-      to alleviate their financial constraints. See below a typical budget
-      allocation for a Honduran family.
+      to alleviate their financial constraints.
     </p>
   </div>
   <Sankey />
@@ -46,13 +45,14 @@
 
   <div class="text-block">
     <p class="body-text">
-      Additionally, it's important to highlight that while most recipient
-      families may not be wealthy, they are not the poorest of the poor either.
-      The high costs of international migration often prevent the poorest
-      households from migrating and sending cross-border remittances.
-      Consequently, remittances should not be seen as a substitute for
-      government assistance, as they don't reach everyone, especially the most
-      vulnerable populations.
+      Here, we have visualized a typical budget allocation for migrants' family
+      back in Central America. Additionally, it's important to highlight that
+      while most recipient families may not be wealthy, they are not the poorest
+      of the poor either. The high costs of international migration often
+      prevent the poorest households from migrating and sending cross-border
+      remittances. Consequently, remittances should not be seen as a substitute
+      for government assistance, as they don't reach everyone, especially the
+      most vulnerable populations.
     </p>
   </div>
 </div>
