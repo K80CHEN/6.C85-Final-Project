@@ -169,7 +169,7 @@
 
   const color = d3
     .scaleOrdinal()
-    .range(["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"]);
+    .range(["#94855f", "#ccb58a", "#76958d", "#707070", "#69a0a4"]);
 
   const radarChartOptions = {
     w: width,
