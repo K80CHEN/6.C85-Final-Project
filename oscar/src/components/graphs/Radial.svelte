@@ -6,7 +6,7 @@
   const height = 750;
   const innerRadius = 50;
   const outerRadius = 350;
-  const colorMain = "#690A12";
+  const colorMain = "#F4A261";
   const amountDomain = [-10, 35];
   const yRadial = d3
     .scaleLinear()
@@ -43,6 +43,11 @@
     const newLat = d < 0 ? `${d * -1}°S` : `${d}°N`;
     return { lat: newLat, loc: yRadial(d) };
   });
+
+  const colors = ["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"];
+  const colorScale = d3.scaleOrdinal()
+                         .domain(missingData.map(d => d.id))
+                         .range(colors);
   // state trackers
   let hovered = -1; // index of the hovered arc, -1 when nothing is hovered
   let current;
@@ -55,7 +60,7 @@
   <svg {width} {height}>
     <g transform={`translate(${width / 2}, ${height / 2 - 50})`}>
       {#if hovered !== -1 && current !== undefined}
-        <text fill={"#690A12"} font-size="15px" text-anchor="middle">
+        <text fill={"#264653"} font-size="15px" text-anchor="middle">
           <tspan x="0" dy="1.2em"
             >{`${current["Reported Month"]} ${current["Incident year"]}\n`}</tspan
           >
@@ -73,7 +78,7 @@
           </tspan>
         </text>
       {:else}
-        <text fill={"#690A12"} font-size="15px" text-anchor="middle">
+        <text fill={"#264653"} font-size="15px" text-anchor="middle">
           <tspan x="0" dy="1.2em">Migrants that were</tspan>
           <tspan x="0" dy="1.2em">reported dead or missing</tspan>
           <tspan x="0" dy="1.2em">at the US-Mexico border</tspan>
@@ -90,7 +95,7 @@
             innerRadius: data.in,
             outerRadius: data.out,
           })}
-          fill={colorMain}
+          fill={colorScale(data.id)}
         />
         <path
           d={hoverGenerator({ startAngle: data.start, endAngle: data.end })}
@@ -132,7 +137,7 @@
       <text
         x={width / 2 + label.loc + 2}
         y={height / 2}
-        fill="#690A12"
+        fill="#264653"
         opacity="0.7"
         font-size="12px">{label.lat}</text
       >

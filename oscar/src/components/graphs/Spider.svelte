@@ -17,9 +17,9 @@
   //     width,
   //     window.innerHeight - margin.top - margin.bottom - 20
   //   );
-  const margin = { top: 10, right: 30, bottom: 40, left: 100 },
-    width = 500 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+  const margin = { top: 10, right: 70, bottom: 40, left: 70 },
+  width = 500 - margin.left - margin.right,
+  height = 500 - margin.top - margin.bottom;
 
   //////////////////////////////////////////////////////////////
   ////////////////////////// Data //////////////////////////////
@@ -169,7 +169,7 @@
 
   const color = d3
     .scaleOrdinal()
-    .range(["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]);
+    .range(["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"]);
 
   const radarChartOptions = {
     w: width,

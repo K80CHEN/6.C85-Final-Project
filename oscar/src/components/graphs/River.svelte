@@ -1,8 +1,16 @@
 <script>
     import P5 from 'p5-svelte';
 
+    const getRandomInt = (max) => {
+        return Math.floor(Math.random() * max);
+    }
+    const getColor = () => {
+        let a = ["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"];
+        return a[getRandomInt(a.length)];
+    }
+
     const create_square = (x, y, wh) => {
-        return { x: x, y: y, wh: wh, rate: 0.5*Math.random(), clr: 200*Math.random() };
+        return { x: x, y: y, wh: wh, rate: 0.5*Math.random(), clr: getColor() };
     }
 
     const width = 1500;

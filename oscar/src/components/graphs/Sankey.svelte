@@ -20,10 +20,7 @@
 
     const linkGenerator = sankeyLinkHorizontal();
 
-    const colors = ["#ad002d","#3addc5","#e600d2","#007203","#6b008e",
-                    "#ffa834","#005da3","#e76800","#ceaeff","#003503",
-                    "#ffa3d8","#00885c","#ac2600","#331a49","#8e6b00",
-                    "#ffa7ad","#5d3a00","#d5c593","#6d0014","#ffa178"];
+    const colors = ["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"];
     const colorScale = d3.scaleOrdinal()
                          .domain(graph.nodes.map(d => d.id))
                          .range(colors);
