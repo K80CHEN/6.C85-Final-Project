@@ -9,7 +9,7 @@
 
 <div>
   <div class="text-block">
-    <p class="myth-title">Myth #1 Migrating is easy</p>
+    <p class="myth-title">Myth #1 Migrating is "easy"</p>
   </div>
 
   <div class="text-block">
@@ -36,14 +36,13 @@
       migration were economic gain, financial aid and jumping the southern
       border. But the journey to the U.S. is by no means a stroll through
       Central Park followed by financial gains and prosperity for migrants. The
-      trip from Central America to the U.A. is treacherous and filled with risks
-      and dangers. Even though migrants experience dire conditions in their home
-      town and they are ready to put all their savings and even their life on
-      the line for an opportunity of migrating to the U.S. Most migrants never
-      make it successfully to the U.S.. Given the low number of legal migration
-      means, the restrictive border access and the dangers encountered during
-      the migration trip, less than 50% of those who try reach their
-      destination.
+      trip from Central America to the U.S.A. is treacherous and filled with
+      risks and dangers. Given that migrants experience dire conditions in their
+      home town, they are ready to put all their savings and even their life on
+      the line for an opportunity for migrating to the U.S. Most migrants never
+      make it successfully to the U.S., because of the low number of legal
+      migration means, the restrictive border access and the dangers encountered
+      during the migration trip.
     </p>
   </div>
   <River />
@@ -56,18 +55,23 @@
       According the survey done by the World Food Program, around 50% of the
       migrants never make it into the United States. Here we represent each
       migrant as an individual square, flowing through various stages of their
-      journey. As migrants face the challenges challenges migrants face and
-      their eventual return, providing a humanizing perspective on the stories
-      that lie hidden beneath the data, and serves as a compelling call to
-      action for a more compassionate approach to migration policy and support
-      services.
+      journey. As migrants face the challenges and their eventual return,
+      providing a humanizing perspective on the stories that lie hidden beneath
+      the data, and serves as a compelling call to action for a more
+      compassionate approach to migration policy and support services.
     </p>
 
     <p class="body-text">
-      According to the data from International Organization for Migration's
-      Missing Migrant project, more than xx ppl died. We visualized a bunch of
-      ppl and we see many who traveled and made it so far but still went missing
-      or dead. So sad :/
+      Although often overlooked, the tragedies that befall migrants in their
+      quest for a better life are not forgotten. The International Organization
+      for Migration (IOM) established the Missing Migrants Project to document
+      the incidents where migrants, including refugees and asylum-seekers, have
+      perished at national borders or during the migration process to
+      international destinations. This initiative was a response to the
+      scattered reports of people dying or disappearing along migratory routes
+      globally. We have endeavored to bring this data to life by highlighting
+      how migrants, in pursuit of the American Dream, have lost their lives
+      during their journey.
     </p>
   </div>
   <Radial />
@@ -76,6 +80,19 @@
       >"Vanishing Voyagers: Lives Lost and Missing in Migration" <br />
       DATA SOURCE: Missing Migrants Project by International Organization for Migration
     </span>
+    <p class="body-text">
+      The radial graph depicts each concentric ‘tower’, which comprises of one
+      or more migrants who began their journey towards the U.S. at the inner
+      tower’s latitude and vanished or perished upon reaching the outer tower’s
+      latitude. The graph showcases the immense distances these migrants
+      traveled, and how they came perilously close to their desired destination,
+      the U.S., only to meet a tragic end. This representation was chosen
+      because, like the radial towers, these migrants had a shared objective: to
+      reach the U.S. and forge a new life, both for themselves and for their
+      host country. The longer concentric towers evoke a sense of despair, akin
+      to that of a marathon runner collapsing at the final mile, crushing her
+      dreams and aspirations, despite her valiant efforts to that point.
+    </p>
   </div>
 </div>
 

@@ -1,4 +1,4 @@
-[
+export const remit = [
   {
     "FirmType": "Bank",
     "Firm": "Wells Fargo",

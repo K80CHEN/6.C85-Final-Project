@@ -1,15 +1,15 @@
 <script>
   import { onMount } from "svelte";
   import * as d3 from "d3";
+  import { remit } from "../../data/remit_service.js";
 
   let data = [];
   let container;
 
   // load data this way:
   onMount(async () => {
-    const response = await fetch("src/data/remit_service.json");
-    // const response = await fetch("src/data/test.json");
-    data = await response.json();
+    data = remit;
+
     // console.log(data);
     // set the dimensions and margins of the graph
     const width = 640;
