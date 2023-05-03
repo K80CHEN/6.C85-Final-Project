@@ -2,35 +2,123 @@
   import River from "./graphs/River.svelte";
   import Radial from "./graphs/Radial.svelte";
   import "@fontsource/libre-franklin";
-  import "@fontsource/libre-franklin/600.css"; // Weight 400.
+  import "@fontsource/libre-franklin/600.css";
+  import "@fontsource/domine/700.css";
 
   import "@fontsource/gelasio";
+  import CircularBar from "./graphs/CircularBar.svelte";
 </script>
 
 <div>
   <div class="text-block">
-    <p class="myth-title">Myth #1 Migrating is "easy"</p>
+    <p class="myth-title">The Easy Road Less Traveled</p>
   </div>
 
   <div class="text-block">
     <p class="body-text">
       The perception of how easy or difficult it is to migrate to the United
       States varies among Americans and is influenced by personal experience,
-      political affiliation, and geographic location. While some believe that
-      the current immigration system needs major changes, with 24% saying it
-      should be completely rebuilt, according to a Pew Research Center survey
-      conducted in 2019, others believe that it is relatively easy to migrate to
-      the US due to the country's long history of welcoming immigrants and
-      various pathways to legal immigration.
+      political affiliation, and geographic location. According to the Cato
+      Institute 2021 Immigration and Identity National Survey of 2,600 U.S.
+      adults, more than two‐​thirds (67%) of Americans believe legally
+      immigrating to the United States is “fairly difficult” while a third (33%)
+      think it’s fairly easy. However, the perception of how difficult is fairly
+      difficult varies vastly. We look at this from several dimensions.
     </p>
+  </div>
+  <div class="callout">
+    <span class="question"
+      >What are the means for Central American migrants to migrate to the U.S.?
+    </span>
+  </div>
+
+  <div class="text-block">
     <p class="body-text">
-      The idea that migration is a simple and straightforward process is a
-      common misconception that glosses over the harsh realities and dangers
-      experienced by individuals and families in pursuit of a better life. In
-      recent years the US Immigration system has become more and more complex,
-      bureaucratic, and creating long waiting times and significant financial
-      costs. The journey to get to the US has also increased in difficulty.
+      The United States offers a diverse array of pathways for individuals
+      seeking to migrate, including family-based immigration, employment-based
+      visas, diversity visas, and humanitarian protection programs such as
+      asylum or refugee status. However, for many Central American migrants,
+      accessing these pathways can prove to be challenging. Factors such as
+      limited availability of visas, stringent eligibility criteria, lengthy
+      waiting periods, and complex application processes often act as barriers
+      to entry. As a result, Central American migrants may find themselves with
+      limited options, resorting to irregular migration routes or facing
+      prolonged separation from their families, underscoring the need for more
+      accessible and inclusive migration policies.
     </p>
+  </div>
+
+  <CircularBar />
+  <div class="text-block add-margin-top-max">
+    <p class="body-text">
+      <span class="viz-footnote">
+        Our peer survey data is not fully in yet so this is inaccurate!
+      </span>
+      We surveyed our peers about the most common pathways they think Central American
+      migrants take and compared that to the WFP survey data that we have. Using
+      this circular barplot, we are hoping to show a direct 1-1 comparison of what
+      pathways people think are available to migrants versus those that are actually
+      available and actively being used.
+    </p>
+  </div>
+
+  <div class="callout">
+    <span class="question"
+      >How many Central American migrants did NOT make it to the U.S.?
+    </span>
+  </div>
+
+  <div class="text-block add-margin-top">
+    <p class="body-text">
+      Although often overlooked, the tragedies that befall migrants in their
+      quest for a better life are not forgotten. The International Organization
+      for Migration (IOM) established the Missing Migrants Project to document
+      the incidents where migrants, including refugees and asylum-seekers, have
+      perished at national borders or during the migration process to
+      international destinations. This initiative was a response to the
+      scattered reports of people dying or disappearing along migratory routes
+      globally. We have endeavored to bring this data to life by highlighting
+      how migrants, in pursuit of the American Dream, have lost their lives
+      during their journey.
+    </p>
+  </div>
+
+  <Radial />
+
+  <div class="text-block add-margin-top">
+    <span class="viz-footnote"
+      >"Vanishing Voyagers: Lives Lost and Missing in Migration" <br />
+      DATA SOURCE: Missing Migrants Project by International Organization for Migration
+    </span>
+
+    <p class="body-text">
+      The radial graph depicts each concentric ‘tower’, which comprises of one
+      or more migrants who began their journey towards the U.S. at the inner
+      tower’s latitude and vanished or perished upon reaching the outer tower’s
+      latitude. The graph showcases the immense distances these migrants
+      traveled, and how they came perilously close to their desired destination,
+      the U.S., only to meet a tragic end. This representation was chosen
+      because, like the radial towers, these migrants had a shared objective: to
+      reach the U.S. and forge a new life, both for themselves and for their
+      host country. The longer concentric towers evoke a sense of despair, akin
+      to that of a marathon runner collapsing at the final mile, crushing her
+      dreams and aspirations, despite her valiant efforts to that point.
+    </p>
+
+    <p class="body-text">
+      The longer concentric towers evoke a sense of despair, akin to that of a
+      marathon runner collapsing at the final mile, crushing her dreams and
+      aspirations, despite her valiant efforts to that point.
+    </p>
+  </div>
+
+  <div class="callout">
+    <span class="question"
+      >How many Central American migrants are actually able to stay in the U.S.?
+    </span>
+  </div>
+
+  <div class="text-block">
     <p class="body-text">
       For a very long time, the first things that Americans associated with
       migration were economic gain, financial aid and jumping the southern
@@ -45,7 +133,9 @@
       during the migration trip.
     </p>
   </div>
+
   <River />
+
   <div class="text-block add-margin-top">
     <span class="viz-footnote"
       >The River of Squares: Visualizing the Plight of Migrants Forced to Return
@@ -60,39 +150,6 @@
       the data, and serves as a compelling call to action for a more
       compassionate approach to migration policy and support services.
     </p>
-
-    <p class="body-text">
-      Although often overlooked, the tragedies that befall migrants in their
-      quest for a better life are not forgotten. The International Organization
-      for Migration (IOM) established the Missing Migrants Project to document
-      the incidents where migrants, including refugees and asylum-seekers, have
-      perished at national borders or during the migration process to
-      international destinations. This initiative was a response to the
-      scattered reports of people dying or disappearing along migratory routes
-      globally. We have endeavored to bring this data to life by highlighting
-      how migrants, in pursuit of the American Dream, have lost their lives
-      during their journey.
-    </p>
-  </div>
-  <Radial />
-  <div class="text-block add-margin-top">
-    <span class="viz-footnote"
-      >"Vanishing Voyagers: Lives Lost and Missing in Migration" <br />
-      DATA SOURCE: Missing Migrants Project by International Organization for Migration
-    </span>
-    <p class="body-text">
-      The radial graph depicts each concentric ‘tower’, which comprises of one
-      or more migrants who began their journey towards the U.S. at the inner
-      tower’s latitude and vanished or perished upon reaching the outer tower’s
-      latitude. The graph showcases the immense distances these migrants
-      traveled, and how they came perilously close to their desired destination,
-      the U.S., only to meet a tragic end. This representation was chosen
-      because, like the radial towers, these migrants had a shared objective: to
-      reach the U.S. and forge a new life, both for themselves and for their
-      host country. The longer concentric towers evoke a sense of despair, akin
-      to that of a marathon runner collapsing at the final mile, crushing her
-      dreams and aspirations, despite her valiant efforts to that point.
-    </p>
   </div>
 </div>
 
@@ -101,7 +158,7 @@
     display: block;
     margin: 0 auto;
     max-width: 460px;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   .body-text {
     font-family: "Gelasio", serif;
@@ -120,6 +177,9 @@
   .add-margin-top {
     margin-top: 1rem;
   }
+  .add-margin-top-max {
+    margin-top: 5rem;
+  }
 
   span.viz-footnote {
     display: block;
@@ -129,5 +189,23 @@
     color: #999;
     text-align: start;
     margin-bottom: 2.5rem;
+  }
+  .callout {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    overflow: visible;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: 1px solid var(--color-stroke-quaternary, #dfdfdf);
+    color: var(--color-content-secondary, #363636);
+    max-width: 460px;
+    margin-bottom: 2rem;
+  }
+  .question {
+    font-family: "Domine", serif;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+    font-weight: 700;
   }
 </style>

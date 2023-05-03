@@ -1,7 +1,7 @@
 <div class="title-wrapper">
   <h1 class="title">
-    Migration Myths Busted: Dispelling Common Misconceptions Surrounding Migration
-    With Data-Driven Insights
+    Balancing the Migration Scale: Dispelling Underestimations and
+    Overestimations in Migrant Worker Challenges
   </h1>
   <p class="by-line">BY AUDREY XIE, KATIE CHEN, TEODOR NICOLA-ANTONIU</p>
 </div>
