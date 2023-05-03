@@ -7,6 +7,8 @@
   import Transition from "./Transition.svelte";
   import RemitMyth from "./RemitMyth.svelte";
   import Outro from "./Outro.svelte";
+  import ViolinDot from "./graphs/ViolinDot.svelte";
+
   import "@fontsource/domine";
 </script>
 
@@ -16,7 +18,7 @@
   <Intro />
   <MigrateMyth />
   <AidMyth />
-  <Transition />
+  <!-- <Transition /> -->
   <RemitMyth />
   <Outro />
 </body>

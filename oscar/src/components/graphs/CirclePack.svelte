@@ -45,9 +45,7 @@
       Tooltip.style("opacity", 1);
     };
     const mousemove = function (event, d) {
-      Tooltip.html(
-        d.Firm + "<br>" + d.CountofFirm + " inhabitants"
-      )
+      Tooltip.html(d.Firm + "<br>" + d.CountofFirm + " transactions")
         .style("left", event.x / 2 + 20 + "px")
         .style("top", event.y / 2 - 30 + "px");
     };

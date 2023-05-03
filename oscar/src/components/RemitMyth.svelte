@@ -7,8 +7,7 @@
 <div>
   <div class="text-block">
     <p class="myth-title">
-      Myth #3: Migrant workers have few vehicles to send money back; it takes a
-      long time and is very expensive.
+      The Remittance Relay: the Hurdles of Migrant Workers' Money Transfers
     </p>
   </div>
   <div class="text-block">
@@ -49,11 +48,20 @@
       network, making it easy for recipients to access funds in rural and urban
       areas alike.
     </p>
+  </div>
+
+  <div class="callout">
+    <span class="question"
+      >Does this mean that sending remittances present no more challenges?
+    </span>
+  </div>
+
+  <div class="text-block">
     <p class="body-text">
-      While these bank alternatives have helped in reducing the cost and time it
-      takes to send money across borders. However, it is important to note that
-      migrant workers still face challenges when it comes to sending
-      remittances.
+      Definitely not! While these bank alternatives have helped in reducing the
+      cost and time it takes to send money across borders. However, it is
+      important to note that migrant workers still face challenges when it comes
+      to sending remittances.
     </p>
     <p class="body-text">
       A significant challenge faced by migrant workers when sending remittances
@@ -84,7 +92,7 @@
     display: block;
     margin: 0 auto;
     max-width: 460px;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   .body-text {
     font-family: "Gelasio", serif;
@@ -113,5 +121,24 @@
     color: #999;
     text-align: start;
     margin-bottom: 2.5rem;
+  }
+
+  .callout {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    overflow: visible;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: 1px solid var(--color-stroke-quaternary, #dfdfdf);
+    color: var(--color-content-secondary, #363636);
+    max-width: 460px;
+    margin-bottom: 2rem;
+  }
+  .question {
+    font-family: "Domine", serif;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+    font-weight: 700;
   }
 </style>
