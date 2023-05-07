@@ -21,13 +21,15 @@
 
     const bg = "#ffffff";
     let sq = [];
-    let remove = [];
+    const remove = [];
+    let removed = 0;
     const n = 500;
     const diff = width / n / width;
 
     for (let j = 0; j < n; j++) {
         sq.push(create_square(width * diff * j,
                               height * 0.1 + Math.random() * 0.8 * height, 20));
+        remove.push(true);
     }
 
     const sketch = (p5) => {
@@ -40,7 +42,8 @@
       p5.draw = () => {
         p5.background(bg);
         for (let i=0; i < sq.length; i++) {
-            p5.fill(sq[i].clr);
+            if (remove[i]) { p5.fill("#ccb58a"); }
+            else { p5.fill("#707070"); }
             p5.push();
             p5.translate(sq[i].x, sq[i].y);
             const nfx = p5.noise(sq[i].x * nf, sq[i].y * nf);
@@ -54,14 +57,9 @@
             if (sq[i].x > width || sq[i].x < 0) {
                 sq[i].x = 0;
             }
-            if (sq.length > n/2) {
-                if (Math.random() < 0.001) { remove.push(false); }
-                else { remove.push(true); }
+            if (removed < n/2) {
+                if (Math.random() < 0.001) { removed += 1; remove[i] = false; }
             }
-        }
-        if (sq.length > n/2) {
-            sq = sq.filter((value, index) => { return remove[index]; })
-            remove = [];
         }
       };
     };
