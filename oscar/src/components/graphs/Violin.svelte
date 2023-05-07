@@ -82,9 +82,13 @@
       .attr("fill", "steelblue")
       .attr("stroke", "black");
   }
+
+  let guess = 0;
 </script>
 
 <div class="chart-container">
+  <input bind:value={guess}>
+  <h1>Value entered: {guess}</h1>
   {#each data as item, i}
     <div bind:this={containers[i]} class="chart" />
   {/each}
