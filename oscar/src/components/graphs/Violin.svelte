@@ -87,7 +87,7 @@
 </script>
 
 <div class="chart-container">
-  <input bind:value={guess}>
+  <input bind:value={guess} />
   <h1>Value entered: {guess}</h1>
   {#each data as item, i}
     <div bind:this={containers[i]} class="chart" />
@@ -100,10 +100,5 @@
     flex-wrap: wrap;
     width: 600px;
     margin: 0 auto;
-  }
-
-  .violin {
-    fill: steelblue;
-    stroke: black;
   }
 </style>
