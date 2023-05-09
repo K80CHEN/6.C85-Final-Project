@@ -7,6 +7,8 @@
 
   import "@fontsource/gelasio";
   import CircularBar from "./graphs/CircularBar.svelte";
+
+  import PathwayWrapper from "./PathwayWrapper.svelte";
 </script>
 
 <div>
@@ -26,10 +28,13 @@
       difficult varies vastly. We look at this from several dimensions.
     </p>
   </div>
-  <div class="callout">
-    <span class="question"
-      >What are the means for Central American migrants to migrate to the U.S.?
-    </span>
+
+  <PathwayWrapper />
+
+  <div class="text-block">
+    <p class="body-text">
+      <span class="viz-footnote"> DATA SOURCE: WFP Central American </span>
+    </p>
   </div>
 
   <div class="text-block">

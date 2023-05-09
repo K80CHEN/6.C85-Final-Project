@@ -31,7 +31,7 @@
   const lineRotations = missing.data.map(
     (d) => ((xRadial(d.index) + xRadial.bandwidth() / 2) * 180) / Math.PI - 90
   );
-  $: console.log(lineRotations);
+  // $: console.log(lineRotations);
   const arcGenerator = d3.arc().padAngle(0.15).padRadius(innerRadius);
   const hoverGenerator = d3
     .arc()
@@ -44,16 +44,24 @@
     return { lat: newLat, loc: yRadial(d) };
   });
 
-  const colors = ["#94855f", "#ccb58a", "#76958d", "#707070", "#69a0a4", "#8b7b82"];
-  const colorScale = d3.scaleOrdinal()
-                         .domain(missingData.map(d => d.all.orig))
-                         .range(colors);
+  const colors = [
+    "#94855f",
+    "#ccb58a",
+    "#76958d",
+    "#707070",
+    "#69a0a4",
+    "#8b7b82",
+  ];
+  const colorScale = d3
+    .scaleOrdinal()
+    .domain(missingData.map((d) => d.all.orig))
+    .range(colors);
   // state trackers
   let hovered = -1; // index of the hovered arc, -1 when nothing is hovered
   let current;
-  $: console.log(hovered);
-  $: if (current !== undefined)
-    console.log(current["Reported Month"], current["Incident year"]);
+  // $: console.log(hovered);
+  // $: if (current !== undefined)
+  // console.log(current["Reported Month"], current["Incident year"]);
 </script>
 
 <div class="visualization">
