@@ -19,9 +19,9 @@ export const remittance_use = {
         {
             "index": 1,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -40,15 +40,15 @@ export const remittance_use = {
         {
             "index": 9,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 12,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -60,17 +60,17 @@ export const remittance_use = {
         {
             "index": 15,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 16,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -82,22 +82,22 @@ export const remittance_use = {
         {
             "index": 21,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 23,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 27,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -109,16 +109,16 @@ export const remittance_use = {
         {
             "index": 31,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 32,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -130,17 +130,17 @@ export const remittance_use = {
         {
             "index": 34,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 39,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -152,8 +152,8 @@ export const remittance_use = {
         {
             "index": 43,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -165,8 +165,8 @@ export const remittance_use = {
         {
             "index": 47,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -179,9 +179,9 @@ export const remittance_use = {
         {
             "index": 53,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -200,16 +200,16 @@ export const remittance_use = {
         {
             "index": 59,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 72,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -221,29 +221,29 @@ export const remittance_use = {
         {
             "index": 75,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 78,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 82,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 84,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -261,16 +261,16 @@ export const remittance_use = {
         {
             "index": 89,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 90,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -301,16 +301,16 @@ export const remittance_use = {
         {
             "index": 100,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 104,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -322,15 +322,15 @@ export const remittance_use = {
         {
             "index": 107,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 109,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -348,46 +348,46 @@ export const remittance_use = {
         {
             "index": 117,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 119,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 121,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 122,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 126,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 131,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Home purchase fee"
+                "Food purchase"
             ]
         },
         {
@@ -399,8 +399,8 @@ export const remittance_use = {
         {
             "index": 134,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -430,37 +430,37 @@ export const remittance_use = {
         {
             "index": 170,
             "values": [
-                "Food purchase",
-                "Payment of the sender's travel debt"
+                "Payment of the sender's travel debt",
+                "Food purchase"
             ]
         },
         {
             "index": 171,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 177,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 178,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 179,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
@@ -478,37 +478,37 @@ export const remittance_use = {
         {
             "index": 193,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 195,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 200,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 201,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 203,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -526,24 +526,24 @@ export const remittance_use = {
         {
             "index": 211,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 212,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 214,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -561,22 +561,22 @@ export const remittance_use = {
         {
             "index": 217,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 219,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 221,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -588,8 +588,8 @@ export const remittance_use = {
         {
             "index": 247,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -607,8 +607,8 @@ export const remittance_use = {
         {
             "index": 255,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -620,68 +620,68 @@ export const remittance_use = {
         {
             "index": 272,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 273,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 275,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 278,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 279,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 280,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 284,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 285,
             "values": [
-                "Home purchase fee",
-                "Payment of other debts"
+                "Other",
+                "Housing"
             ]
         },
         {
             "index": 292,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -693,9 +693,9 @@ export const remittance_use = {
         {
             "index": 299,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -720,15 +720,15 @@ export const remittance_use = {
         {
             "index": 314,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 326,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -746,25 +746,25 @@ export const remittance_use = {
         {
             "index": 337,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 344,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 350,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -776,28 +776,28 @@ export const remittance_use = {
         {
             "index": 360,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 370,
             "values": [
-                "Business"
+                "Other"
             ]
         },
         {
             "index": 372,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 373,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -809,25 +809,25 @@ export const remittance_use = {
         {
             "index": 388,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 389,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 392,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -845,9 +845,9 @@ export const remittance_use = {
         {
             "index": 402,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -859,9 +859,9 @@ export const remittance_use = {
         {
             "index": 404,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -879,60 +879,60 @@ export const remittance_use = {
         {
             "index": 417,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 419,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing rental fee"
+                "Food purchase"
             ]
         },
         {
             "index": 420,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 423,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 425,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 427,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 429,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 433,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -962,31 +962,31 @@ export const remittance_use = {
         {
             "index": 454,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 458,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 460,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 461,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1004,45 +1004,45 @@ export const remittance_use = {
         {
             "index": 475,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 477,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 481,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 482,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 483,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 486,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -1067,9 +1067,9 @@ export const remittance_use = {
         {
             "index": 491,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1081,31 +1081,31 @@ export const remittance_use = {
         {
             "index": 502,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 509,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 522,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 528,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1117,40 +1117,40 @@ export const remittance_use = {
         {
             "index": 532,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 534,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 535,
             "values": [
-                "Food purchase",
+                "Other",
                 "Education expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 536,
             "values": [
-                "Food purchase",
+                "Other",
                 "Education expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 537,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1162,8 +1162,8 @@ export const remittance_use = {
         {
             "index": 549,
             "values": [
-                "Food purchase",
-                "Payment of the sender's travel debt"
+                "Payment of the sender's travel debt",
+                "Food purchase"
             ]
         },
         {
@@ -1182,126 +1182,126 @@ export const remittance_use = {
         {
             "index": 574,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 575,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 578,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 595,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 597,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Education expenses",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
             "index": 606,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 607,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 608,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 610,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 622,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 626,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 627,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 628,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 630,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 633,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 634,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 635,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1313,29 +1313,29 @@ export const remittance_use = {
         {
             "index": 647,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 652,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 653,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 654,
             "values": [
-                "Expenses related to COVID-19"
+                "Other"
             ]
         },
         {
@@ -1347,25 +1347,25 @@ export const remittance_use = {
         {
             "index": 658,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 659,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 660,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1377,37 +1377,37 @@ export const remittance_use = {
         {
             "index": 663,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 665,
             "values": [
-                "Food purchase",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 667,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 668,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 670,
             "values": [
-                "Food purchase",
-                "Business",
-                "Saving"
+                "Other",
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -1419,15 +1419,15 @@ export const remittance_use = {
         {
             "index": 673,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 677,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -1439,16 +1439,16 @@ export const remittance_use = {
         {
             "index": 683,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 685,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -1478,33 +1478,33 @@ export const remittance_use = {
         {
             "index": 700,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 701,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 702,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 703,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1528,37 +1528,37 @@ export const remittance_use = {
         {
             "index": 710,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 711,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 717,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 719,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 722,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1570,9 +1570,9 @@ export const remittance_use = {
         {
             "index": 725,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1584,61 +1584,61 @@ export const remittance_use = {
         {
             "index": 728,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 735,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 739,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 741,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 742,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 743,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 744,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 745,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1656,16 +1656,16 @@ export const remittance_use = {
         {
             "index": 755,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 756,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1683,15 +1683,15 @@ export const remittance_use = {
         {
             "index": 759,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 760,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1703,16 +1703,16 @@ export const remittance_use = {
         {
             "index": 762,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 767,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1724,17 +1724,17 @@ export const remittance_use = {
         {
             "index": 771,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 772,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1752,30 +1752,30 @@ export const remittance_use = {
         {
             "index": 780,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 783,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 785,
             "values": [
-                "Business"
+                "Other"
             ]
         },
         {
             "index": 786,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1787,9 +1787,9 @@ export const remittance_use = {
         {
             "index": 788,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1801,8 +1801,8 @@ export const remittance_use = {
         {
             "index": 794,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1810,7 +1810,7 @@ export const remittance_use = {
             "values": [
                 "Health expenses",
                 "Payment of services",
-                "Clothes and shoes"
+                "Other"
             ]
         },
         {
@@ -1822,46 +1822,46 @@ export const remittance_use = {
         {
             "index": 803,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 810,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 820,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 821,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 826,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 829,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1874,45 +1874,45 @@ export const remittance_use = {
             "index": 837,
             "values": [
                 "Education expenses",
-                "Clothes and shoes"
+                "Other"
             ]
         },
         {
             "index": 840,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 841,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 844,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 851,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 858,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1924,31 +1924,31 @@ export const remittance_use = {
         {
             "index": 872,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 874,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 877,
             "values": [
-                "Food purchase",
+                "Other",
                 "Education expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 885,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -1960,16 +1960,16 @@ export const remittance_use = {
         {
             "index": 893,
             "values": [
-                "Food purchase",
+                "Other",
                 "Education expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 897,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -1981,17 +1981,17 @@ export const remittance_use = {
         {
             "index": 909,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 912,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2011,24 +2011,24 @@ export const remittance_use = {
         {
             "index": 935,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 939,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Housing",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
             "index": 947,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2052,9 +2052,9 @@ export const remittance_use = {
         {
             "index": 966,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2066,46 +2066,46 @@ export const remittance_use = {
         {
             "index": 970,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 971,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 973,
             "values": [
-                "Food purchase",
+                "Payment of commitments abroad",
                 "Saving",
-                "Payment of commitments of members residing abroad"
+                "Food purchase"
             ]
         },
         {
             "index": 981,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 983,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 985,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2123,15 +2123,15 @@ export const remittance_use = {
         {
             "index": 989,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 990,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2143,15 +2143,15 @@ export const remittance_use = {
         {
             "index": 1005,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1006,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2169,16 +2169,16 @@ export const remittance_use = {
         {
             "index": 1017,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1018,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2190,8 +2190,8 @@ export const remittance_use = {
         {
             "index": 1027,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2203,38 +2203,38 @@ export const remittance_use = {
         {
             "index": 1041,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1042,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1058,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1059,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1065,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2255,84 +2255,84 @@ export const remittance_use = {
         {
             "index": 1069,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1070,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1072,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1074,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1075,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1077,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1078,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1080,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1081,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1083,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1084,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2350,8 +2350,8 @@ export const remittance_use = {
         {
             "index": 1090,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2375,9 +2375,9 @@ export const remittance_use = {
         {
             "index": 1102,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2389,46 +2389,46 @@ export const remittance_use = {
         {
             "index": 1117,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1120,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1125,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1132,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1135,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1136,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2446,8 +2446,8 @@ export const remittance_use = {
         {
             "index": 1139,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2465,8 +2465,8 @@ export const remittance_use = {
         {
             "index": 1143,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2478,8 +2478,8 @@ export const remittance_use = {
         {
             "index": 1145,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2497,100 +2497,100 @@ export const remittance_use = {
         {
             "index": 1151,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 1153,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1154,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1156,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1158,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1159,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1160,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1162,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1164,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1166,
             "values": [
-                "Food purchase",
+                "Purchase of agricultural inputs",
                 "Payment of services",
-                "Purchase of agricultural inputs"
+                "Food purchase"
             ]
         },
         {
             "index": 1170,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1174,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1199,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Health expenses",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
@@ -2602,31 +2602,31 @@ export const remittance_use = {
         {
             "index": 1201,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1202,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1204,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 1205,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -2638,8 +2638,8 @@ export const remittance_use = {
         {
             "index": 1208,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2651,77 +2651,77 @@ export const remittance_use = {
         {
             "index": 1219,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1220,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 1227,
             "values": [
-                "Clothes and shoes"
+                "Other"
             ]
         },
         {
             "index": 1231,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1235,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1237,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1238,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1242,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1245,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1246,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Other"
+                "Food purchase"
             ]
         },
         {
@@ -2733,79 +2733,79 @@ export const remittance_use = {
         {
             "index": 1263,
             "values": [
-                "Clothes and shoes"
+                "Other"
             ]
         },
         {
             "index": 1264,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1267,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1269,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1284,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 1285,
             "values": [
-                "Food purchase",
                 "Payment of services",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 1286,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 1287,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1291,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1303,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Other"
+                "Food purchase"
             ]
         },
         {
@@ -2823,9 +2823,9 @@ export const remittance_use = {
         {
             "index": 1313,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Saving"
+                "Other",
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -2837,9 +2837,9 @@ export const remittance_use = {
         {
             "index": 1328,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -2851,40 +2851,40 @@ export const remittance_use = {
         {
             "index": 1335,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1337,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1347,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1352,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1361,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -2909,9 +2909,9 @@ export const remittance_use = {
         {
             "index": 1380,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Education expenses",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
@@ -2923,33 +2923,33 @@ export const remittance_use = {
         {
             "index": 1388,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1389,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1392,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1400,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -2973,49 +2973,49 @@ export const remittance_use = {
         {
             "index": 1445,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1446,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1447,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 1449,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1450,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1453,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3027,8 +3027,8 @@ export const remittance_use = {
         {
             "index": 1459,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -3046,17 +3046,17 @@ export const remittance_use = {
         {
             "index": 1484,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1488,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3068,45 +3068,44 @@ export const remittance_use = {
         {
             "index": 1501,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1510,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 1513,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1517,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1519,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1523,
             "values": [
-                "Food purchase",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -3118,16 +3117,16 @@ export const remittance_use = {
         {
             "index": 1530,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 1533,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3163,8 +3162,8 @@ export const remittance_use = {
         {
             "index": 1539,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3176,46 +3175,46 @@ export const remittance_use = {
         {
             "index": 1552,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1553,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1554,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1555,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1559,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1566,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3233,24 +3232,24 @@ export const remittance_use = {
         {
             "index": 1577,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1581,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1583,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3281,15 +3280,15 @@ export const remittance_use = {
         {
             "index": 1590,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1591,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3307,8 +3306,8 @@ export const remittance_use = {
         {
             "index": 1598,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -3320,8 +3319,8 @@ export const remittance_use = {
         {
             "index": 1606,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -3333,8 +3332,8 @@ export const remittance_use = {
         {
             "index": 1612,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3370,16 +3369,16 @@ export const remittance_use = {
         {
             "index": 1636,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1638,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3391,128 +3390,127 @@ export const remittance_use = {
         {
             "index": 1641,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 1644,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1645,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1646,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1656,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1663,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 1667,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1677,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1679,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1681,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1682,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1684,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1686,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1693,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 1694,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1698,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1700,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing rental fee"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -3531,24 +3529,24 @@ export const remittance_use = {
         {
             "index": 1706,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1711,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1714,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Payment of other debts"
+                "Food purchase"
             ]
         },
         {
@@ -3560,25 +3558,25 @@ export const remittance_use = {
         {
             "index": 1720,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 1722,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1724,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
@@ -3590,25 +3588,25 @@ export const remittance_use = {
         {
             "index": 1743,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1753,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Saving",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
             "index": 1754,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Housing",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
@@ -3626,33 +3624,33 @@ export const remittance_use = {
         {
             "index": 1786,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 1789,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 1792,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1794,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3664,40 +3662,40 @@ export const remittance_use = {
         {
             "index": 1796,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1797,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1800,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1806,
             "values": [
-                "Food purchase",
+                "Payment of commitments abroad",
                 "Payment of services",
-                "Payment of commitments of members residing abroad"
+                "Food purchase"
             ]
         },
         {
             "index": 1808,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3710,17 +3708,17 @@ export const remittance_use = {
         {
             "index": 1811,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1812,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -3744,15 +3742,15 @@ export const remittance_use = {
         {
             "index": 1827,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1830,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3764,125 +3762,125 @@ export const remittance_use = {
         {
             "index": 1835,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 1837,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1851,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1873,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1877,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1882,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 1889,
             "values": [
-                "Food purchase",
                 "Payment of services",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 1898,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1900,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1901,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1903,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 1906,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 1907,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1912,
             "values": [
-                "Food purchase",
-                "Payment of the sender's travel debt"
+                "Payment of the sender's travel debt",
+                "Food purchase"
             ]
         },
         {
             "index": 1925,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1926,
             "values": [
-                "Food purchase",
+                "Other",
                 "Education expenses",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 1927,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3894,39 +3892,38 @@ export const remittance_use = {
         {
             "index": 1943,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 1947,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1948,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1951,
             "values": [
-                "Food purchase",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 1952,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3938,32 +3935,32 @@ export const remittance_use = {
         {
             "index": 1965,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 1970,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1971,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1982,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -3977,93 +3974,93 @@ export const remittance_use = {
         {
             "index": 1988,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1989,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 1993,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 1996,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 2000,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2015,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 2017,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2029,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2031,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2034,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2035,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2038,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4075,9 +4072,9 @@ export const remittance_use = {
         {
             "index": 2044,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -4089,37 +4086,37 @@ export const remittance_use = {
         {
             "index": 2052,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2053,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 2054,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2063,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2065,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -4131,52 +4128,51 @@ export const remittance_use = {
         {
             "index": 2085,
             "values": [
-                "Food purchase",
-                "Payment of other debts",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2087,
             "values": [
-                "Food purchase",
+                "Payment of commitments abroad",
                 "Payment of services",
-                "Payment of commitments of members residing abroad"
+                "Food purchase"
             ]
         },
         {
             "index": 2088,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Education expenses",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 2094,
             "values": [
                 "Health expenses",
-                "Clothes and shoes"
+                "Other"
             ]
         },
         {
             "index": 2103,
             "values": [
-                "Expenses related to COVID-19"
+                "Other"
             ]
         },
         {
             "index": 2104,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2106,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -4188,22 +4184,22 @@ export const remittance_use = {
         {
             "index": 2120,
             "values": [
-                "Housing",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Housing"
             ]
         },
         {
             "index": 2127,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 2128,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -4221,63 +4217,63 @@ export const remittance_use = {
         {
             "index": 2135,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2136,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2137,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2138,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2140,
             "values": [
                 "Payment of services",
-                "Business"
+                "Other"
             ]
         },
         {
             "index": 2142,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 2144,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 2149,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4289,8 +4285,8 @@ export const remittance_use = {
         {
             "index": 2155,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4302,17 +4298,17 @@ export const remittance_use = {
         {
             "index": 2171,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2172,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4324,67 +4320,67 @@ export const remittance_use = {
         {
             "index": 2178,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2180,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2186,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2187,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2188,
             "values": [
-                "Food purchase",
+                "Other",
                 "Housing",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 2189,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2193,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2194,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2205,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4396,30 +4392,30 @@ export const remittance_use = {
         {
             "index": 2216,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2217,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2219,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2221,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4437,8 +4433,8 @@ export const remittance_use = {
         {
             "index": 2227,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4450,17 +4446,17 @@ export const remittance_use = {
         {
             "index": 2231,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2238,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
@@ -4472,9 +4468,9 @@ export const remittance_use = {
         {
             "index": 2246,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4486,37 +4482,36 @@ export const remittance_use = {
         {
             "index": 2286,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2302,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2332,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2333,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2334,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -4534,9 +4529,9 @@ export const remittance_use = {
         {
             "index": 2355,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
@@ -4544,14 +4539,14 @@ export const remittance_use = {
             "values": [
                 "Education expenses",
                 "Payment of services",
-                "Clothes and shoes"
+                "Other"
             ]
         },
         {
             "index": 2363,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -4563,15 +4558,15 @@ export const remittance_use = {
         {
             "index": 2365,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2369,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4583,16 +4578,16 @@ export const remittance_use = {
         {
             "index": 2379,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2390,
             "values": [
-                "Food purchase",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -4604,23 +4599,23 @@ export const remittance_use = {
         {
             "index": 2392,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2396,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2399,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4632,9 +4627,9 @@ export const remittance_use = {
         {
             "index": 2429,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4670,9 +4665,9 @@ export const remittance_use = {
         {
             "index": 2446,
             "values": [
-                "Food purchase",
-                "Payment of commitments of members residing abroad",
-                "Other"
+                "Other",
+                "Payment of commitments abroad",
+                "Food purchase"
             ]
         },
         {
@@ -4684,15 +4679,15 @@ export const remittance_use = {
         {
             "index": 2451,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2458,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4704,23 +4699,23 @@ export const remittance_use = {
         {
             "index": 2472,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2473,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2477,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4762,23 +4757,23 @@ export const remittance_use = {
         {
             "index": 2489,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2490,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2491,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4802,25 +4797,24 @@ export const remittance_use = {
         {
             "index": 2507,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2509,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2510,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
@@ -4832,17 +4826,17 @@ export const remittance_use = {
         {
             "index": 2514,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2519,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Payment of services",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
@@ -4854,15 +4848,15 @@ export const remittance_use = {
         {
             "index": 2523,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2524,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4875,54 +4869,54 @@ export const remittance_use = {
         {
             "index": 2526,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 2529,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2551,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2552,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2567,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 2568,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 2576,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -4934,31 +4928,31 @@ export const remittance_use = {
         {
             "index": 2581,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2590,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2591,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2592,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -4970,9 +4964,9 @@ export const remittance_use = {
         {
             "index": 2599,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Education expenses",
-                "Housing rental fee"
+                "Food purchase"
             ]
         },
         {
@@ -4984,41 +4978,41 @@ export const remittance_use = {
         {
             "index": 2607,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Payment of services",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
             "index": 2611,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 2616,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2620,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2625,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5030,55 +5024,54 @@ export const remittance_use = {
         {
             "index": 2631,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2635,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2636,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 2637,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2638,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2639,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 2666,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -5090,92 +5083,92 @@ export const remittance_use = {
         {
             "index": 2674,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 2676,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 2679,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2685,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2689,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2690,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2691,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2696,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2702,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2734,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2737,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 2738,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5193,8 +5186,8 @@ export const remittance_use = {
         {
             "index": 2744,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5206,16 +5199,16 @@ export const remittance_use = {
         {
             "index": 2748,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2752,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5227,31 +5220,30 @@ export const remittance_use = {
         {
             "index": 2755,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2756,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2758,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2763,
             "values": [
                 "Payment of services",
-                "Housing",
-                "Home purchase fee"
+                "Housing"
             ]
         },
         {
@@ -5263,41 +5255,41 @@ export const remittance_use = {
         {
             "index": 2766,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2768,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2786,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 2823,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2832,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -5309,8 +5301,8 @@ export const remittance_use = {
         {
             "index": 2849,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5322,8 +5314,8 @@ export const remittance_use = {
         {
             "index": 2856,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5336,44 +5328,44 @@ export const remittance_use = {
         {
             "index": 2873,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 2876,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2882,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2884,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2885,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2893,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -5391,23 +5383,23 @@ export const remittance_use = {
         {
             "index": 2899,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2910,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2914,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5425,9 +5417,9 @@ export const remittance_use = {
         {
             "index": 2941,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5439,38 +5431,38 @@ export const remittance_use = {
         {
             "index": 2945,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2949,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 2950,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2951,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2956,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5482,9 +5474,9 @@ export const remittance_use = {
         {
             "index": 2969,
             "values": [
-                "Food purchase",
+                "Purchase of agricultural inputs",
                 "Payment of services",
-                "Purchase of agricultural inputs"
+                "Food purchase"
             ]
         },
         {
@@ -5496,8 +5488,8 @@ export const remittance_use = {
         {
             "index": 2979,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5515,39 +5507,39 @@ export const remittance_use = {
         {
             "index": 2991,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 2993,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 2995,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 2998,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3001,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5559,16 +5551,16 @@ export const remittance_use = {
         {
             "index": 3004,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3005,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Home purchase fee"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -5599,8 +5591,8 @@ export const remittance_use = {
         {
             "index": 3015,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5612,24 +5604,24 @@ export const remittance_use = {
         {
             "index": 3020,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3021,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3023,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5641,23 +5633,23 @@ export const remittance_use = {
         {
             "index": 3046,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3051,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3055,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5675,38 +5667,38 @@ export const remittance_use = {
         {
             "index": 3069,
             "values": [
-                "Food purchase",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 3070,
             "values": [
-                "Food purchase",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 3073,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3075,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 3076,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
@@ -5718,9 +5710,9 @@ export const remittance_use = {
         {
             "index": 3080,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5732,8 +5724,8 @@ export const remittance_use = {
         {
             "index": 3104,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5751,40 +5743,40 @@ export const remittance_use = {
         {
             "index": 3109,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3110,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3113,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3115,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3118,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -5796,8 +5788,8 @@ export const remittance_use = {
         {
             "index": 3135,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5809,38 +5801,38 @@ export const remittance_use = {
         {
             "index": 3138,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3139,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3140,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3141,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3143,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Other"
+                "Food purchase"
             ]
         },
         {
@@ -5852,24 +5844,24 @@ export const remittance_use = {
         {
             "index": 3145,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3152,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3157,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5881,8 +5873,8 @@ export const remittance_use = {
         {
             "index": 3161,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5900,46 +5892,46 @@ export const remittance_use = {
         {
             "index": 3166,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3168,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 3169,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3173,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3174,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3179,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -5951,16 +5943,16 @@ export const remittance_use = {
         {
             "index": 3182,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3184,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -5972,16 +5964,16 @@ export const remittance_use = {
         {
             "index": 3187,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3188,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -5993,16 +5985,16 @@ export const remittance_use = {
         {
             "index": 3192,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3196,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6014,23 +6006,23 @@ export const remittance_use = {
         {
             "index": 3199,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3200,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3202,
             "values": [
                 "Health expenses",
-                "Housing rental fee"
+                "Housing"
             ]
         },
         {
@@ -6042,23 +6034,23 @@ export const remittance_use = {
         {
             "index": 3212,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3214,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3215,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6070,23 +6062,23 @@ export const remittance_use = {
         {
             "index": 3217,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3220,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3222,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6110,8 +6102,8 @@ export const remittance_use = {
         {
             "index": 3232,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6123,60 +6115,60 @@ export const remittance_use = {
         {
             "index": 3236,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3238,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3249,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3254,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3255,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3256,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3262,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3263,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6188,8 +6180,8 @@ export const remittance_use = {
         {
             "index": 3268,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6202,23 +6194,23 @@ export const remittance_use = {
         {
             "index": 3274,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3279,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3281,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6236,9 +6228,9 @@ export const remittance_use = {
         {
             "index": 3291,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -6280,16 +6272,16 @@ export const remittance_use = {
         {
             "index": 3320,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3321,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6301,8 +6293,8 @@ export const remittance_use = {
         {
             "index": 3328,
             "values": [
-                "Food purchase",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -6314,36 +6306,36 @@ export const remittance_use = {
         {
             "index": 3342,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3347,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3352,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3353,
             "values": [
-                "Food purchase",
-                "Payment of the sender's travel debt"
+                "Payment of the sender's travel debt",
+                "Food purchase"
             ]
         },
         {
             "index": 3357,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6355,92 +6347,92 @@ export const remittance_use = {
         {
             "index": 3359,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3360,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3366,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3367,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 3371,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3378,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3380,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3382,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Education expenses",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 3383,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3387,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3388,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 3393,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6452,52 +6444,52 @@ export const remittance_use = {
         {
             "index": 3397,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3414,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3415,
             "values": [
-                "Home purchase fee"
+                "Housing"
             ]
         },
         {
             "index": 3423,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3425,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3427,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3429,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6509,15 +6501,15 @@ export const remittance_use = {
         {
             "index": 3436,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3437,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6529,29 +6521,29 @@ export const remittance_use = {
         {
             "index": 3441,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3443,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3446,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3447,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6563,15 +6555,15 @@ export const remittance_use = {
         {
             "index": 3459,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3460,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6595,8 +6587,8 @@ export const remittance_use = {
         {
             "index": 3471,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6608,44 +6600,44 @@ export const remittance_use = {
         {
             "index": 3487,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3494,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3499,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 3500,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3501,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3502,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6681,24 +6673,24 @@ export const remittance_use = {
         {
             "index": 3517,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3519,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3520,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6710,38 +6702,38 @@ export const remittance_use = {
         {
             "index": 3522,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3528,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3531,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3534,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3537,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -6753,37 +6745,37 @@ export const remittance_use = {
         {
             "index": 3540,
             "values": [
-                "Food purchase",
+                "Other",
                 "Purchase of agricultural inputs",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 3544,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3546,
             "values": [
-                "Clothes and shoes"
+                "Other"
             ]
         },
         {
             "index": 3547,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3548,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6795,15 +6787,15 @@ export const remittance_use = {
         {
             "index": 3551,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3554,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6827,15 +6819,15 @@ export const remittance_use = {
         {
             "index": 3564,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3567,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6853,30 +6845,30 @@ export const remittance_use = {
         {
             "index": 3574,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3577,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3578,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3580,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -6888,31 +6880,31 @@ export const remittance_use = {
         {
             "index": 3586,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Payment of services",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
             "index": 3587,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3589,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3590,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6924,7 +6916,6 @@ export const remittance_use = {
         {
             "index": 3598,
             "values": [
-                "Clothes and shoes",
                 "Other"
             ]
         },
@@ -6943,22 +6934,22 @@ export const remittance_use = {
         {
             "index": 3604,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3606,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3607,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -6970,31 +6961,31 @@ export const remittance_use = {
         {
             "index": 3610,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3612,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3613,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3617,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7006,16 +6997,16 @@ export const remittance_use = {
         {
             "index": 3620,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3621,
             "values": [
                 "Payment of services",
-                "Business"
+                "Other"
             ]
         },
         {
@@ -7027,33 +7018,33 @@ export const remittance_use = {
         {
             "index": 3623,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3626,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3627,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 3629,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7065,8 +7056,8 @@ export const remittance_use = {
         {
             "index": 3634,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7079,8 +7070,8 @@ export const remittance_use = {
         {
             "index": 3640,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7092,8 +7083,8 @@ export const remittance_use = {
         {
             "index": 3645,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7111,7 +7102,7 @@ export const remittance_use = {
         {
             "index": 3650,
             "values": [
-                "Payment of other debts"
+                "Other"
             ]
         },
         {
@@ -7123,46 +7114,46 @@ export const remittance_use = {
         {
             "index": 3652,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Other"
+                "Food purchase"
             ]
         },
         {
             "index": 3653,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3654,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 3656,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3657,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3663,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7174,25 +7165,25 @@ export const remittance_use = {
         {
             "index": 3666,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 3667,
             "values": [
-                "Food purchase",
                 "Payment of services",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3669,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7204,32 +7195,32 @@ export const remittance_use = {
         {
             "index": 3671,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3672,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing rental fee"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 3673,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3675,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7241,30 +7232,30 @@ export const remittance_use = {
         {
             "index": 3678,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3681,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3682,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3683,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7294,9 +7285,9 @@ export const remittance_use = {
         {
             "index": 3690,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7308,9 +7299,9 @@ export const remittance_use = {
         {
             "index": 3696,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7322,76 +7313,76 @@ export const remittance_use = {
         {
             "index": 3700,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3701,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3702,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3706,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Education expenses",
-                "Housing rental fee"
+                "Food purchase"
             ]
         },
         {
             "index": 3707,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3710,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Business"
+                "Food purchase"
             ]
         },
         {
             "index": 3718,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3719,
             "values": [
-                "Food purchase",
                 "Payment of services",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3720,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3723,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7403,22 +7394,22 @@ export const remittance_use = {
         {
             "index": 3726,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3727,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3728,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7430,48 +7421,48 @@ export const remittance_use = {
         {
             "index": 3732,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3733,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3735,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3737,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3738,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3739,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -7489,47 +7480,47 @@ export const remittance_use = {
         {
             "index": 3772,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 3773,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3779,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 3781,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3790,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3793,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7541,52 +7532,52 @@ export const remittance_use = {
         {
             "index": 3796,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3797,
             "values": [
-                "Food purchase",
                 "Payment of services",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3800,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3803,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3807,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3815,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 3816,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7598,68 +7589,68 @@ export const remittance_use = {
         {
             "index": 3822,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3826,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3829,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Home purchase fee"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 3830,
             "values": [
-                "Food purchase",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3832,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3834,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3839,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3840,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3842,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -7678,25 +7669,25 @@ export const remittance_use = {
         {
             "index": 3849,
             "values": [
-                "Food purchase",
+                "Payment of commitments abroad",
                 "Payment of services",
-                "Payment of commitments of members residing abroad"
+                "Food purchase"
             ]
         },
         {
             "index": 3850,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3852,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7708,17 +7699,17 @@ export const remittance_use = {
         {
             "index": 3854,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3857,
             "values": [
                 "Health expenses",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Payment of services",
+                "Other"
             ]
         },
         {
@@ -7730,31 +7721,31 @@ export const remittance_use = {
         {
             "index": 3867,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3874,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 3875,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3878,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Education expenses",
-                "Housing rental fee"
+                "Food purchase"
             ]
         },
         {
@@ -7772,8 +7763,8 @@ export const remittance_use = {
         {
             "index": 3886,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -7791,16 +7782,16 @@ export const remittance_use = {
         {
             "index": 3897,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3900,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7812,15 +7803,15 @@ export const remittance_use = {
         {
             "index": 3902,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3903,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7832,98 +7823,98 @@ export const remittance_use = {
         {
             "index": 3905,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3907,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3908,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3909,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3912,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3913,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3914,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3915,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3919,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3920,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3921,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3925,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3926,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7935,8 +7926,8 @@ export const remittance_use = {
         {
             "index": 3931,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -7948,17 +7939,17 @@ export const remittance_use = {
         {
             "index": 3933,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3935,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -7970,31 +7961,31 @@ export const remittance_use = {
         {
             "index": 3937,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3939,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3940,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3945,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8006,32 +7997,32 @@ export const remittance_use = {
         {
             "index": 3950,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3952,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 3955,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3956,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8061,8 +8052,8 @@ export const remittance_use = {
         {
             "index": 3967,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -8074,16 +8065,16 @@ export const remittance_use = {
         {
             "index": 3970,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3974,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8095,22 +8086,22 @@ export const remittance_use = {
         {
             "index": 3977,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3978,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3980,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8122,75 +8113,74 @@ export const remittance_use = {
         {
             "index": 3990,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Payment of other debts"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 3991,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 3993,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 3995,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 3999,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 4000,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4001,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4002,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4003,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4004,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -8214,22 +8204,22 @@ export const remittance_use = {
         {
             "index": 4011,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4013,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4014,
             "values": [
                 "Payment of services",
-                "Payment of other debts"
+                "Other"
             ]
         },
         {
@@ -8241,9 +8231,9 @@ export const remittance_use = {
         {
             "index": 4018,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8267,22 +8257,22 @@ export const remittance_use = {
         {
             "index": 4027,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4029,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4031,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8300,54 +8290,54 @@ export const remittance_use = {
         {
             "index": 4039,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 4042,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4045,
             "values": [
-                "Food purchase",
                 "Housing",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 4052,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 4061,
             "values": [
-                "Food purchase",
+                "Purchase of agricultural inputs",
                 "Payment of services",
-                "Purchase of agricultural inputs"
+                "Food purchase"
             ]
         },
         {
             "index": 4062,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4078,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8359,23 +8349,23 @@ export const remittance_use = {
         {
             "index": 4084,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4096,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4099,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8387,16 +8377,16 @@ export const remittance_use = {
         {
             "index": 4102,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 4104,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -8414,9 +8404,9 @@ export const remittance_use = {
         {
             "index": 4118,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -8428,9 +8418,9 @@ export const remittance_use = {
         {
             "index": 4128,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
@@ -8442,90 +8432,90 @@ export const remittance_use = {
         {
             "index": 4131,
             "values": [
-                "Food purchase",
                 "Payment of services",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 4133,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4134,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 4136,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4138,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 4139,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4140,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4141,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4142,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4145,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4152,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4155,
             "values": [
-                "Food purchase",
+                "Purchase of agricultural inputs",
                 "Housing",
-                "Purchase of agricultural inputs"
+                "Food purchase"
             ]
         },
         {
@@ -8537,8 +8527,8 @@ export const remittance_use = {
         {
             "index": 4160,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -8550,9 +8540,9 @@ export const remittance_use = {
         {
             "index": 4165,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8576,69 +8566,69 @@ export const remittance_use = {
         {
             "index": 4173,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 4175,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4176,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Housing",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
             "index": 4178,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4182,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 4183,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4187,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4188,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4196,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -8650,23 +8640,23 @@ export const remittance_use = {
         {
             "index": 4206,
             "values": [
-                "Food purchase",
-                "Payment of the sender's travel debt"
+                "Payment of the sender's travel debt",
+                "Food purchase"
             ]
         },
         {
             "index": 4207,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4209,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -8678,9 +8668,9 @@ export const remittance_use = {
         {
             "index": 4218,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -8698,8 +8688,8 @@ export const remittance_use = {
         {
             "index": 4221,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -8711,16 +8701,16 @@ export const remittance_use = {
         {
             "index": 4225,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Saving"
+                "Other",
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 4230,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -8732,30 +8722,30 @@ export const remittance_use = {
         {
             "index": 4243,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4245,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4246,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4249,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8767,30 +8757,30 @@ export const remittance_use = {
         {
             "index": 4254,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4259,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4262,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4263,
             "values": [
-                "Food purchase",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -8809,9 +8799,9 @@ export const remittance_use = {
         {
             "index": 4282,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Saving"
+                "Other",
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -8823,25 +8813,25 @@ export const remittance_use = {
         {
             "index": 4288,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4292,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 4293,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8853,47 +8843,47 @@ export const remittance_use = {
         {
             "index": 4300,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4304,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4307,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4326,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 4327,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 4335,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8917,9 +8907,9 @@ export const remittance_use = {
         {
             "index": 4352,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -8931,24 +8921,24 @@ export const remittance_use = {
         {
             "index": 4360,
             "values": [
-                "Food purchase",
-                "Payment of the sender's travel debt"
+                "Payment of the sender's travel debt",
+                "Food purchase"
             ]
         },
         {
             "index": 4361,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 4363,
             "values": [
                 "Health expenses",
-                "Housing",
-                "Purchase of agricultural inputs"
+                "Purchase of agricultural inputs",
+                "Housing"
             ]
         },
         {
@@ -8960,30 +8950,30 @@ export const remittance_use = {
         {
             "index": 4375,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4383,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 4385,
             "values": [
-                "Food purchase",
-                "Other"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 4387,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
@@ -9019,9 +9009,9 @@ export const remittance_use = {
         {
             "index": 4440,
             "values": [
-                "Food purchase",
                 "Payment of services",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -9045,16 +9035,16 @@ export const remittance_use = {
         {
             "index": 4463,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4464,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9066,22 +9056,22 @@ export const remittance_use = {
         {
             "index": 4476,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4494,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4495,
             "values": [
-                "Food purchase",
-                "Saving"
+                "Saving",
+                "Food purchase"
             ]
         },
         {
@@ -9093,9 +9083,9 @@ export const remittance_use = {
         {
             "index": 4501,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9107,8 +9097,8 @@ export const remittance_use = {
         {
             "index": 4510,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9120,46 +9110,46 @@ export const remittance_use = {
         {
             "index": 4514,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 4519,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4523,
             "values": [
-                "Food purchase",
+                "Other",
                 "Education expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 4524,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4526,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Education expenses"
+                "Other",
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4529,
             "values": [
-                "Food purchase",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9171,8 +9161,8 @@ export const remittance_use = {
         {
             "index": 4538,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9185,71 +9175,71 @@ export const remittance_use = {
         {
             "index": 4544,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4545,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4546,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4547,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4548,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4553,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4555,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4557,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4558,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
@@ -9261,54 +9251,54 @@ export const remittance_use = {
         {
             "index": 4567,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4568,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4569,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing rental fee"
+                "Food purchase"
             ]
         },
         {
             "index": 4573,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4575,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4582,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4587,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Payment of other debts"
+                "Food purchase"
             ]
         },
         {
@@ -9326,8 +9316,8 @@ export const remittance_use = {
         {
             "index": 4595,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -9339,8 +9329,8 @@ export const remittance_use = {
         {
             "index": 4607,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9394,8 +9384,8 @@ export const remittance_use = {
         {
             "index": 4643,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9425,23 +9415,23 @@ export const remittance_use = {
         {
             "index": 4658,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4661,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing rental fee"
+                "Food purchase"
             ]
         },
         {
             "index": 4663,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9453,31 +9443,31 @@ export const remittance_use = {
         {
             "index": 4677,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Expenses related to COVID-19"
+                "Food purchase"
             ]
         },
         {
             "index": 4683,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4685,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4686,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9489,122 +9479,122 @@ export const remittance_use = {
         {
             "index": 4697,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4701,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4705,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
             "index": 4707,
             "values": [
-                "Food purchase",
+                "Payment of the sender's travel debt",
                 "Housing",
-                "Payment of the sender's travel debt"
+                "Food purchase"
             ]
         },
         {
             "index": 4712,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Payment of the sender's travel debt"
+                "Other",
+                "Payment of the sender's travel debt",
+                "Food purchase"
             ]
         },
         {
             "index": 4720,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4726,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4727,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4730,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4734,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Saving"
+                "Other",
+                "Saving",
+                "Food purchase"
             ]
         },
         {
             "index": 4740,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
             "index": 4748,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 4749,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4755,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 4768,
             "values": [
-                "Food purchase",
+                "Other",
                 "Payment of services",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 4769,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9622,16 +9612,16 @@ export const remittance_use = {
         {
             "index": 4775,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Purchase of agricultural inputs"
+                "Other",
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 4777,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -9649,46 +9639,46 @@ export const remittance_use = {
         {
             "index": 4792,
             "values": [
-                "Food purchase",
-                "Clothes and shoes",
-                "Purchase of agricultural inputs"
+                "Other",
+                "Purchase of agricultural inputs",
+                "Food purchase"
             ]
         },
         {
             "index": 4799,
             "values": [
-                "Food purchase",
+                "Other",
                 "Health expenses",
-                "Clothes and shoes"
+                "Food purchase"
             ]
         },
         {
             "index": 4817,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4830,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4831,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4834,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9742,23 +9732,23 @@ export const remittance_use = {
         {
             "index": 4867,
             "values": [
-                "Food purchase",
-                "Expenses related to COVID-19",
-                "Payment of services"
+                "Other",
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4868,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4876,
             "values": [
-                "Food purchase",
-                "Clothes and shoes"
+                "Other",
+                "Food purchase"
             ]
         },
         {
@@ -9770,9 +9760,9 @@ export const remittance_use = {
         {
             "index": 4881,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing rental fee"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -9790,8 +9780,8 @@ export const remittance_use = {
         {
             "index": 4900,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9815,22 +9805,22 @@ export const remittance_use = {
         {
             "index": 4913,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4917,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4922,
             "values": [
-                "Housing rental fee"
+                "Housing"
             ]
         },
         {
@@ -9842,31 +9832,31 @@ export const remittance_use = {
         {
             "index": 4926,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4929,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4940,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4942,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9878,16 +9868,16 @@ export const remittance_use = {
         {
             "index": 4946,
             "values": [
-                "Food purchase",
                 "Education expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4949,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9899,17 +9889,17 @@ export const remittance_use = {
         {
             "index": 4951,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Education expenses"
+                "Education expenses",
+                "Food purchase"
             ]
         },
         {
             "index": 4952,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Housing rental fee"
+                "Housing",
+                "Food purchase"
             ]
         },
         {
@@ -9927,9 +9917,9 @@ export const remittance_use = {
         {
             "index": 4963,
             "values": [
-                "Food purchase",
                 "Health expenses",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
@@ -9941,23 +9931,23 @@ export const remittance_use = {
         {
             "index": 4969,
             "values": [
-                "Food purchase",
+                "Housing",
                 "Payment of services",
-                "Housing"
+                "Food purchase"
             ]
         },
         {
             "index": 4975,
             "values": [
-                "Food purchase",
-                "Payment of services"
+                "Payment of services",
+                "Food purchase"
             ]
         },
         {
             "index": 4986,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         },
         {
@@ -9969,8 +9959,8 @@ export const remittance_use = {
         {
             "index": 4989,
             "values": [
-                "Food purchase",
-                "Health expenses"
+                "Health expenses",
+                "Food purchase"
             ]
         }
     ]

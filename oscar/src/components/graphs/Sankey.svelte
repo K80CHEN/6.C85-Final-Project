@@ -1,7 +1,7 @@
 <script>
   import * as d3 from "d3";
   import { sankey as Sankey, sankeyLinkHorizontal } from "d3-sankey";
-  import { remittance_use } from "../../data/remittance_uses";
+  import { remittance_use } from "../../data/remit_per_migrant";
 
   const width = 750;
   const height = 500;

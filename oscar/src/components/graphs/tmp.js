@@ -6,42 +6,36 @@ import * as fs from "fs";
 const width = 750;
 const height = 750;
 const defaultOpacity = 0.3;
-const radius = 500;
+const radius = 300;
 
 const onCircle = function(index) {
-    const angleDeg = (330 - 120) / 4899;
+    const angleDeg = (360 - 60) / 4899;
     const angleRad = angleDeg * Math.PI / 180;
-    const x = radius*Math.cos(Math.PI/6 + index*angleRad);
-    const y = radius*Math.sin(Math.PI/6 + index*angleRad);
-    return {x: x, y: y}
+    const x = radius*Math.cos(Math.PI/6 + 5*Math.PI/180 + index*angleRad);
+    const y = radius*Math.sin(Math.PI/6 + 5*Math.PI/180 + index*angleRad);
+    return {x: x, y: y};
 };
 
 const list_label = [
     'Food purchase',
     'Health expenses',
-    'Expenses related to COVID-19',
     'Education expenses',
-    'Payment of services',
-    'Clothes and shoes',
     'Housing',
-    'Housing rental fee',
-    'Home purchase fee',
     'Purchase of agricultural inputs',
-    'Business',
     'Saving',
-    'Payment of commitments of members residing abroad',
+    'Payment of commitments abroad',
     'Payment of the sender\'s travel debt',
-    'Payment of other debts',
     'Other'
 ];
 
 const labelOnCircle = function(index) {
-    const angleDeg = 120 / list_label.length;
+    const angleDeg = 50 / list_label.length;
     const angleRad = angleDeg * Math.PI / 180;
     const x = radius*Math.cos(Math.PI/6 - index*angleRad);
     const y = radius*Math.sin(Math.PI/6 - index*angleRad);
     return {x: x, y: y}
 };
+
 const nodes = new Object();
 for (let i=4990; i < list_label.length + 4990; i++) {
     const circ = labelOnCircle(i - 4990);

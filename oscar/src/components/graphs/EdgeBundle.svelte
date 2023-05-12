@@ -2,37 +2,30 @@
     import * as d3 from "d3";
     import { results } from "../../data/results";
     
-    const width = 1020;
-    const height = 1020;
+    const width = 620;
+    const height = 620;
     const defaultOpacity = 0.3;
-    const radius = 500;
+    const radius = 300;
     
     const labelOnCircle = function(index) {
-        const angleDeg = 120 / list_label.length;
+        const angleDeg = 50 / list_label.length;
         const angleRad = angleDeg * Math.PI / 180;
         const x = radius*Math.cos(Math.PI/6 - index*angleRad);
         const y = radius*Math.sin(Math.PI/6 - index*angleRad);
         return {x: x, y: y}
     };
 
-    const list_label = [
-        'Food purchase',
-        'Health expenses',
-        'Expenses related \nto COVID-19',
-        'Education expenses',
-        'Payment of services',
-        'Clothes and shoes',
-        'Housing',
-        'Housing rental fee',
-        'Home purchase fee',
-        'Purchase of agricultural inputs',
-        'Business',
-        'Saving',
-        'Payment of commitments of members residing abroad',
-        'Payment of the sender\'s travel debt',
-        'Payment of other debts',
-        'Other'
-    ];
+	const list_label = [
+		'Food purchase',
+		'Health expenses',
+		'Education expenses',
+		'Housing',
+		'Purchase of agricultural inputs',
+		'Saving',
+		'Payment of commitments abroad',
+		'Payment of the sender\'s travel debt',
+		'Other'
+	];
 
     const hoverables = [];
     for (let i=4990; i < list_label.length + 4990; i++) {
@@ -45,30 +38,38 @@
                    .y(function(d){ return d.y; })
                    .curve(d3.curveBasis);
   
-    const colors = ["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"];
+    const colors = ["#94855f", "#76958d", "#69a0a4", "#188977", "#0E4D64", "#BFE1B0", "#0A2F51", "#B29D4E", "#9F635D"];
     const colorScale = d3
       .scaleOrdinal()
-      .domain(list_label.map((d) => list_label.indexOf(d) + 4990))
+      .domain(hoverables.map(v => `x_${v.x}_y_${v.y}`))
       .range(colors);
     // state trackers
     let hovered = -1; // index of the hovered segment
     // $: console.log(hovered);
-  </script>
+</script>
   
-  <div class="visualization">
+<div class="visualization">
     <svg {width} {height}>
-      <g transform="translate(510, 510)">
-        {#each results.data as data}
-          <path
-            d={d3line(data)}
-            fill="none"
-            stroke={'#76958D'}
-            stroke-opacity={0.15}
-            stroke-width={1}
-          />
-        {/each}
-        {#each hoverables as hover}
-          <circle cx={hover.x} cy={hover.y} r={5}
+    	<g transform="translate(310, 310)">
+        	{#each results.data as data}
+          		<path
+            		d={d3line(data)}
+            		fill="none"
+            		stroke={(hovered === `x_${data[data.length-1].x}_y_${data[data.length-1].y}` || hovered === -1) ? colorScale(`x_${data[data.length-1].x}_y_${data[data.length-1].y}`) : '#808080'}
+            		stroke-opacity={0.15}
+            		stroke-width={1}
+					on:mouseover={(event) => {
+						hovered = `x_${data[data.length-1].x}_y_${data[data.length-1].y}`;
+					}}
+					on:focus={() => {}}
+					on:mouseout={(event) => {
+						hovered = -1;
+					}}
+					on:blur={() => {}}
+          		/>
+        	{/each}
+        	<!-- {#each hoverables as hover}
+          		<circle cx={hover.x} cy={hover.y} r={5}
 					on:mouseover={(event) => {
 						hovered = hover.id;
 					}}
@@ -77,13 +78,13 @@
 						hovered = -1;
 					}}
 					on:blur={() => {}}></circle>
-			<text x={hover.x} y={hover.y} dy="0.35em"
-            text-anchor={"end"}
-            font-size="18px">{hover.id === hovered ? hover.caption : ''}</text>
-        {/each}
-      </g>
+				<text x={hover.x} y={hover.y} dy="0.35em"
+            		text-anchor={"end"}
+            		font-size="18px">{hover.id === hovered ? hover.caption : ''}</text>
+        	{/each} -->
+      	</g>
     </svg>
-  </div>
+</div>
   
   <style>
     .visualization {
@@ -91,5 +92,5 @@
       margin-top: 0;
       text-align: middle;
     }
-  </style>
+</style>
   
