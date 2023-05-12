@@ -26,22 +26,22 @@
 
     <div class="callout">
       <span class="question"
-        >How much do Central American migrant workers send back home every
-        month?
+        >How much do you think a Central American migrant workers send back home
+        every month in USD?
       </span>
     </div>
 
     <div class="text-block">
       <p class="body-text">
-        We first visualized the distribution of remittance amounts using violin
-        plot. We then broken down these distributions based on their
-        frequencies, and juxtaposed these distributions using small multiples.
+        We encourage you to take a guess first! After you enter your guess, we
+        will show you how your guess compares to the actual distribution of the
+        monthly remittances sent back to El Salvador, Honduras and Guatemala
       </p>
     </div>
 
     <InputWrapper />
 
-    <div class="text-block add-margin-top">
+    <div class="text-block">
       <span class="viz-footnote"
         >Visualizing the distribution of how much Central American migrants send
         back home in different frequencies</span
@@ -153,10 +153,5 @@
     font-size: 1.0625rem;
     line-height: 1.5625rem;
     font-weight: 700;
-  }
-  .hist-wrapper {
-    margin: 0 auto;
-    display: flex;
-    max-width: 640px;
   }
 </style>

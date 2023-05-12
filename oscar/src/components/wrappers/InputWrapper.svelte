@@ -1,10 +1,9 @@
 <script>
   import Input from "../helpers/Input.svelte";
   import Barcode from "../graphs/Barcode.svelte";
-  import { writable } from "svelte/store";
+  import { writable, derived } from "svelte/store";
 
-  const inputValue = writable(null);
-  let monthly_data = [
+  let data = [
     100, 75, 120, 400, 50, 200, 350, 16.9, 5.1, 25.4, 100, 100, 150, 150, 250,
     400, 100, 200, 50, 150, 150, 100, 150, 600, 100, 25.4, 33.8, 500, 400, 200,
     100, 150, 200, 250, 20.2, 10.1, 13.4, 11.8, 100, 60, 3.4, 200, 0.3, 200,
@@ -29,24 +28,22 @@
     22, 11.8, 84.5, 50, 200, 200, 11.8, 25.4, 42.3, 7.4, 50, 20.2, 3.4, 50.7,
     2.4, 11.8, 12.7, 50, 2.5, 100,
   ];
-  let localData = [...monthly_data]; // create a local copy of the data
-  let highlightedValue = null; // add a variable for the highlighted value
+  let highlightedValue = writable(null);
+  let localData = [...data];
 
   function handleInputSubmit(value) {
     // Update the highlighted value
-    highlightedValue = value;
-
-    // Update the local data to include the highlighted value
-    if (!localData.includes(value)) {
-      localData.push(value);
-    }
-
-    // Update inputValue
-    inputValue.set(value);
+    highlightedValue.set(value);
+    localData = [...data, value];
+  }
+  $: if ($highlightedValue !== null) {
+    localData = [...data, $highlightedValue];
   }
 </script>
 
 <div>
   <Input onSubmit={handleInputSubmit} />
-  <Barcode data={localData} {highlightedValue} />
+  {#if $highlightedValue !== null}
+    <Barcode data={localData} highlightedValue={$highlightedValue} />
+  {/if}
 </div>
