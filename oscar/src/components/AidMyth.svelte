@@ -2,7 +2,7 @@
   import Hist1 from "./graphs/Hist1.svelte";
   import Hist2 from "./graphs/Hist2.svelte";
   import Sankey from "./graphs/Sankey.svelte";
-  import Violin from "./graphs/Violin.svelte";
+  import InputWrapper from "./wrappers/InputWrapper.svelte";
 </script>
 
 <div>
@@ -39,8 +39,7 @@
       </p>
     </div>
 
-    <Violin />
-
+    <InputWrapper />
     <div class="text-block add-margin-top">
       <span class="viz-footnote"
         >Visualizing the distribution of how much Central American migrants send

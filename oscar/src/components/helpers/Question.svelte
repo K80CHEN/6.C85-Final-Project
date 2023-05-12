@@ -62,13 +62,6 @@
   .question {
     margin: 20px 0;
   }
-  /* .choice-container {
-    display: flex;
-    max-width: 460px;
-    margin: 0 auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  } */
 
   .choice-container {
     max-width: 460px;

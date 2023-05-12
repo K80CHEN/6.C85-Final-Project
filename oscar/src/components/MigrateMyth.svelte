@@ -6,9 +6,11 @@
   import "@fontsource/domine/700.css";
 
   import "@fontsource/gelasio";
-  import CircularBar from "./graphs/CircularBar.svelte";
 
   import PathwayWrapper from "./PathwayWrapper.svelte";
+
+  import Spin from "./helpers/Spin.svelte";
+
 </script>
 
 <div>
@@ -53,20 +55,7 @@
     </p>
   </div>
 
-  <CircularBar />
-  <div class="text-block add-margin-top-max">
-    <p class="body-text">
-      <span class="viz-footnote">
-        Our peer survey data is not fully in yet so this is inaccurate!
-      </span>
-      We surveyed our peers about the most common pathways they think Central American
-      migrants take and compared that to the WFP survey data that we have. Using
-      this circular barplot, we are hoping to show a direct 1-1 comparison of what
-      pathways people think are available to migrants versus those that are actually
-      available and actively being used.
-    </p>
-  </div>
-
+  <Spin />
   <div class="callout">
     <span class="question"
       >How many Central American migrants did NOT make it to the U.S.?
@@ -157,6 +146,7 @@
     </p>
   </div>
 </div>
+
 
 <style>
   .text-block {
