@@ -1,6 +1,4 @@
 <script>
-  import Hist1 from "./graphs/Hist1.svelte";
-  import Hist2 from "./graphs/Hist2.svelte";
   import Sankey from "./graphs/Sankey.svelte";
   import Violin from "./graphs/Violin.svelte";
   import EdgeBundle from "./graphs/EdgeBundle.svelte";
@@ -42,6 +40,7 @@
     </div>
 
     <InputWrapper />
+
     <div class="text-block add-margin-top">
       <span class="viz-footnote"
         >Visualizing the distribution of how much Central American migrants send
@@ -52,11 +51,6 @@
         send back home on a monthly basis, here's a comparison between the
         actual and the guess distributions.
       </p>
-    </div>
-
-    <div class="hist-wrapper">
-      <Hist1 />
-      <Hist2 />
     </div>
 
     <div class="text-block add-margin-top">
