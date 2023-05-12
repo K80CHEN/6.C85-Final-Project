@@ -3,6 +3,7 @@
   import Hist2 from "./graphs/Hist2.svelte";
   import Sankey from "./graphs/Sankey.svelte";
   import Violin from "./graphs/Violin.svelte";
+  import EdgeBundle from "./graphs/EdgeBundle.svelte";
 </script>
 
 <div>
@@ -86,7 +87,7 @@
     </div>
   </div>
 
-  <Sankey />
+  <EdgeBundle />
 
   <div class="text-block add-margin-top">
     <span class="viz-footnote"
