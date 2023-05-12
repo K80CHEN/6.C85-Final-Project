@@ -4,111 +4,172 @@
   import * as d3 from "d3";
   import { freq_remesa } from "../../data/freq_remesa.js";
 
-  export let data = freq_remesa[0]; // access the data for each month
-  export let highlightedValue = null;
-
   let svg;
 
-  function createChart() {
-    // Set the dimensions and margins of the graph
-    const margin = { top: 20, right: 30, bottom: 30, left: 40 },
-      width = 600 - margin.left - margin.right,
+  const data = freq_remesa;
+
+  onMount(async () => {
+    const margin = { top: 20, right: 30, bottom: 40, left: 50 },
+      width = 1000 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
-    // Append the SVG object to the component
-    d3.select(svg)
+    svg = d3
+      .select(svg)
+      .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    // Create a y scale
-    const y = d3
-      .scaleLinear()
-      .domain([0, d3.max(data.values)])
-      .range([height, 0]);
-
-    // Create an x scale for the violin plot
-    const x = d3.scaleBand().range([0, width]).domain([""]).padding(0.05);
-
-    // Compute kernel density estimator
-    const kde = kernelDensityEstimator(kernelEpanechnikov(7), y.ticks(40));
-    const density = kde(data);
-
-    // Create a yAxis
-    const yAxis = d3.axisLeft(y);
-
-    // Add the y-axis to the chart
-    d3.select(svg)
+    const x = d3
+      .scaleBand()
+      .range([0, width])
+      .domain([
+        "Every week or less",
+        "Every fifteen days",
+        "Each month",
+        "Every two months",
+        "Every three months",
+        "Every six months",
+        "Once a year",
+        "On extraordinary occasions",
+        "Other",
+      ])
+      .padding(0.05);
+    svg
       .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`)
-      .call(yAxis);
+      .attr("transform", `translate(0,${height})`)
+      .call(d3.axisBottom(x));
 
-    // Create the area generator for the violin
-    const area = d3
-      .area()
-      .x0((d) => x("") + x.bandwidth() / 2 - d[1] / 2)
-      .x1((d) => x("") + x.bandwidth() / 2 + d[1] / 2)
-      .y((d) => y(d[0]))
-      .curve(d3.curveCatmullRom);
+    const y = d3.scaleLinear().domain([0, 1200]).range([height, 0]);
+    svg.append("g").call(d3.axisLeft(y));
 
-    // Draw the violin plot
-    d3.select(svg)
-      .append("path")
-      .datum(density)
-      .attr("transform", `translate(${margin.left},${margin.top})`)
-      .attr("fill", "#69b3a2")
-      .attr("opacity", 0.8)
-      .attr("stroke", "#000")
-      .attr("stroke-width", 1)
-      .attr("d", area);
+    // Features of density estimate
+    var kde = kernelDensityEstimator(kernelEpanechnikov(0.9), y.ticks(10));
+    // y.ticks(50): 50 is a good starting number
+    // The number you provide to y.ticks() should be set according to the level of granularity you want for your density estimates.
+    // A higher number will result in more sample points and a potentially more detailed estimation, but also more computational work.
 
-    // Add the highlightedValue marker
-    if (highlightedValue !== null) {
-      d3.select(svg)
-        .append("line")
-        .attr("x1", margin.left)
-        .attr("x2", width + margin.left)
-        .attr("y1", y(highlightedValue))
-        .attr("y2", y(highlightedValue))
-        .attr("stroke", "red")
-        .attr("stroke-width", 2);
-    }
-  }
+    // The number provided to kernelEpanechnikov() function is a parameter known as the bandwidth.
+    // The bandwidth controls the width of the kernels (the "bumps"), which determines the level of smoothing applied to the density estimate.
+    // A smaller bandwidth (like 0.1) would result in a narrower kernel,
+    // which would make the density estimate more sensitive to small variations in the data (i.e., less smooth).
+    // Compute the binning for each group of the dataset
+    var sumstat = d3.rollup(
+      data,
+      (v) => kde(v.map((d) => d.values)), // Compute the density estimate for values
+      (d) => d.category // Group by Species
+    );
 
-  // Create the kernel density estimator
-  function kernelDensityEstimator(kernel, X) {
-    return function (V) {
-      return X.map(function (x) {
-        return [
-          x,
-          d3.mean(V, function (v) {
-            return kernel(x - v);
-          }),
-        ];
+    // Convert the Map to an Array of objects for easier processing
+    sumstat = Array.from(sumstat, ([key, value]) => ({ key, value }));
+    // What is the biggest value that the density estimate reach?
+    var maxNum = 0;
+    for (let i in sumstat) {
+      let allBins = sumstat[i].value;
+      let kdeValues = allBins.map(function (a) {
+        return a[1];
       });
-    };
-  }
+      let biggest = d3.max(kdeValues);
+      if (biggest > maxNum) {
+        maxNum = biggest;
+      }
+    }
 
-  // Epanechnikov kernel function
-  function kernelEpanechnikov(k) {
-    return function (v) {
-      return Math.abs((v /= k)) <= 1 ? (0.75 * (1 - v * v)) / k : 0;
-    };
-  }
+    // The maximum width of a violin must be x.bandwidth = the width dedicated to a group
+    let xNum = d3
+      .scaleLinear()
+      .range([0, x.bandwidth()])
+      .domain([-maxNum, maxNum]);
 
-  function updateChart() {
-    // Code to update the violin chart using D3
-    // Make sure to update the highlighted value in the chart
-  }
+    // var color = d3
+    //   .scaleOrdinal()
+    //   .domain([
+    //     "Every week or less",
+    //     "Every fifteen days",
+    //     "Each month",
+    //     "Every two months",
+    //     "Every three months",
+    //     "Every six months",
+    //     "Once a year",
+    //     "On extraordinary occasions",
+    //     "Other",
+    //   ]) // Get unique species
+    //   .range(["#69A0A4", "#707070"])
+    //   .interpolate(d3.interpolateRgb);
 
-  onMount(() => {
-    createChart();
-  });
+    const my_categories = [
+      "Every week or less",
+      "Every fifteen days",
+      "Each month",
+      "Every two months",
+      "Every three months",
+      "Every six months",
+      "Once a year",
+      "On extraordinary occasions",
+      "Other",
+    ];
+    var color = d3
+      .scaleLinear()
+      .domain([0, 8])
+      .range(["#69A0A4", "#707070"])
+      .interpolate(d3.interpolateRgb);
 
-  afterUpdate(() => {
-    updateChart();
+    // Add the shape to this svg!
+    svg
+      .selectAll("myViolin")
+      .data(sumstat)
+      .enter() // So now we are working group per group
+      .append("g")
+      .attr("transform", function (d) {
+        return "translate(" + x(d.key) + " ,0)";
+      }) // Translation on the right to be at the group position
+      .append("path")
+      .each(function (d) {
+        console.log(d);
+      }) // Log `d` for each element
+      .datum(function (d) {
+        return d.value;
+      }) // So now we are working density per density
+      .style("stroke", "none")
+      // .style("fill", (d, i) => color(i))
+      .style("fill", "#69A0A4")
+
+      .attr(
+        "d",
+        d3
+          .area()
+          .x0(function (d) {
+            return xNum(-d[1]);
+          })
+          .x1(function (d) {
+            return xNum(d[1]);
+          })
+          .y(function (d) {
+            return y(d[0]);
+          })
+          .curve(d3.curveCatmullRom) // This makes the line smoother to give the violin appearance. Try d3.curveStep to see the difference
+      );
+
+    // 2 functions needed for kernel density estimate
+    function kernelDensityEstimator(kernel, X) {
+      return function (V) {
+        return X.map(function (x) {
+          return [
+            x,
+            d3.mean(V, function (v) {
+              return kernel(x - v);
+            }),
+          ];
+        });
+      };
+    }
+    function kernelEpanechnikov(k) {
+      return function (v) {
+        return Math.abs((v /= k)) <= 1 ? (0.75 * (1 - v * v)) / k : 0;
+      };
+    }
   });
 </script>
 
-<svg bind:this={svg} width="600" height="400" />
+<svg bind:this={svg} width="1000" height="400" />

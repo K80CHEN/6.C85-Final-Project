@@ -53,6 +53,7 @@
       </p>
     </div>
 
+    <Violin />
     <div class="text-block add-margin-top">
       <span class="viz-footnote"
         >Visualizing WFP survey data and our survey data</span

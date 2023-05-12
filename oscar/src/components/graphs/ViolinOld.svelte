@@ -28,7 +28,7 @@
 
     const xScale = d3
       .scaleBand()
-      .domain([chartData.category])
+      .domain([data.category])
       .range([0, width])
       .padding(0.1);
 
