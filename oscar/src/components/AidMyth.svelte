@@ -4,6 +4,7 @@
   import Sankey from "./graphs/Sankey.svelte";
   import Violin from "./graphs/Violin.svelte";
   import EdgeBundle from "./graphs/EdgeBundle.svelte";
+  import InputWrapper from "./wrappers/InputWrapper.svelte";
 </script>
 
 <div>
@@ -40,8 +41,7 @@
       </p>
     </div>
 
-    <Violin />
-
+    <InputWrapper />
     <div class="text-block add-margin-top">
       <span class="viz-footnote"
         >Visualizing the distribution of how much Central American migrants send

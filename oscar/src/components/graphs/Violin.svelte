@@ -1,104 +1,114 @@
+<!-- ViolinChart.svelte -->
 <script>
-  import { onMount } from "svelte";
+  import { onMount, afterUpdate } from "svelte";
   import * as d3 from "d3";
-  import { max, histogram } from "d3-array";
   import { freq_remesa } from "../../data/freq_remesa.js";
 
-  //   const data = [
-  //     { category: "A", values: [10, 20, 30, 40, 50] },
-  //     { category: "B", values: [15, 25, 35, 45, 55] },
-  //     // ...
-  //   ];
-  let data = freq_remesa;
-  let containers = [];
+  export let data = freq_remesa[0]; // access the data for each month
+  export let highlightedValue = null;
 
-  const globalMin = d3.min(data, (d) => d3.min(d.values));
-  const globalMax = d3.max(data, (d) => d3.max(d.values));
+  let svg;
 
-  onMount(() => {
-    for (let i = 0; i < data.length; i++) {
-      createChart(containers[i], data[i], globalMin, globalMax);
-    }
-  });
+  function createChart() {
+    // Set the dimensions and margins of the graph
+    const margin = { top: 20, right: 30, bottom: 30, left: 40 },
+      width = 600 - margin.left - margin.right,
+      height = 400 - margin.top - margin.bottom;
 
-  function createChart(container, chartData, globalMin, globalMax) {
-    const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-    const width = 200 - margin.left - margin.right;
-    const height = 200 - margin.top - margin.bottom;
-
-    const xScale = d3
-      .scaleBand()
-      .domain([chartData.category])
-      .range([0, width])
-      .padding(0.1);
-
-    const yScale = d3
-      .scaleLinear()
-      .domain([globalMin, globalMax])
-      .range([height, 0]);
-
-    const xAxis = d3.axisBottom(xScale);
-    const yAxis = d3.axisLeft(yScale);
-
-    const hist = histogram()
-      .domain(yScale.domain())
-      .thresholds(yScale.ticks(20));
-
-    const maxDensity = max(hist(chartData.values), (h) => h.length);
-
-    const kdeScale = d3
-      .scaleLinear()
-      .domain([0, maxDensity])
-      .range([0, xScale.bandwidth() / 2]);
-
-    const area = d3
-      .area()
-      .curve(d3.curveCatmullRom)
-      .x0((d) => -kdeScale(d.length))
-      .x1((d) => kdeScale(d.length))
-      .y((d) => yScale(d.x0));
-
-    const svg = d3
-      .select(container)
-      .append("svg")
+    // Append the SVG object to the component
+    d3.select(svg)
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    svg
+    // Create a y scale
+    const y = d3
+      .scaleLinear()
+      .domain([0, d3.max(data.values)])
+      .range([height, 0]);
+
+    // Create an x scale for the violin plot
+    const x = d3.scaleBand().range([0, width]).domain([""]).padding(0.05);
+
+    // Compute kernel density estimator
+    const kde = kernelDensityEstimator(kernelEpanechnikov(7), y.ticks(40));
+    const density = kde(data);
+
+    // Create a yAxis
+    const yAxis = d3.axisLeft(y);
+
+    // Add the y-axis to the chart
+    d3.select(svg)
       .append("g")
-      .attr("class", "x-axis")
-      .attr("transform", `translate(0,${height})`)
-      .call(xAxis);
+      .attr("transform", `translate(${margin.left},${margin.top})`)
+      .call(yAxis);
 
-    svg.append("g").attr("class", "y-axis").call(yAxis);
+    // Create the area generator for the violin
+    const area = d3
+      .area()
+      .x0((d) => x("") + x.bandwidth() / 2 - d[1] / 2)
+      .x1((d) => x("") + x.bandwidth() / 2 + d[1] / 2)
+      .y((d) => y(d[0]))
+      .curve(d3.curveCatmullRom);
 
-    svg
+    // Draw the violin plot
+    d3.select(svg)
       .append("path")
-      .datum(hist(chartData.values))
-      .attr("class", "violin")
-      .attr("d", area)
-      .attr("fill", "steelblue")
-      .attr("stroke", "black");
+      .datum(density)
+      .attr("transform", `translate(${margin.left},${margin.top})`)
+      .attr("fill", "#69b3a2")
+      .attr("opacity", 0.8)
+      .attr("stroke", "#000")
+      .attr("stroke-width", 1)
+      .attr("d", area);
+
+    // Add the highlightedValue marker
+    if (highlightedValue !== null) {
+      d3.select(svg)
+        .append("line")
+        .attr("x1", margin.left)
+        .attr("x2", width + margin.left)
+        .attr("y1", y(highlightedValue))
+        .attr("y2", y(highlightedValue))
+        .attr("stroke", "red")
+        .attr("stroke-width", 2);
+    }
   }
 
-  let guess = 0;
+  // Create the kernel density estimator
+  function kernelDensityEstimator(kernel, X) {
+    return function (V) {
+      return X.map(function (x) {
+        return [
+          x,
+          d3.mean(V, function (v) {
+            return kernel(x - v);
+          }),
+        ];
+      });
+    };
+  }
+
+  // Epanechnikov kernel function
+  function kernelEpanechnikov(k) {
+    return function (v) {
+      return Math.abs((v /= k)) <= 1 ? (0.75 * (1 - v * v)) / k : 0;
+    };
+  }
+
+  function updateChart() {
+    // Code to update the violin chart using D3
+    // Make sure to update the highlighted value in the chart
+  }
+
+  onMount(() => {
+    createChart();
+  });
+
+  afterUpdate(() => {
+    updateChart();
+  });
 </script>
 
-<div class="chart-container">
-  <input bind:value={guess} />
-  <h1>Value entered: {guess}</h1>
-  {#each data as item, i}
-    <div bind:this={containers[i]} class="chart" />
-  {/each}
-</div>
-
-<style>
-  .chart-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    margin: 0 auto;
-  }
-</style>
+<svg bind:this={svg} width="600" height="400" />

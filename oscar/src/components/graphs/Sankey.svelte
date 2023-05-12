@@ -13,6 +13,9 @@
     .nodePadding(30)
     .size([width, height]);
 
+  // state trackers
+  let hovered = -1; // index of the hovered segment
+  $: console.log(hovered);
   const nodes = remittance_use.data.map(function (d) {
     return { id: d.id, use: d.use };
   });
@@ -20,18 +23,23 @@
   const links = remittance_use.data.map(function (d) {
     return { source: 9, target: d.id, value: d.values };
   });
-  let graph = sankey({ nodes: nodes, links: links });
 
   const linkGenerator = sankeyLinkHorizontal();
+  let graph = sankey({ nodes: nodes, links: links });
 
-  const colors = ["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"];
+  // const colors = ["#94855f", "#ccb58a", "#76958d", "#db99b", "#69a0a4"];
+  // const colorScale = d3
+  //   .scaleOrdinal()
+  //   .domain(graph.nodes.map((d) => d.id))
+  //   .range(colors);
+  // state trackers
+  // let hovered = -1; // index of the hovered segment
+  // $: console.log(hovered);
+  const colors = ["#94855f", "#ccb58a", "#76958d", "#707070", "#69a0a4"];
   const colorScale = d3
     .scaleOrdinal()
     .domain(graph.nodes.map((d) => d.id))
     .range(colors);
-  // state trackers
-  let hovered = -1; // index of the hovered segment
-  // $: console.log(hovered);
 </script>
 
 <div class="visualization">

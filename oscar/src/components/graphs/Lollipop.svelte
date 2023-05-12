@@ -1,8 +1,6 @@
 <script>
   //  currently not integrated in
   import * as d3 from "d3";
-  import { onMount } from "svelte";
-  import { onDestroy } from "svelte";
 
   export let selectedChoice;
   const data = [
@@ -63,7 +61,7 @@
     if (selectedChoice === d.migration_pathways) {
       return "fill: red; stroke: black";
     } else {
-      return "fill: #69b3a2; stroke: black";
+      return "fill: #69a0a4; stroke: black";
     }
   }
   let svg;
