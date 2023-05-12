@@ -13,15 +13,6 @@
     .nodePadding(30)
     .size([width, height]);
 
-<<<<<<< HEAD
-    const colors = ["#94855f", "#ccb58a", "#76958d", "#707070", "#69a0a4"];
-    const colorScale = d3.scaleOrdinal()
-                         .domain(graph.nodes.map(d => d.id))
-                         .range(colors);
-	// state trackers
-	let hovered = -1; // index of the hovered segment
-	$: console.log(hovered);
-=======
   const nodes = remittance_use.data.map(function (d) {
     return { id: d.id, use: d.use };
   });
@@ -41,7 +32,6 @@
   // state trackers
   let hovered = -1; // index of the hovered segment
   // $: console.log(hovered);
->>>>>>> 76f6f8e (question and pathways)
 </script>
 
 <div class="visualization">
