@@ -8,6 +8,13 @@
   const outerRadius = 350;
   const colorMain = "#F4A261";
   const amountDomain = [-10, 35];
+
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  
+  missing.data.sort(function(a, b) {
+    return new Date(a['Incident year'], months.indexOf(a['Reported month'])) - new Date(b['Incident year'], months.indexOf(b['Reported month']));
+  });
+
   const yRadial = d3
     .scaleLinear()
     .range([innerRadius, outerRadius])
