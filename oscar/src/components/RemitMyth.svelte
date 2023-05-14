@@ -1,6 +1,5 @@
 <script>
   import CirclePack from "./graphs/CirclePack.svelte";
-  import Speed from "./graphs/Speed.svelte";
   import Spider from "./graphs/Spider.svelte";
 </script>
 

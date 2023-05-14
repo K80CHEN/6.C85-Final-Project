@@ -1,6 +1,4 @@
 <script>
-  import Sankey from "./graphs/Sankey.svelte";
-  import Violin from "./graphs/Violin.svelte";
   import EdgeBundle from "./graphs/EdgeBundle.svelte";
   import InputWrapper from "./wrappers/InputWrapper.svelte";
 </script>
@@ -49,9 +47,7 @@
       </p>
     </div>
 
-
     <div class="text-block add-margin-top">
-      
       <p class="body-text">
         The overestimation of the amounts migrant workers send back home can
         lead to several challenges and problems. It can paint an unrealistic
