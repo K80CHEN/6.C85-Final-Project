@@ -11,8 +11,8 @@
 
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   
-  missing.data.sort(function(a, b) {
-    return new Date(a['Incident year'], months.indexOf(a['Reported month'])) - new Date(b['Incident year'], months.indexOf(b['Reported month']));
+  const data = missing.data.sort(function(a, b) {
+    return new Date(a['Incident year'], months.indexOf(a['Reported Month'])) - new Date(b['Incident year'], months.indexOf(b['Reported Month']));
   });
 
   const yRadial = d3
@@ -23,20 +23,20 @@
     .scaleBand()
     .range([Math.PI / 2 + 0.04, Math.PI / 2 + 2 * Math.PI - 0.1])
     .align(0)
-    .domain(missing.data.map((d) => d.index));
+    .domain(data.map((d, index) => index));
 
-  let missingData = missing.data.map(function (d) {
+  let missingData = data.map(function (d, index) {
     return {
-      id: d.index,
-      start: xRadial(d.index),
-      end: xRadial(d.index) + xRadial.bandwidth(),
+      id: index,
+      start: xRadial(index),
+      end: xRadial(index) + xRadial.bandwidth(),
       in: yRadial(d.orig),
       out: yRadial(d.found),
       all: d,
     };
   });
-  const lineRotations = missing.data.map(
-    (d) => ((xRadial(d.index) + xRadial.bandwidth() / 2) * 180) / Math.PI - 90
+  const lineRotations = data.map(
+    (d, index) => ((xRadial(index) + xRadial.bandwidth() / 2) * 180) / Math.PI - 90
   );
   // $: console.log(lineRotations);
   const arcGenerator = d3.arc().padAngle(0.15).padRadius(innerRadius);
@@ -79,18 +79,29 @@
           <tspan x="0" dy="1.2em"
             >{`${current["Reported Month"]} ${current["Incident year"]}\n`}</tspan
           >
-          <tspan x="0" dy="2.0em">
-            {current["Number of Dead"]} migrant{current["Number of Dead"] > 1
-              ? "s"
-              : ""} from {current["Country of Origin"]}
-          </tspan>
-          <tspan x="0" dy="1.2em">
-            {current["Number of Dead"] > 1 ? " were" : " was"} reported dead{current[
-              "Minimum Estimated Number of Missing"
-            ] > 0
-              ? ` and ${current["Minimum Estimated Number of Missing"]} were reported missing`
-              : ""}.
-          </tspan>
+          {#if current["Number of Dead"] > 0}
+            <tspan x="0" dy="2.0em">
+              {current["Number of Dead"]} migrant{current["Number of Dead"] > 1
+                ? "s"
+                : ""} from {current["Country of Origin"]}
+            </tspan>
+			<tspan x="0" dy="1.2em">
+				{current["Number of Dead"] > 1 ? " were" : " was"} reported dead{current[
+				  "Minimum Estimated Number of Missing"
+				] > 0
+				  ? ` and ${current["Minimum Estimated Number of Missing"]} were reported missing`
+				  : ""}.
+			</tspan>
+		  {:else}
+			<tspan x="0" dy="2.0em">
+				{current["Minimum Estimated Number of Missing"]} migrant{current["Minimum Estimated Number of Missing"] > 1
+				? "s"
+				: ""} from {current["Country of Origin"]}
+			</tspan>
+		  	<tspan x="0" dy="1.2em">
+				{current["Minimum Estimated Number of Missing"] > 1 ? " were" : " was"} reported missing.
+			</tspan>
+          {/if}
         </text>
       {:else}
         <text fill={"#264653"} font-size="15px" text-anchor="middle">
