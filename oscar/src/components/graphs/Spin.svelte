@@ -171,11 +171,11 @@
   let hasSpun = false;
 
   function spin(d) {
-    // if (hasSpun) {
-    //   // alert("Too bad");
-    //   showPopup();
-    //   return;
-    // }
+    if (hasSpun) {
+      // alert("Too bad");
+      showPopup();
+      return;
+    }
     container.on("click", null);
     //all slices have been seen, all done
     // console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
