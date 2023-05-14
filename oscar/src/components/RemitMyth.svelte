@@ -98,7 +98,8 @@
     font-family: "Gelasio", serif;
     font-size: 17px;
     line-height: 1.6;
-    text-align: start;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .myth-title {

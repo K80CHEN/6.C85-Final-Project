@@ -2,6 +2,7 @@
   import Input from "../helpers/Input.svelte";
   import Barcode from "../graphs/Barcode.svelte";
   import { writable, derived } from "svelte/store";
+  import Violin from "../graphs/Violin.svelte";
 
   let data = [
     100, 75, 120, 400, 50, 200, 350, 16.9, 5.1, 25.4, 100, 100, 150, 150, 250,
@@ -45,5 +46,35 @@
   <Input onSubmit={handleInputSubmit} />
   {#if $highlightedValue !== null}
     <Barcode data={localData} highlightedValue={$highlightedValue} />
+
+    <Violin />
+    <div class="text-block">
+      <span class="viz-footnote"
+        >Title: Distribution of Remittance Frequencies Sent by Central American
+        Migrants
+        <br />
+        Credit: These data visualizations were made with data contributed by the
+        United Nations World Food Programme (WFP).</span
+      >
+    </div>
   {/if}
 </div>
+
+<style>
+  .text-block {
+    display: block;
+    margin: 0 auto;
+    max-width: 460px;
+    margin-bottom: 2rem;
+  }
+
+  span.viz-footnote {
+    display: block;
+    font-size: 11px;
+    line-height: 16px;
+    font-family: "Libre Franklin", sans-serif;
+    color: #999;
+    text-align: start;
+    margin-bottom: 2.5rem;
+  }
+</style>

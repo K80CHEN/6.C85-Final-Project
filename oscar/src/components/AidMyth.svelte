@@ -41,11 +41,7 @@
 
     <InputWrapper />
 
-    <div class="text-block">
-      <span class="viz-footnote"
-        >Visualizing the distribution of how much Central American migrants send
-        back home in different frequencies</span
-      >
+    <div>
       <p class="body-text">
         We then asked our peers to estimate how much Central American migrants
         send back home on a monthly basis, here's a comparison between the
@@ -53,11 +49,9 @@
       </p>
     </div>
 
-    <Violin />
+
     <div class="text-block add-margin-top">
-      <span class="viz-footnote"
-        >Visualizing WFP survey data and our survey data</span
-      >
+      
       <p class="body-text">
         The overestimation of the amounts migrant workers send back home can
         lead to several challenges and problems. It can paint an unrealistic
@@ -86,7 +80,8 @@
 
   <div class="text-block add-margin-top">
     <span class="viz-footnote"
-      >Visualizing remittance spending. Data Source: World Food Program</span
+      >This data visualization was made with data contributed by the United
+      Nations World Food Programme (WFP).</span
     >
   </div>
 
@@ -115,7 +110,8 @@
     font-family: "Gelasio", serif;
     font-size: 17px;
     line-height: 1.6;
-    text-align: start;
+    text-align: justify;
+    text-justify: inter-word;
   }
   .myth-title {
     font-size: 1.5rem;

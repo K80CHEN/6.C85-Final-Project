@@ -5,21 +5,16 @@
 
   onMount(() => {});
 
-  /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+  /* Radar chart design (radarChart.js) created by Nadieh Bremer - VisualCinnamon.com */
+  /* I re-wrote part of the code into D3.js V6 to use in this project*/
 
   //////////////////////////////////////////////////////////////
   //////////////////////// Set-Up //////////////////////////////
   //////////////////////////////////////////////////////////////
 
-  // var margin = { top: 100, right: 100, bottom: 100, left: 100 },
-  //   width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
-  //   height = Math.min(
-  //     width,
-  //     window.innerHeight - margin.top - margin.bottom - 20
-  //   );
   const margin = { top: 10, right: 70, bottom: 40, left: 70 },
-  width = 500 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom;
+    width = 500 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
   //////////////////////////////////////////////////////////////
   ////////////////////////// Data //////////////////////////////

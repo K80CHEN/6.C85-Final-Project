@@ -8,7 +8,7 @@
   import "@fontsource/gelasio";
 
   import PathwayWrapper from "./wrappers/PathwayWrapper.svelte";
-  import Spin from "./interations/Spin.svelte";
+  import Spin from "./graphs/Spin.svelte";
 </script>
 
 <div>

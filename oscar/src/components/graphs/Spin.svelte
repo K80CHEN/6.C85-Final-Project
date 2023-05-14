@@ -7,54 +7,16 @@
 
   var data = [
     {
-      label: "You made it and are able to stay",
-      value: 1,
-      question: "Congratulations, you were the few. ",
-    },
-    {
-      label: "You did not make it. ",
+      label: "You made it!",
       value: 2,
-      question: "You were eaten by a wolf. Want to try again? ",
+      question:
+        "Congratulations, you were one of the 2 percent. Unfortunately, many weren't as fortunate. ",
     },
     {
       label: "You did not make it. ",
-      value: 3,
-      question: "You were scammed by the coyote. Want to try again?",
-    },
-    {
-      label: "You did not make it. ",
-      value: 4,
-      question: "You were eaten by a wolf. Want to try again? ",
-    },
-    {
-      label: "You did not make it",
-      value: 5,
-      question: "You were eaten by a wolf. Want to try again? ",
-    },
-    {
-      label: "You did not make it",
-      value: 6,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 7,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 8,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 9,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 10,
-      question: "You were eaten by a wolf. Want to try again?",
+      value: 98,
+      question:
+        "You did not make it to the U.S. Want to try again? Click to spin one more time. ",
     },
   ];
 
@@ -95,14 +57,16 @@
       .pie()
       .sort(null)
       .value((d) => {
-        return 1;
+        return d.value;
       });
+    const pieData = pie(data);
+
     // declare an arc generator function
     var arc = d3.arc().innerRadius(0).outerRadius(r);
     // select paths, use arc generator to draw
     var arcs = vis
       .selectAll("g.slice")
-      .data(pie)
+      .data(pieData)
       .enter()
       .append("g")
       .attr("class", "slice");
@@ -112,7 +76,7 @@
       .attr("fill", "#69a0a4")
       .attr("d", (d) => arc(d))
       .style("stroke", "white")
-      .style("stroke-width", "2px");
+      .style("stroke-width", "1px");
 
     // Add the text
     const labels = arcs
@@ -156,8 +120,8 @@
             .attr("x", 0)
             .attr("dy", dy + "em")
             .text(line)
-            .style("font-family", "gelasio")
-            .style("font-size", "1rem");
+            .style("font-family", "libre franklin")
+            .style("font-size", "0.8rem");
         }
       });
     }
@@ -193,8 +157,8 @@
       .attr("x", 0)
       .attr("y", 7)
       .attr("text-anchor", "middle")
-      .text("SPIN")
-      .attr("font-family", "gelasio") // Set the font family
+      .text("Click to spin")
+      .attr("font-family", "libre franklin") // Set the font family
       .attr("font-size", "1rem"); // Set the font size
   });
 
