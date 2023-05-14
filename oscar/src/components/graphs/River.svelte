@@ -13,17 +13,19 @@
     return { x: x, y: y, wh: wh, rate: 0.5 * Math.random(), clr: getColor() };
   };
 
+  let started = false;
+
   const width = 1500;
   const height = 400;
   const nf = 0.005;
-  const wave = 20;
-  const speed = 1;
+  const wave = 0;
+  const speed = 0.5;
 
   const bg = "#ffffff";
   let sq = [];
   const remove = [];
   let removed = 0;
-  const n = 500;
+  const n = 1000;
   const diff = width / n / width;
 
   for (let j = 0; j < n; j++) {
@@ -31,7 +33,7 @@
       create_square(
         width * diff * j,
         height * 0.1 + Math.random() * 0.8 * height,
-        20
+        10
       )
     );
     remove.push(true);
@@ -50,30 +52,38 @@
         if (remove[i]) {
           p5.fill("#ccb58a");
         } else {
-          p5.fill("#707070");
+          p5.fill("#800020");
         }
-        p5.push();
-        p5.translate(sq[i].x, sq[i].y);
-        const nfx = p5.noise(sq[i].x * nf, sq[i].y * nf);
-        p5.rotate(p5.TWO_PI * nfx);
-        p5.rect(nfx * wave, 0, sq[i].wh, sq[i].wh);
-
-        p5.pop();
-        p5.fill(255);
-        sq[i].x += speed + p5.sin(p5.frameCount * sq[i].rate);
-        sq[i].y += p5.cos(p5.frameCount * sq[i].rate);
-        if (sq[i].x > width || sq[i].x < 0) {
-          sq[i].x = 0;
-        }
-        if (removed < n / 2) {
-          if (Math.random() < 0.001) {
-            removed += 1;
-            remove[i] = false;
-          }
-        }
+		p5.push();
+		p5.translate(sq[i].x, sq[i].y);
+		const nfx = p5.noise(sq[i].x * nf, sq[i].y * nf);
+		p5.rotate(p5.TWO_PI * nfx);
+		p5.rect(nfx * wave, 0, sq[i].wh, sq[i].wh);
+		if (started && removed < n / 2 && Math.random() < 0.001) {
+			removed += 1;
+			remove[i] = false;
+		}
+		if (started && remove[i]) {
+			sq[i].x += speed + p5.sin(p5.frameCount * sq[i].rate)*0.01;
+			sq[i].y += p5.cos(p5.frameCount * sq[i].rate)*0.01;
+			if (sq[i].x > width || sq[i].x < 0) {
+				sq[i].x = 0;
+			}
+		} else if (started && sq[i].y <= height - 3) {
+			sq[i].y += 0.5;
+		}
+		p5.pop();
+		p5.fill(255);
       }
     };
   };
 </script>
 
+<button on:click={() => {started = !started}}>
+	{#if started}
+		Pause
+	{:else}
+		Start
+	{/if}
+</button>
 <P5 {sketch} />
