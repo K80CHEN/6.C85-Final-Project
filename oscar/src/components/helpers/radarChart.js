@@ -226,7 +226,7 @@ function RadarChart(id, data, options) {
 			tooltip
 				.attr('x', newX)
 				.attr('y', newY)
-				.text(Format(d.value))
+				.text(d.originalTarget.__data__.value + "")
 				.transition().duration(200)
 				.style('opacity', 1);
 		})
