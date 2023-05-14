@@ -4,8 +4,8 @@
   import "@fontsource/libre-franklin";
   import "@fontsource/libre-franklin/600.css";
   import "@fontsource/domine/700.css";
-
   import "@fontsource/gelasio";
+  import "@fontsource/gelasio/600.css";
 
   import PathwayWrapper from "./wrappers/PathwayWrapper.svelte";
   import Spin from "./graphs/Spin.svelte";
@@ -18,17 +18,21 @@
 
   <div class="text-block">
     <p class="body-text">
-      The United States offers a diverse array of pathways for individuals
-      seeking to migrate, including family-based immigration, employment-based
-      visas, diversity visas, and humanitarian protection programs such as
-      asylum or refugee status. However, for many Central American migrants,
-      accessing these pathways can prove to be challenging. Factors such as
-      limited availability of visas, stringent eligibility criteria, lengthy
-      waiting periods, and complex application processes often act as barriers
-      to entry. As a result, Central American migrants may find themselves with
-      limited options, resorting to irregular migration routes or facing
-      prolonged separation from their families, underscoring the need for more
-      accessible and inclusive migration policies.
+      Accessing regular pathways to migrate to the United States can be an
+      insurmountable challenge for Central American migrants. Despite a
+      seemingly diverse array of migration options such as family-based
+      immigration, employment-based visas, diversity visas, and humanitarian
+      protection programs, the reality is that these pathways are increasingly
+      difficult to navigate due to limited availability, strict eligibility
+      criteria, long waiting periods, and complex application processes. In
+      light of these obstacles, many Central American migrants find themselves
+      with few viable options, either resorting to dangerous and irregular
+      migration routes or facing the possibility of being indefinitely separated
+      from their loved ones. Test your knowledge on migration routes below <span
+        class="bolded"
+      >
+        by clicking on the option corresponding to your answer</span
+      >.
     </p>
   </div>
 
@@ -36,7 +40,28 @@
 
   <div class="text-block">
     <p class="body-text">
-      Let's add some words words words to transition into the spinning wheel.
+      According to Michael A. Clemens' research paper, "Pathways for Labor
+      Migration from Northern Central America: Five Difficult but Necessary
+      Proposals," it is distressing to note that out of every 100 individuals
+      from Northern Central America, only two have access to existing lawful
+      migration channels. This means that the other 98 people have limited
+      options and face significant challenges in seeking a better life
+      elsewhere. They are left with no other choice but to endure the difficult
+      conditions in their home countries or to embark on dangerous and often
+      deadly journeys to find refuge in other nations. The lack of accessible
+      and inclusive migration policies underscores the urgent need for systemic
+      change to ensure that individuals seeking a better life are not forced
+      into perilous situations.
+    </p>
+    <p class="body-text">
+      When migrants decide whether they should embark on this journey, they
+      cannot afford to look at the low probability of it and perform an in depth
+      analysis because their family’s life depends on their success. They have
+      to ‘gamble’ with their finances and future in hopes for a better life.
+      Imagine you are in Central America and your only chance of survival is
+      trying to migrate. <span class="bolded">
+        Spin the wheel below to test your odds of making it to the us.
+      </span>
     </p>
   </div>
 
@@ -51,16 +76,21 @@
 
   <div class="text-block add-margin-top">
     <p class="body-text">
-      Although often overlooked, the tragedies that befall migrants in their
-      quest for a better life are not forgotten. The International Organization
-      for Migration (IOM) established the Missing Migrants Project to document
-      the incidents where migrants, including refugees and asylum-seekers, have
-      perished at national borders or during the migration process to
-      international destinations. This initiative was a response to the
-      scattered reports of people dying or disappearing along migratory routes
-      globally. We have endeavored to bring this data to life by highlighting
-      how migrants, in pursuit of the American Dream, have lost their lives
-      during their journey.
+      Unfortunately, not being able to take a regular migration route and having
+      to spin the wheels of fortune lead Central American migrants towards
+      tragedy. Although often overlooked, the tragedies that befall migrants in
+      their quest for a better life are not forgotten. The International
+      Organization for Migration (IOM) established the Missing Migrants Project
+      to document the incidents where migrants, including refugees and
+      asylum-seekers, have perished at national borders or during the migration
+      process to international destinations. This initiative was a response to
+      the scattered reports of people dying or disappearing along migratory
+      routes globally. We have endeavored to bring this data to life by
+      highlighting how migrants, in pursuit of the American Dream, have lost
+      their lives during their journey. The figure below will offer you an
+      insight into some of these sad stories. Hover over some of the ‘towers’ to
+      explore what happened to these migrants. Below the visualization you will
+      find an in depth description of the visualization.
     </p>
   </div>
 
@@ -68,7 +98,7 @@
 
   <div class="text-block add-margin-top">
     <span class="viz-footnote"
-      >"Vanishing Voyagers: Lives Lost and Missing in Migration" <br />
+      >Vanishing Voyagers: Lives Lost and Missing in Migration<br />
       DATA SOURCE: Missing Migrants Project by International Organization for Migration
     </span>
 
@@ -85,12 +115,6 @@
       to that of a marathon runner collapsing at the final mile, crushing her
       dreams and aspirations, despite her valiant efforts to that point.
     </p>
-
-    <p class="body-text">
-      The longer concentric towers evoke a sense of despair, akin to that of a
-      marathon runner collapsing at the final mile, crushing her dreams and
-      aspirations, despite her valiant efforts to that point.
-    </p>
   </div>
 
   <div class="callout">
@@ -101,17 +125,26 @@
 
   <div class="text-block">
     <p class="body-text">
-      For a very long time, the first things that Americans associated with
-      migration were economic gain, financial aid and jumping the southern
-      border. But the journey to the U.S. is by no means a stroll through
-      Central Park followed by financial gains and prosperity for migrants. The
-      trip from Central America to the U.S.A. is treacherous and filled with
-      risks and dangers. Given that migrants experience dire conditions in their
-      home town, they are ready to put all their savings and even their life on
-      the line for an opportunity for migrating to the U.S. Most migrants never
-      make it successfully to the U.S., because of the low number of legal
-      migration means, the restrictive border access and the dangers encountered
-      during the migration trip.
+      Let's focus on the few migrants who successfully reach the US. The United
+      States greatly benefits from the labor of immigrants, who play a crucial
+      role in various industries, from agriculture to healthcare. However, this
+      benefit is often one-sided, with many migrants facing challenges in
+      accessing basic services and struggling to make ends meet. Additionally,
+      obtaining legal status poses a significant challenge for many, leading to
+      an inability to stay in the US for the long term. According to a survey by
+      the World Food Program, around half of the migrants fail to stay in the
+      US. The discourse around migration often revolves around financial gain,
+      but it's important to recognize the complex factors driving migration,
+      such as economic hardship, political instability, and violence, and
+      approach the issue with empathy and understanding.
+    </p>
+    <p class="body-text">
+      <span class="bolded">
+        Take a look at the river depicted below. Each drop of the stream is a
+        hard working migrant who has risked everything in pursuit of the
+        American Dream. As you may notice, many of these hopeful water drops
+        fall from their desired "stream of hope".</span
+      >
     </p>
   </div>
 
@@ -122,15 +155,6 @@
       >The River of Squares: Visualizing the Plight of Migrants Forced to Return
       Home</span
     >
-    <p class="body-text">
-      According the survey done by the World Food Program, around 50% of the
-      migrants never make it into the United States. Here we represent each
-      migrant as an individual square, flowing through various stages of their
-      journey. As migrants face the challenges and their eventual return,
-      providing a humanizing perspective on the stories that lie hidden beneath
-      the data, and serves as a compelling call to action for a more
-      compassionate approach to migration policy and support services.
-    </p>
   </div>
 </div>
 
@@ -189,5 +213,8 @@
     font-size: 1.0625rem;
     line-height: 1.5625rem;
     font-weight: 700;
+  }
+  .bolded {
+    font-weight: 600;
   }
 </style>

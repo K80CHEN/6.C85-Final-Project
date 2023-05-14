@@ -9,10 +9,26 @@
   const colorMain = "#F4A261";
   const amountDomain = [-10, 35];
 
-  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  
-  const data = missing.data.sort(function(a, b) {
-    return new Date(a['Incident year'], months.indexOf(a['Reported Month'])) - new Date(b['Incident year'], months.indexOf(b['Reported Month']));
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const data = missing.data.sort(function (a, b) {
+    return (
+      new Date(a["Incident year"], months.indexOf(a["Reported Month"])) -
+      new Date(b["Incident year"], months.indexOf(b["Reported Month"]))
+    );
   });
 
   const yRadial = d3
@@ -36,7 +52,8 @@
     };
   });
   const lineRotations = data.map(
-    (d, index) => ((xRadial(index) + xRadial.bandwidth() / 2) * 180) / Math.PI - 90
+    (d, index) =>
+      ((xRadial(index) + xRadial.bandwidth() / 2) * 180) / Math.PI - 90
   );
   // $: console.log(lineRotations);
   const arcGenerator = d3.arc().padAngle(0.15).padRadius(innerRadius);
@@ -53,8 +70,13 @@
 
   const colors = [
     "#94855f",
+    "#c6ad74",
+    "#F7D488",
+    "#E2C589",
+    "#ACAD8B",
     "#ccb58a",
     "#76958d",
+    "#818888",
     "#707070",
     "#69a0a4",
     "#8b7b82",
@@ -69,6 +91,10 @@
   // $: console.log(hovered);
   // $: if (current !== undefined)
   // console.log(current["Reported Month"], current["Incident year"]);
+
+  const countries = Array.from(
+    new Set(missing.data.map((x) => x["Country of Origin"]))
+  );
 </script>
 
 <div class="visualization">
@@ -85,22 +111,26 @@
                 ? "s"
                 : ""} from {current["Country of Origin"]}
             </tspan>
-			<tspan x="0" dy="1.2em">
-				{current["Number of Dead"] > 1 ? " were" : " was"} reported dead{current[
-				  "Minimum Estimated Number of Missing"
-				] > 0
-				  ? ` and ${current["Minimum Estimated Number of Missing"]} were reported missing`
-				  : ""}.
-			</tspan>
-		  {:else}
-			<tspan x="0" dy="2.0em">
-				{current["Minimum Estimated Number of Missing"]} migrant{current["Minimum Estimated Number of Missing"] > 1
-				? "s"
-				: ""} from {current["Country of Origin"]}
-			</tspan>
-		  	<tspan x="0" dy="1.2em">
-				{current["Minimum Estimated Number of Missing"] > 1 ? " were" : " was"} reported missing.
-			</tspan>
+            <tspan x="0" dy="1.2em">
+              {current["Number of Dead"] > 1 ? " were" : " was"} reported dead{current[
+                "Minimum Estimated Number of Missing"
+              ] > 0
+                ? ` and ${current["Minimum Estimated Number of Missing"]} were reported missing`
+                : ""}.
+            </tspan>
+          {:else}
+            <tspan x="0" dy="2.0em">
+              {current["Minimum Estimated Number of Missing"]} migrant{current[
+                "Minimum Estimated Number of Missing"
+              ] > 1
+                ? "s"
+                : ""} from {current["Country of Origin"]}
+            </tspan>
+            <tspan x="0" dy="1.2em">
+              {current["Minimum Estimated Number of Missing"] > 1
+                ? " were"
+                : " was"} reported missing.
+            </tspan>
           {/if}
         </text>
       {:else}
@@ -169,6 +199,17 @@
       >
     {/each}
   </svg>
+  <div class="check-box">
+    {#each countries as country}
+      <span class="check-box-input">
+        <div
+          class="check-box-color"
+          style="background-color: {colorScale(country)}"
+        />
+        {country}
+      </span>
+    {/each}
+  </div>
 </div>
 
 <style>
@@ -176,5 +217,27 @@
     font: 25px sans-serif;
     margin-top: 0;
     text-align: middle;
+  }
+  .check-box {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: start;
+    height: 100px;
+    text-align: start;
+    flex-wrap: wrap;
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+  }
+  .check-box-color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  }
+  .check-box-input {
+    font-family: "libre franklin", "sans serif";
+    font-size: 0.8rem;
+    padding: 5px;
   }
 </style>

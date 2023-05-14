@@ -54,36 +54,63 @@
         } else {
           p5.fill("#800020");
         }
-		p5.push();
-		p5.translate(sq[i].x, sq[i].y);
-		const nfx = p5.noise(sq[i].x * nf, sq[i].y * nf);
-		p5.rotate(p5.TWO_PI * nfx);
-		p5.rect(nfx * wave, 0, sq[i].wh, sq[i].wh);
-		if (started && removed < n / 2 && Math.random() < 0.001) {
-			removed += 1;
-			remove[i] = false;
-		}
-		if (started && remove[i]) {
-			sq[i].x += speed + p5.sin(p5.frameCount * sq[i].rate)*0.01;
-			sq[i].y += p5.cos(p5.frameCount * sq[i].rate)*0.01;
-			if (sq[i].x > width || sq[i].x < 0) {
-				sq[i].x = 0;
-			}
-		} else if (started && sq[i].y <= height - 3) {
-			sq[i].y += 0.5;
-		}
-		p5.pop();
-		p5.fill(255);
+        p5.push();
+        p5.translate(sq[i].x, sq[i].y);
+        const nfx = p5.noise(sq[i].x * nf, sq[i].y * nf);
+        p5.rotate(p5.TWO_PI * nfx);
+        p5.rect(nfx * wave, 0, sq[i].wh, sq[i].wh);
+        if (started && removed < n / 2 && Math.random() < 0.001) {
+          removed += 1;
+          remove[i] = false;
+        }
+        if (started && remove[i]) {
+          sq[i].x += speed + p5.sin(p5.frameCount * sq[i].rate) * 0.01;
+          sq[i].y += p5.cos(p5.frameCount * sq[i].rate) * 0.01;
+          if (sq[i].x > width || sq[i].x < 0) {
+            sq[i].x = 0;
+          }
+        } else if (started && sq[i].y <= height - 3) {
+          sq[i].y += 0.5;
+        }
+        p5.pop();
+        p5.fill(255);
       }
     };
   };
 </script>
 
-<button on:click={() => {started = !started}}>
-	{#if started}
-		Pause
-	{:else}
-		Start
-	{/if}
+<button
+  class="btn"
+  on:click={() => {
+    started = !started;
+  }}
+>
+  {#if started}
+    Pause Animation
+  {:else}
+    Start Animation
+  {/if}
 </button>
 <P5 {sketch} />
+
+<style>
+  .btn {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 15px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #053e69;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.35s ease-out;
+    transition-property: background-color;
+    font-family: "libre franklin";
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #707070;
+  }
+</style>

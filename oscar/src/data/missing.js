@@ -502,21 +502,7 @@ export const missing = {
             "orig": 15.5,
             "found": 28.6613741
         },
-        {
-            "index": 11566,
-            "Incident year": 2022,
-            "Reported Month": "December",
-            "Region of Origin": "Southern Asia",
-            "Country of Origin": "India",
-            "Coordinates": "POINT (-117.122358 32.53447999)",
-            "Migration route": "US-Mexico border crossing",
-            "Total Number of Dead and Missing": 1,
-            "Number of Children": 0,
-            "Number of Dead": 1.0,
-            "Minimum Estimated Number of Missing": 0,
-            "orig": 20.0,
-            "found": 32.53447999
-        },
+       
         {
             "index": 11569,
             "Incident year": 2022,

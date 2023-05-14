@@ -69,7 +69,7 @@
   $: if (selectedChoice) {
     // set the dimensions and margins of the graph
     cleanup();
-    const margin = { top: 10, right: 30, bottom: 40, left: 240 },
+    const margin = { top: 10, right: 30, bottom: 40, left: 280 },
       width = 800 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 

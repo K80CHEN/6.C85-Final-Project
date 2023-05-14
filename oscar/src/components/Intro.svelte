@@ -1,5 +1,6 @@
 <script>
   import "@fontsource/gelasio";
+  import "@fontsource/gelasio/600.css";
 </script>
 
 <div class="intro">
@@ -11,26 +12,29 @@
     In the realm of migration, misconceptions often tip the scales, leading to
     underestimations and overestimations of the challenges that migrant workers
     face. It's time to strike a balance by busting these myths and uncovering
-    the true intricacies of migrant experiences. By recalibrating our
+    the true intricacies of migrant experiences. The perception of how easy or
+    difficult it is to migrate to the United States varies among Americans and
+    is influenced by personal experience, political affiliation, and geographic
+    location. According to the Cato Institute 2021 Immigration and Identity
+    National Survey of 2,600 U.S. adults, more than two‐​thirds (67%) of
+    Americans believe legally immigrating to the United States is “fairly
+    difficult” while a third (33%) think it’s fairly easy. By recalibrating our
     understanding, we can foster well-informed policies and garner public
     support that addresses the diverse needs of migrant workers, ultimately
     promoting their successful integration and restoring equilibrium in host
     societies. Just like Adam Savage and Jamie Hyneman, we use hard facts,
     statistics, and evidence to reveal the truth beneath the rhetoric. So,
     buckle up and prepare to have your assumptions challenged as we dismantle
-    misconceptions and uncover the genuine impact of migration on our world.
-    Hopefully, at the end of it all, we'll prove to you that, when it comes to
-    migration, the facts are often far more enlightening than fiction.
+    misconceptions and uncover the genuine impact of migration on our world. We
+    encourage you to engage with our visualizations, read the <span
+      class="bolded">additional insights shared in our tooltips</span
+    > (hover your mouse over me) and interact with our questionnaires to see how
+    your current image of the phenomenon compares with the facts suggested by the
+    data.
   </p>
   <p class="body-text">
-    The perception of how easy or difficult it is to migrate to the United
-    States varies among Americans and is influenced by personal experience,
-    political affiliation, and geographic location. According to the Cato
-    Institute 2021 Immigration and Identity National Survey of 2,600 U.S.
-    adults, more than two‐​thirds (67%) of Americans believe legally immigrating
-    to the United States is “fairly difficult” while a third (33%) think it’s
-    fairly easy. However, the perception of how difficult is fairly difficult
-    varies vastly. We look at this from several dimensions.
+    Hopefully, at the end of it all, we'll prove to you that, when it comes to
+    migration, the facts are often far more enlightening than fiction.
   </p>
 </div>
 
@@ -63,5 +67,8 @@
     font-weight: 600;
     line-height: 1.3rem;
     margin: 3rem 0;
+  }
+  .bolded {
+    font-weight: 600;
   }
 </style>

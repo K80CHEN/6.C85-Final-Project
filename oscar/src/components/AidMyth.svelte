@@ -1,6 +1,7 @@
 <script>
   import EdgeBundle from "./graphs/EdgeBundle.svelte";
   import InputWrapper from "./wrappers/InputWrapper.svelte";
+  import "@fontsource/gelasio/600.css";
 </script>
 
 <div>
@@ -22,6 +23,16 @@
       and home countries.
     </p>
 
+    <div class="text-block">
+      <p class="body-text">
+        <span class="bolded"> We encourage you to take a guess first! </span> After
+        you enter your guess, we will show you how your guess compares to the actual
+        distribution of the monthly remittances sent back to El Salvador, Honduras
+        and Guatemala. After your guess, you will see a visualization of the distribution
+        of remittance amounts using a violin plot.
+      </p>
+    </div>
+
     <div class="callout">
       <span class="question"
         >How much do you think a Central American migrant workers send back home
@@ -29,23 +40,7 @@
       </span>
     </div>
 
-    <div class="text-block">
-      <p class="body-text">
-        We encourage you to take a guess first! After you enter your guess, we
-        will show you how your guess compares to the actual distribution of the
-        monthly remittances sent back to El Salvador, Honduras and Guatemala
-      </p>
-    </div>
-
     <InputWrapper />
-
-    <div>
-      <p class="body-text">
-        We then asked our peers to estimate how much Central American migrants
-        send back home on a monthly basis, here's a comparison between the
-        actual and the guess distributions.
-      </p>
-    </div>
 
     <div class="text-block add-margin-top">
       <p class="body-text">
@@ -72,15 +67,6 @@
     </div>
   </div>
 
-  <EdgeBundle />
-
-  <div class="text-block add-margin-top">
-    <span class="viz-footnote"
-      >This data visualization was made with data contributed by the United
-      Nations World Food Programme (WFP).</span
-    >
-  </div>
-
   <div class="text-block">
     <p class="body-text">
       Furthermore, we have visualized a typical budget allocation for migrants'
@@ -92,6 +78,15 @@
       a substitute for government assistance, as they don't reach everyone,
       especially the most vulnerable populations.
     </p>
+  </div>
+
+  <EdgeBundle />
+
+  <div class="text-block add-margin-top">
+    <span class="viz-footnote"
+      >This data visualization was made with data contributed by the United
+      Nations World Food Programme (WFP).</span
+    >
   </div>
 </div>
 
@@ -146,5 +141,8 @@
     font-size: 1.0625rem;
     line-height: 1.5625rem;
     font-weight: 700;
+  }
+  .bolded {
+    font-weight: 600;
   }
 </style>

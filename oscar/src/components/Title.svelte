@@ -1,9 +1,10 @@
 <div class="title-wrapper">
   <h1 class="title">
-    Balancing the Migration Scale: Dispelling Underestimations and
-    Overestimations in Migrant Worker Challenges
+    Breaking the Myths: A Scrolling Journey Through Central American Migration
+    to the US
   </h1>
   <p class="by-line">BY AUDREY XIE, KATIE CHEN, TEODOR NICOLA-ANTONIU</p>
+  <span class="viz-footnote">Estimated Reading Time: ~10min </span>
 </div>
 
 <style>
@@ -30,5 +31,16 @@
     font-family: "Gelasio", serif;
     font-size: 0.6875rem;
     line-height: 0.75rem;
+  }
+  span.viz-footnote {
+    display: block;
+    font-size: 11px;
+    line-height: 16px;
+    font-family: "Libre Franklin", sans-serif;
+    color: #999;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    /* text-align: start; */
+    margin-bottom: 2.5rem;
   }
 </style>
