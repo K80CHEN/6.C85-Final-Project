@@ -8,54 +8,14 @@
   var data = [
     {
       label: "You made it and are able to stay",
-      value: 1,
+      value: 2,
       question: "Congratulations, you were the few. ",
     },
     {
       label: "You did not make it. ",
-      value: 2,
+      value: 98,
       question: "You were eaten by a wolf. Want to try again? ",
-    },
-    {
-      label: "You did not make it. ",
-      value: 3,
-      question: "You were scammed by the coyote. Want to try again?",
-    },
-    {
-      label: "You did not make it. ",
-      value: 4,
-      question: "You were eaten by a wolf. Want to try again? ",
-    },
-    {
-      label: "You did not make it",
-      value: 5,
-      question: "You were eaten by a wolf. Want to try again? ",
-    },
-    {
-      label: "You did not make it",
-      value: 6,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 7,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 8,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 9,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
-    {
-      label: "You did not make it",
-      value: 10,
-      question: "You were eaten by a wolf. Want to try again?",
-    },
+    }
   ];
 
   let container;
@@ -95,14 +55,15 @@
       .pie()
       .sort(null)
       .value((d) => {
-        return 1;
+        return d.value;
       });
+    const pieData = pie(data);
     // declare an arc generator function
     var arc = d3.arc().innerRadius(0).outerRadius(r);
     // select paths, use arc generator to draw
     var arcs = vis
       .selectAll("g.slice")
-      .data(pie)
+      .data(pieData)
       .enter()
       .append("g")
       .attr("class", "slice");

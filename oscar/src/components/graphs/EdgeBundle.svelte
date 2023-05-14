@@ -9,6 +9,29 @@
 	const upperX = 60;
 	const lowerX = -60;
 
+	let checks = ["x_259.8076211353316_y_149.99999999999997",
+        		  "x_273.108882289844_y_124.14321735154174",
+				  "x_283.8444470627251_y_97.1201826174963", 
+				  "x_291.91346117394716_y_69.18476122273206",
+				  "x_297.2401210094536_y_40.59938992503933",
+				  "x_299.774385751269_y_11.632611377045015",
+				  "x_299.49244748138045_y_-17.44344867314272",
+				  "x_296.3969548430427_y_-46.35563784235212",
+				  "x_290.51698815834175_y_-74.83234321739437"];
+	
+	// let checksEntry = Object.entries(checks);
+	let selected = [];
+
+	let labels = {"x_259.8076211353316_y_149.99999999999997": "Food purchase",
+        "x_273.108882289844_y_124.14321735154174": "Health expenses",
+        "x_283.8444470627251_y_97.1201826174963": "Education expenses", 
+        "x_291.91346117394716_y_69.18476122273206": "Housing",
+        "x_297.2401210094536_y_40.59938992503933": "Purchase of agricultural inputs",
+        "x_299.774385751269_y_11.632611377045015": "Saving",
+        "x_299.49244748138045_y_-17.44344867314272": "Payment of commitments abroad",
+        "x_296.3969548430427_y_-46.35563784235212": "Payment of the sender's travel debt",
+        "x_290.51698815834175_y_-74.83234321739437": "Other" };
+
 	const list_label = [
 		'Food purchase',
 		'Health expenses',
@@ -58,30 +81,23 @@
       .scaleOrdinal()
       .domain(hoverables.map(v => `x_${v.x}_y_${v.y}`))
       .range(colors);
-    // state trackers
-    let hovered = -1; // index of the hovered segment
-    let recorded_mouse_position = {x: 0, y: 0};
 </script>
   
 <div class="visualization">
+	<div>
+		{#each checks as key}
+			<label>
+				<input type=checkbox bind:group={selected} name="selected" value={key}>
+				{labels[key]}
+			</label>
+		{/each}	
+	</div>
     <svg {width} {height}>
     	<g transform="translate(310, 310)">
 			{#each [...captions.entries()] as [id, label]}
-				<g  stroke={(hovered === id || hovered === -1) ? colorScale(id) : '#808080'}
-				    stroke-opacity={(hovered === id || hovered === -1) ? 0.15 : 0.05}
-				    on:mouseover={(event) => {
-						hovered = id;
-					}}
-					on:focus={() => {}}
-					on:mouseout={(event) => {
-						hovered = -1;
-						recorded_mouse_position = {
-							x: event.pageX,
-							y: event.pageY
-						};
-					}}
-					on:blur={() => {}}>
-					{#each results[id] as data}
+				<g  stroke={(selected.includes(id)) ? colorScale(id) : '#808080'}
+				    stroke-opacity={(selected.includes(id)) ? 0.15 : 0.05}>
+					{#each results[id] as data}	
 						<path
 							d={d3line(data)}
 							fill="none"
@@ -90,35 +106,8 @@
 					{/each}
 				</g>
 			{/each}
-        	<!-- {#each results.data as data}
-          		<path
-					id={`x_${data[data.length-1].x}_y_${data[data.length-1].y}`}
-            		d={d3line(data)}
-            		fill="none"
-            		stroke-width={1}
-					on:mouseover={(event) => {
-						hovered = `x_${data[data.length-1].x}_y_${data[data.length-1].y}`;
-					}}
-					on:focus={() => {}}
-					on:mouseout={(event) => {
-						hovered = -1;
-						recorded_mouse_position = {
-							x: event.pageX,
-							y: event.pageY
-						};
-					}}
-					on:blur={() => {}}
-          		/>
-        	{/each} -->
       	</g>
     </svg>
-	<div
-		class={hovered === -1 ? "tooltip-hidden": "tooltip-visible"}	
-		style="left: {recorded_mouse_position.x}px; top: {recorded_mouse_position.y}px">
-			{#if hovered !== -1}
-				{captions.get(hovered)}
-			{/if}
-	</div>
 </div>
   
 <style>
