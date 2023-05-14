@@ -189,7 +189,7 @@
     container
       .append("text")
       .attr("x", 0)
-      .attr("y", 10)
+      .attr("y", 7)
       .attr("text-anchor", "middle")
       .text("SPIN")
       .attr("font-family", "gelasio") // Set the font family

@@ -9,7 +9,7 @@
 
   import PathwayWrapper from "./PathwayWrapper.svelte";
 
-  import Spin from "./helpers/Spin.svelte";
+  import Spin from "./graphs/Spin.svelte";
 
 </script>
 
