@@ -171,11 +171,11 @@
   let hasSpun = false;
 
   function spin(d) {
-    if (hasSpun) {
-      // alert("Too bad");
-      showPopup();
-      return;
-    }
+    // if (hasSpun) {
+    //   // alert("Too bad");
+    //   showPopup();
+    //   return;
+    // }
     container.on("click", null);
     //all slices have been seen, all done
     // console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
@@ -184,14 +184,15 @@
       container.on("click", null);
       return;
     }
-    var ps = 360 / data.length,
+    var ps = 360 / 100,
       pieslice = Math.round(1440 / data.length),
-      rng = Math.floor(Math.random() * 1440 + 360);
+    rng = Math.floor(Math.random() * 1440 + 360);
 
     rotation = Math.round(rng / ps) * ps;
 
-    picked = Math.round(data.length - (rotation % 360) / ps);
-    picked = picked >= data.length ? picked % data.length : picked;
+    picked = Math.round((rotation % 360) / ps);
+    picked = picked >= 100 ? picked % 100 : picked;
+    picked = picked > 1 ? 1 : picked;
 
     if (oldpick.indexOf(picked) !== -1) {
       spin();
