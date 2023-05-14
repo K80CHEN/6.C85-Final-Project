@@ -5,6 +5,7 @@
 
   let data = [];
   let container;
+  let tooltip;
 
   // load data this way:
   onMount(async () => {
@@ -30,28 +31,27 @@
 
     // Size scale for countries
     const size = d3.scaleLinear().domain([0, 300]).range([17, 85]); // circle will be between 7 and 55 px wide
-
-    // create a tooltip
-    const Tooltip = d3
-      .select(container)
-      .append("div")
-      .style("opacity", 0)
-      .attr("class", "tooltip")
-      .style("background-color", "white")
-      .style("padding", "5px");
+    // // create a tooltip
+    // const Tooltip = d3
+    //   .select(container)
+    //   .append("div")
+    //   .style("opacity", 0)
+    //   .attr("class", "tooltip")
+    //   .style("background-color", "white")
+    //   .style("padding", "5px");
 
     // Three function that change the tooltip when user hover / move / leave a cell
-    const mouseover = function (event, d) {
-      Tooltip.style("opacity", 1);
-    };
-    const mousemove = function (event, d) {
-      Tooltip.html(d.Firm + "<br>" + d.CountofFirm + " transactions")
-        .style("left", event.x / 2 + 20 + "px")
-        .style("top", event.y / 2 - 30 + "px");
-    };
-    var mouseleave = function (event, d) {
-      Tooltip.style("opacity", 0);
-    };
+    // const mouseover = function (event, d) {
+    //   Tooltip.style("opacity", 1);
+    // };
+    // const mousemove = function (event, d) {
+    //   Tooltip.html(d.Firm + "<br>" + d.CountofFirm + " transactions")
+    //     .style("left", event.x / 2 + 20 + "px")
+    //     .style("top", event.y / 2 - 30 + "px");
+    // };
+    // var mouseleave = function (event, d) {
+    //   Tooltip.style("opacity", 0);
+    // };
 
     // Initialize the circle: all located at the center of the svg area
     var node = svg
@@ -65,9 +65,21 @@
       .attr("cy", height / 2)
       .style("fill", (d) => color(d.FirmType))
       .style("fill-opacity", 0.8)
-      .on("mouseover", mouseover) // What to do when hovered
-      .on("mousemove", mousemove)
-      .on("mouseleave", mouseleave);
+      .on("mouseover", function (event, d) {
+        d3.select(tooltip)
+          .style("opacity", 1)
+          .style("left", `${event.pageX}px`)
+          .style("top", `${event.pageY}px`)
+          .html(d.Firm + "<br>" + d.CountofFirm + " transactions");
+      })
+	  .on("mousemove", function (event) {
+        d3.select(tooltip)
+          .style("left", `${event.pageX}px`)
+          .style("top", `${event.pageY}px`);
+      })
+      .on("mouseout", function () {
+        d3.select(tooltip).style("opacity", 0);
+      });
 
     // Features of the forces applied to the nodes:
     const simulation = d3
@@ -99,4 +111,22 @@
   });
 </script>
 
-<div bind:this={container} />
+<div>
+	<div class="tooltip" bind:this={tooltip} />
+	<div bind:this={container} />
+</div>
+
+<style>
+  .tooltip {
+		font: 12px sans-serif;
+		font-family: "Libre Franklin", sans-serif;
+		visibility: visible;
+		background-color: #DEEDCF;
+		border-radius: 10px;
+		width: 100px;
+		color: black;
+		position: absolute;
+		padding: 5px;
+		opacity: 0;
+	}
+</style>
