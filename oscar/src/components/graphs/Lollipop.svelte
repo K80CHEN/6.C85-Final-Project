@@ -96,7 +96,8 @@
       .call(d3.axisBottom(x))
       .selectAll("text")
       .attr("transform", "translate(-10,0)rotate(-45)")
-      .style("text-anchor", "end");
+      .style("text-anchor", "end")
+      .style("font-family", "libre franklin");
 
     // Y axis
     const y = d3
@@ -108,7 +109,11 @@
         })
       )
       .padding(1);
-    svg.append("g").call(d3.axisLeft(y));
+    svg
+      .append("g")
+      .call(d3.axisLeft(y))
+      .style("font-family", "libre franklin")
+      .style("font-size", "12px");
 
     // Lines
     svg
@@ -143,7 +148,7 @@
           .style("top", `${event.pageY - 10}px`)
           .html(
             selectedChoice === d.migration_pathways
-              ? `This was your choice. There are ${d.pathways_used} reportings of this pathway being used`
+              ? `This was your guess. There are ${d.pathways_used} reportings of this pathway being used`
               : `There are ${d.pathways_used} reportings of this pathway being used`
           );
       })
@@ -182,11 +187,36 @@
 <div>
   <div class="tooltip" bind:this={tooltip} />
   <div class="lollipop" bind:this={container} />
+  <div class="caption-box">
+    <p class="caption-text">
+      The most commonly used pathway is with a coyote through irregular
+      measures. A coyote is a person who smuggles immigrants across the
+      Mexico-United States border. <br /><br />
+      There were 1652 reportings on the main means that a Central American migrant
+      used to migrate or attempt to migrate abroad the last time. Please note that
+      these are number of reportings. One person could have more than one means to
+      migrate. But the distribution should represent the pathways that were commonly
+      taken.
+    </p>
+  </div>
 </div>
 
 <style>
-  .lollipop text {
-    font-family: "domine";
+  .caption-box {
+    display: block;
+    position: absolute;
+    left: 80%;
+    transform: translateY(-120%);
+    border: 1px solid #707070;
+    padding: 20px;
+    width: 200px;
+    text-align: left;
+  }
+  .caption-text {
+    font-family: "gelasio";
+    line-height: 1.1rem;
+    font-size: 14px;
+    transition: opacity 2s ease-in-out;
   }
   .tooltip {
     position: absolute;
@@ -197,8 +227,7 @@
     padding: 5px;
     opacity: 0;
     transition: opacity 0.2s;
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 12px;
     font-family: "Libre Franklin", sans-serif;
     color: #999;
     text-align: start;

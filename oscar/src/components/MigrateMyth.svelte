@@ -7,36 +7,13 @@
 
   import "@fontsource/gelasio";
 
-  import PathwayWrapper from "./PathwayWrapper.svelte";
-
-  import Spin from "./graphs/Spin.svelte";
-
+  import PathwayWrapper from "./wrappers/PathwayWrapper.svelte";
+  import Spin from "./interations/Spin.svelte";
 </script>
 
 <div>
   <div class="text-block">
     <p class="myth-title">The Easy Road Less Traveled</p>
-  </div>
-
-  <div class="text-block">
-    <p class="body-text">
-      The perception of how easy or difficult it is to migrate to the United
-      States varies among Americans and is influenced by personal experience,
-      political affiliation, and geographic location. According to the Cato
-      Institute 2021 Immigration and Identity National Survey of 2,600 U.S.
-      adults, more than two‐​thirds (67%) of Americans believe legally
-      immigrating to the United States is “fairly difficult” while a third (33%)
-      think it’s fairly easy. However, the perception of how difficult is fairly
-      difficult varies vastly. We look at this from several dimensions.
-    </p>
-  </div>
-
-  <PathwayWrapper />
-
-  <div class="text-block">
-    <p class="body-text">
-      <span class="viz-footnote"> DATA SOURCE: WFP Central American </span>
-    </p>
   </div>
 
   <div class="text-block">
@@ -55,12 +32,22 @@
     </p>
   </div>
 
-  <Spin />
+  <PathwayWrapper />
+
+  <div class="text-block">
+    <p class="body-text">
+      Let's add some words words words to transition into the spinning wheel.
+    </p>
+  </div>
+
   <div class="callout">
     <span class="question"
-      >How many Central American migrants did NOT make it to the U.S.?
+      >What do you think are the odds are for a Central American migrant worker
+      to make it to the U.S.?
     </span>
   </div>
+
+  <Spin />
 
   <div class="text-block add-margin-top">
     <p class="body-text">
@@ -86,8 +73,8 @@
     </span>
 
     <p class="body-text">
-      The radial graph depicts each concentric ‘tower’, which comprises of one
-      or more migrants who began their journey towards the U.S. at the inner
+      The radial graph depicts each concentric ‘tower’, which comprises one or
+      more migrants who began their journey towards the U.S. at the inner
       tower’s latitude and vanished or perished upon reaching the outer tower’s
       latitude. The graph showcases the immense distances these migrants
       traveled, and how they came perilously close to their desired destination,
@@ -147,7 +134,6 @@
   </div>
 </div>
 
-
 <style>
   .text-block {
     display: block;
@@ -159,7 +145,8 @@
     font-family: "Gelasio", serif;
     font-size: 17px;
     line-height: 1.6;
-    text-align: start;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .myth-title {

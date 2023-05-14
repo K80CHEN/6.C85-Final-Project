@@ -172,4 +172,19 @@
   });
 </script>
 
-<svg bind:this={svg} width="1000" height="400" />
+<div>
+  <svg id="violin" bind:this={svg} width="1000" height="400" />
+  <div class="graph-placeholder" width="1000" height="400" />
+</div>
+
+<style>
+  #violin {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .graph-placeholder {
+    /* Match the height of the placeholder with the height of the graph */
+    height: 400px;
+  }
+</style>
