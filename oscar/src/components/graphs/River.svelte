@@ -47,7 +47,6 @@
       p5.createCanvas(width, height);
       p5.background(bg);
       p5.noStroke();
-      p5.noLoop();
     };
 
     p5.draw = () => {
