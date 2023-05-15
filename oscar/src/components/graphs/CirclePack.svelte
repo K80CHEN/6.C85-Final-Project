@@ -31,27 +31,6 @@
 
     // Size scale for countries
     const size = d3.scaleLinear().domain([0, 300]).range([17, 85]); // circle will be between 7 and 55 px wide
-    // // create a tooltip
-    // const Tooltip = d3
-    //   .select(container)
-    //   .append("div")
-    //   .style("opacity", 0)
-    //   .attr("class", "tooltip")
-    //   .style("background-color", "white")
-    //   .style("padding", "5px");
-
-    // Three function that change the tooltip when user hover / move / leave a cell
-    // const mouseover = function (event, d) {
-    //   Tooltip.style("opacity", 1);
-    // };
-    // const mousemove = function (event, d) {
-    //   Tooltip.html(d.Firm + "<br>" + d.CountofFirm + " transactions")
-    //     .style("left", event.x / 2 + 20 + "px")
-    //     .style("top", event.y / 2 - 30 + "px");
-    // };
-    // var mouseleave = function (event, d) {
-    //   Tooltip.style("opacity", 0);
-    // };
 
     // Initialize the circle: all located at the center of the svg area
     var node = svg
@@ -72,7 +51,7 @@
           .style("top", `${event.pageY}px`)
           .html(d.Firm + "<br>" + d.CountofFirm + " transactions");
       })
-	  .on("mousemove", function (event) {
+      .on("mousemove", function (event) {
         d3.select(tooltip)
           .style("left", `${event.pageX}px`)
           .style("top", `${event.pageY}px`);
@@ -112,21 +91,54 @@
 </script>
 
 <div>
-	<div class="tooltip" bind:this={tooltip} />
-	<div bind:this={container} />
+  <div class="tooltip" bind:this={tooltip} />
+  <div bind:this={container} />
+
+  <div class="check-box">
+    <span class="check-box-input">
+      <div class="check-box-color" style="background-color: #94855f" />
+      Bank
+    </span>
+    <span class="check-box-input">
+      <div class="check-box-color" style="background-color: #69a0a4" />
+      Money Transfer Operator
+    </span>
+  </div>
 </div>
 
 <style>
   .tooltip {
-		font: 12px sans-serif;
-		font-family: "Libre Franklin", sans-serif;
-		visibility: visible;
-		background-color: #DEEDCF;
-		border-radius: 10px;
-		width: 100px;
-		color: black;
-		position: absolute;
-		padding: 5px;
-		opacity: 0;
-	}
+    font: 12px sans-serif;
+    font-family: "Libre Franklin", sans-serif;
+    visibility: visible;
+    background-color: #deedcf;
+    border-radius: 10px;
+    width: 100px;
+    color: black;
+    position: absolute;
+    padding: 5px;
+    opacity: 0;
+  }
+  .check-box {
+    display: flex;
+    width: 460px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: start;
+    /* height: 100px; */
+    text-align: start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .check-box-color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  }
+  .check-box-input {
+    font-family: "libre franklin", "sans serif";
+    font-size: 0.8rem;
+    margin-right: 10px;
+    /* padding: 5px; */
+  }
 </style>

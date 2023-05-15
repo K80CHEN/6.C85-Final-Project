@@ -59,7 +59,7 @@
 
   function circleStyle(d) {
     if (selectedChoice === d.migration_pathways) {
-      return "fill: red; stroke: black";
+      return "fill: #C1121F; stroke: black";
     } else {
       return "fill: #69a0a4; stroke: black";
     }
@@ -69,7 +69,7 @@
   $: if (selectedChoice) {
     // set the dimensions and margins of the graph
     cleanup();
-    const margin = { top: 10, right: 30, bottom: 40, left: 280 },
+    const margin = { top: 20, right: 30, bottom: 80, left: 280 },
       width = 800 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
@@ -98,7 +98,16 @@
       .attr("transform", "translate(-10,0)rotate(-45)")
       .style("text-anchor", "end")
       .style("font-family", "libre franklin");
-
+    svg
+      .append("text")
+      .attr(
+        "transform",
+        "translate(" + width / 2 + " ," + (height + margin.top + 40) + ")"
+      ) // Adjust the second part of the translate attribute as needed
+      .style("text-anchor", "middle")
+      .style("font-family", "libre franklin")
+      .style("font-size", "0.8rem")
+      .text("Number of reportings");
     // Y axis
     const y = d3
       .scaleBand()
@@ -115,6 +124,15 @@
       .style("font-family", "libre franklin")
       .style("font-size", "12px");
 
+    svg
+      .append("text")
+      .attr("y", margin.top - 40) // Adjust as needed
+      .attr("x", -40)
+      .attr("dy", "1em")
+      .style("text-anchor", "start")
+      .style("font-family", "libre franklin")
+      .style("font-size", "0.8rem")
+      .text("Type of Pathways");
     // Lines
     svg
       .selectAll("myline")

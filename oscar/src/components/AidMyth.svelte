@@ -80,12 +80,31 @@
     </p>
   </div>
 
+  <div class="callout">
+    <span class="question"
+      >How do you think migrant worker families allocate their remittances?
+    </span>
+  </div>
+
+  <div class="text-block">
+    <p class="body-text">
+      <span class="bolded"> Toggle on and off different categories </span> to see
+      the allocation of remittances from every migrant worker family interviewed
+      in the World Food Program survey. Each node on the arc highlighted on the right
+      hand-side of the circle represent a category. Each node on the rest of the
+      arc represent a migrant worker family in the survey.
+    </p>
+  </div>
+
   <EdgeBundle />
 
   <div class="text-block add-margin-top">
     <span class="viz-footnote"
-      >This data visualization was made with data contributed by the United
-      Nations World Food Programme (WFP).</span
+      >Title: Tracing the Impact - A Color-Coded Visualization of Remittance
+      Allocation by Migrant Workers' Families"
+
+      <br />Credit: This data visualization was made with data contributed by
+      the United Nations World Food Programme (WFP).</span
     >
   </div>
 </div>

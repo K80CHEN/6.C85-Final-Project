@@ -27,7 +27,7 @@
 
   <CirclePack />
 
-  <div class="text-block add-margin-top">
+  <div class="text-block">
     <span class="viz-footnote"
       >Data Scource: Remittances Price Worldwide (2016 Q2 - 2022 Q3)</span
     >

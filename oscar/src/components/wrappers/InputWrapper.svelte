@@ -47,11 +47,29 @@
   {#if $highlightedValue !== null}
     <Barcode data={localData} highlightedValue={$highlightedValue} />
 
+    <div class="text-block">
+      <p class="body-text">
+        From the World Food Program survey data, we counted 768 reportings of
+        remittances that were sent back on a monthly basis. The barcode plot
+        visualizes the distribution of the amounts of remittances. The average
+        remittance amount is ~160 USD, the median is only ~100 USD.
+      </p>
+      <p class="body-text">
+        The following violin plot visualizes the distrubution of remittances
+        amount by different frequencies. Overall, most remittances are around
+        $100 - $200 range, regardless of frequency it was sent back. As the
+        frequency decreases, the amount sent back also decreases. Presumably
+        migrant workers would want to send back remittances as frequent as
+        possible, and for those who cannot afford to sent more frequently, their
+        remittances amount might also be lower.
+      </p>
+    </div>
+
     <Violin />
     <div class="text-block">
       <span class="viz-footnote"
-        >Title: Distribution of Remittance Frequencies Sent by Central American
-        Migrants
+        >Title: Distribution of Remittance Amount (in USD) by Different
+        Frequencies
         <br />
         Credit: These data visualizations were made with data contributed by the
         United Nations World Food Programme (WFP).</span
@@ -66,6 +84,14 @@
     margin: 0 auto;
     max-width: 460px;
     margin-bottom: 2rem;
+  }
+
+  .body-text {
+    font-family: "Gelasio", serif;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   span.viz-footnote {

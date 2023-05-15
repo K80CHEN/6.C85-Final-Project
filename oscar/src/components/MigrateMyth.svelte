@@ -60,15 +60,15 @@
       to ‘gamble’ with their finances and future in hopes for a better life.
       Imagine you are in Central America and your only chance of survival is
       trying to migrate. <span class="bolded">
-        Spin the wheel below to test your odds of making it to the us.
+        Spin the wheel below to test your odds of making it to the U.S.
       </span>
     </p>
   </div>
 
   <div class="callout">
     <span class="question"
-      >What do you think are the odds are for a Central American migrant worker
-      to make it to the U.S.?
+      >What do you think the odds are for a Central American migrant worker to
+      make it to the U.S.?
     </span>
   </div>
 
@@ -98,8 +98,9 @@
 
   <div class="text-block add-margin-top">
     <span class="viz-footnote"
-      >Vanishing Voyagers: Lives Lost and Missing in Migration<br />
-      DATA SOURCE: Missing Migrants Project by International Organization for Migration
+      >Title: Radial Visualization of Distance Traveled by Missing or Deceased
+      Migrant Workers from Different Countries<br />
+      Data Source: Missing Migrants Project by International Organization for Migration
     </span>
 
     <p class="body-text">
@@ -132,11 +133,11 @@
       accessing basic services and struggling to make ends meet. Additionally,
       obtaining legal status poses a significant challenge for many, leading to
       an inability to stay in the US for the long term. According to a survey by
-      the World Food Program, around half of the migrants fail to stay in the
-      US. The discourse around migration often revolves around financial gain,
-      but it's important to recognize the complex factors driving migration,
-      such as economic hardship, political instability, and violence, and
-      approach the issue with empathy and understanding.
+      the World Food Program, around half of the migrants were not to stay in
+      the US. The discourse around migration often revolves around financial
+      gain, but it's important to recognize the complex factors driving
+      migration, such as economic hardship, political instability, and violence,
+      and approach the issue with empathy and understanding.
     </p>
     <p class="body-text">
       <span class="bolded">
@@ -152,8 +153,10 @@
 
   <div class="text-block add-margin-top">
     <span class="viz-footnote"
-      >The River of Squares: Visualizing the Plight of Migrants Forced to Return
-      Home</span
+      >Title: Unfulfilled Dreams - Visualizing Migrant Workers Who Were Unable
+      to Remain in the U.S.<br />
+      Credit: This data visualization was made with data contributed by the United
+      Nations World Food Programme (WFP).</span
     >
   </div>
 </div>

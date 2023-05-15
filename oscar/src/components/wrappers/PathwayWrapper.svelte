@@ -24,6 +24,8 @@
     <div class="text-block">
       <p class="body-text">
         <span class="viz-footnote">
+          Title: Reported Migration Pathways Used by Central American Workers" <br
+          />
           Data Scource: World Food Program <br />
           Credit: This data visualization was made with data contributed by the United
           Nations World Food Programme (WFP).

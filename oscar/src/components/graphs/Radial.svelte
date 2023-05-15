@@ -1,4 +1,8 @@
 <script>
+  // Inspired and adapted from ObservableHQ: some of the women architects and designers I didn't hear about at university
+  // Link: https://observablehq.com/@carmen-tm/women-architects-i-didnt-hear-about
+  // By Carmen Torrecillas
+
   import * as d3 from "d3";
   import { missing } from "../../data/missing";
 

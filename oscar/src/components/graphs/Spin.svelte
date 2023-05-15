@@ -2,6 +2,8 @@
   import * as d3 from "d3";
   import { onMount } from "svelte";
 
+  // Adapted and Inspired by Spin Wheel on Codepen: https://codepen.io/sumeshkp18/pen/VGBPYg
+
   let chart;
   let question;
 
@@ -186,7 +188,7 @@
     }
     var ps = 360 / 100,
       pieslice = Math.round(1440 / data.length),
-    rng = Math.floor(Math.random() * 1440 + 360);
+      rng = Math.floor(Math.random() * 1440 + 360);
 
     rotation = Math.round(rng / ps) * ps;
 

@@ -21,7 +21,7 @@
     const height = 400;
     const width = 500;
     const margin = { top: 30, right: 30, bottom: 10, left: 0 };
-    const chartHeight = height - margin.top - margin.bottom;
+    const chartHeight = height - margin.top - margin.bottom - 20;
     const chartWidth = width - margin.left - margin.right;
 
     const y = d3
@@ -49,10 +49,24 @@
       .attr("y1", margin.top)
       .attr("x2", (d) => x(d))
       .attr("y2", chartHeight)
-      .attr("stroke", (d) => (d === highlightedValue ? "red" : "#76958d"))
+      .attr("stroke", (d) => (d === highlightedValue ? "#C1121F" : "#76958d"))
       .attr("stroke-width", 2);
 
     g.append("g").attr("transform", `translate(0, ${chartHeight})`).call(xAxis);
+
+    g.append("text")
+      .attr(
+        "transform",
+        "translate(" +
+          width / 2 +
+          " ," +
+          (chartHeight + margin.bottom + 30) +
+          ")"
+      ) // Adjust the second part of the translate attribute as needed
+      .style("text-anchor", "middle")
+      .text("Monthly Remittance in USD")
+      .style("font-family", "libre franklin")
+      .style("font-size", "0.8rem");
   }
 </script>
 

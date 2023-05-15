@@ -1,6 +1,6 @@
 <div class="title-wrapper">
   <h1 class="title">
-    Breaking the Myths: A Scrolling Journey Through Central American Migration
+    Debuking the Myths: A Scrolling Journey Through Central American Migration
     to the US
   </h1>
   <p class="by-line">BY AUDREY XIE, KATIE CHEN, TEODOR NICOLA-ANTONIU</p>

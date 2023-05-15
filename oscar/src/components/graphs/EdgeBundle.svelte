@@ -27,7 +27,8 @@
     "x_290.51698815834175_y_-74.83234321739437",
   ];
 
-  let selected = ["x_259.8076211353316_y_149.99999999999997",
+  let selected = [
+    "x_259.8076211353316_y_149.99999999999997",
     "x_273.108882289844_y_124.14321735154174",
     "x_283.8444470627251_y_97.1201826174963",
     "x_291.91346117394716_y_69.18476122273206",
@@ -35,7 +36,8 @@
     "x_299.774385751269_y_11.632611377045015",
     "x_299.49244748138045_y_-17.44344867314272",
     "x_296.3969548430427_y_-46.35563784235212",
-    "x_290.51698815834175_y_-74.83234321739437"];
+    "x_290.51698815834175_y_-74.83234321739437",
+  ];
 
   let labels = {
     "x_259.8076211353316_y_149.99999999999997": "Food purchase",
@@ -176,29 +178,6 @@
     width: 10px;
     height: 10px;
     /* background-color: #707070; */
-  }
-  .visualization {
-    /* display: flex; */
-  }
-
-  /* dynamic classes for the tooltip */
-  .tooltip-hidden {
-    visibility: hidden;
-    font-family: "Libre Franklin", sans-serif;
-    width: 100px;
-    position: absolute;
-  }
-
-  .tooltip-visible {
-    font: 12px sans-serif;
-    font-family: "Libre Franklin", sans-serif;
-    visibility: visible;
-    background-color: #deedcf;
-    border-radius: 10px;
-    width: 100px;
-    color: black;
-    position: absolute;
-    padding: 5px;
   }
   .check-box {
     display: flex;
