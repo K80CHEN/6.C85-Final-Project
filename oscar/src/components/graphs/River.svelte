@@ -28,6 +28,8 @@
   const n = 1000;
   const diff = width / n / width;
 
+  const p = [];
+
   for (let j = 0; j < n; j++) {
     sq.push(
       create_square(
@@ -37,6 +39,7 @@
       )
     );
     remove.push(true);
+    p.push(0.03)
   }
 
   const sketch = (p5) => {
@@ -44,6 +47,7 @@
       p5.createCanvas(width, height);
       p5.background(bg);
       p5.noStroke();
+      p5.noLoop();
     };
 
     p5.draw = () => {
@@ -52,7 +56,8 @@
         if (remove[i]) {
           p5.fill("#ccb58a");
         } else {
-          p5.fill("#800020");
+          p5.fill(p5.lerpColor(p5.color('#ccb58a'), p5.color("#800020"), p[i]));
+          p[i] = (p[i] < 1) ? p[i] + 0.03 : 1;
         }
         p5.push();
         p5.translate(sq[i].x, sq[i].y);
