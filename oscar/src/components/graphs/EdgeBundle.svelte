@@ -9,6 +9,12 @@
   const upperX = 60;
   const lowerX = -60;
 
+  let arc = d3.arc()
+              .innerRadius(radius)
+              .outerRadius(radius)
+              .startAngle(Math.PI/2 - Math.PI/12)
+              .endAngle(Math.PI/2 + Math.PI/6);
+
   let checks = [
     "x_259.8076211353316_y_149.99999999999997",
     "x_273.108882289844_y_124.14321735154174",
@@ -84,12 +90,6 @@
     captions.set(`x_${circ.x}_y_${circ.y}`, list_label[i - 4990]);
   }
 
-  function update(id) {
-    d3.selectAll(id)
-      .style("stroke", colorScale(id))
-      .style("stroke-opacity", 0.15);
-  }
-
   var d3line = d3
     .line()
     .x(function (d) {
@@ -134,6 +134,7 @@
   <div class="edge-bundle-plot">
     <svg {width} {height}>
       <g transform="translate(310, 310)">
+        <path d={arc()} fill='none' stroke-width=1 stroke='#808080' stroke-opacity=0.75></path>
         {#each [...captions.entries()] as [id, label]}
           <g
             stroke={selected.includes(id) ? colorScale(id) : "#808080"}
